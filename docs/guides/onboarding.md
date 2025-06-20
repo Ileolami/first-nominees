@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # onboarding
 
-![onboarding flow](./img/Screenshot%202025-06-20%20at%202.09.31 PM.png)
+![onboarding flow](./img/onboarding.png)
 
 ## Process
 

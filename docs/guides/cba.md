@@ -5,7 +5,7 @@ sidebar_position: 6
 
 # CBA Integration
 
-![process flow](./img/Screenshot%202025-06-20%20at%202.38.35 PM.png)
+![process flow](./img/cba.png)
 
 ## Process
 

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 # Dashboard
 
-![dashboard flow](./img/Screenshot%202025-06-20%20at%202.42.08 PM.png)
+![dashboard flow](./img/dashboard.png)
 
 ## Process
 

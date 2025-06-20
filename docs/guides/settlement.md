@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Settlement Module
 
-![settlement process](./img/Screenshot%202025-06-20%20at%202.26.54 PM.png)
+![settlement process](./img/settlement.png)
 
 ## Process
 

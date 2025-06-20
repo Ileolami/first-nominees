@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Approval Module
 
-![approval flow](./img/Screenshot%202025-06-20%20at%202.30.50 PM.png)
+![approval flow](./img/approval.png)
 
 ## Process
 
