@@ -1,0 +1,71 @@
+---
+id: upload-fund-transfer-schedule
+title: "Upload Fund Transfer Schedule"
+description: "This endpoint is used to upload a fund transfer schedule to the system."
+sidebar_label: "Upload Fund Transfer Schedule"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFtv2zYU/isEnzZAjm/plurNbdItwJIZsbMtCPJAk0cWG4lUeUnqGv7vwyEtW77WRftYP8kiz/183yE1pwIsN7JyUiua0nEuLQElKi2VI9ISb0EQp4mvCs0EYSTzShBnmLIZGGJ5DsIXgFtcDsTOrIPyjCZUV2AYar0WNKVR/INXYrwUHS0laUINfPJg3TstZjSdU66VA+XwkVVVIXlQ0/5o0cM5RZMlwyc3q4CmVE8+Anc0oZVBo06CxdWsNgbmEhyTRXi7Ge5AEWYMmxGdbQUmokhCXnMwQIDxnERDBP1jUlma1B4EHTSh0kFpv+4ZK7WP8W0nH0hcw3ROYOWNAbE2Zp2RakoTCp9ZWRX4qtfpdOgioRNQkEkumZndshL2W1CsBIwXy9UQOGpg8Nf1wz25uR+NB8M/B2iKGxDSDThHd2/1gWDiMlG+nIDBoF5zyfNgehnoqywKDDXq+0qc/X7n7fnFm9/7vbUL75h6fq/FgWAnTD0TrsUq4ihUe3bU2ptztCJg8q1xZkaXhyMNCr9a0P5F722/d9Hrr3z4xkCDzElxxmwqFuG6ByREYYPjP5JpE7SHzmQ87Dim+wFYjtq1maLIkBknuS+Y2TWzXrN1DNpMmZJfoulTTfb68OY3d95vmDWQqQOlM5CBAcWhLt73mO6GTFZsVoJyl8wdqJVgblWm5WYiFXl4eHho3dy0Li8xzSXbV7XlQkpRx1bL9M5bnW4rdowFI1lx68v9HsTlrZBPjpIuFovGi8c1o0Um2kNE2wyyh0Ca6N4FN6JxF4wbQNnBCQ2a1o0du3FvM2Lptttl3UlbNW3meiPVmJonzP5ytu2H64B4JT95iHCtEWXX8/Bw6i3nrU63s1GAMFLu43jGAUvqCUtWIzad0xdWeDg0Fn9WcKOC2wVspj1k3oCttLIx9b1OZ7fGd8sdNKE5MAEmbH0fTzatK8W1wNruO87sKfv0i6woGq455RShf0EkpHdBPsCEYLik20m7/bTXI3/cjIO2EZgXMKfqu5HcaKsz17q+HrW7nbNOUFJ32zcHxXOvnkEEJf/gAeREuQHnUDVyiPL/tYb6FQyI1rvT9YyGZ7dX44ilH3TmFMyFXcoXBZugGWc8NKziwiKhJVjLpnDcwQ0w/2J/XZ7BQRDrOQdrM18Us8D28X9D3UTrAphq6kNPdnhj1adNiohRoKsNT091p+HN0mLETAku13gVqLQNiWMupyltZ1WLa6WAO23arJLtl247am4hVbXqM3CrQZA2NG4kLm8KmtLcucqm7fYUSuurqWECzvCZF9qLM1ZVEdbAvZFuFgQnzEo+8OjF41NzFWmzjOlp7FmlFk3RSBGBF8Oe0IXYLXfru8xVnfmfpPtdpJtQqbJwfHPSRWRIYx0ZgrJ4Oru7Go3JYHhtQyg7t1mhuUcn4lGuvrwRVhRkU89geL26+lq8wmKPRUXdM6S7SBOMI01gvbGTSxYIQsVyHR/DW+41bro/8N697FIHn127KphUmMAAkvkSc4+0iTmaUFZJjLZLE3oceU8JzRG96SOdzyfMwr0pFgt8/ckDMvjjU0JfmJGR+x7xLBTHX2j3Z5jRdDUEx+hoUrPOLu0ukloiMv7RvU8Nghn+PRojmJafE8rYToa94qcG9kpTGj5PoHQAeXg3pwVTUx+pLurE3//nscUZ
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/first-pension-rest-apis
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Upload Fund Transfer Schedule"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/fp-connector/api/v1/upload-fund-transfer-schedule"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to upload a fund transfer schedule to the system.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"fundTranserDetails":{"description":"An array of fund transfer details, where each object contains","type":"array","items":{"type":"object","properties":{"amount":{"description":"The amount to be transferred","type":"string","example":"2000"},"beneficiaryName":{"description":"The name of the beneficiary","type":"string","example":"ALIYU MUSTAPHA"},"creditAccountNo":{"description":"The account number to which the amount will be credited","type":"string","example":"3309485732"},"creditBankCode":{"description":"The bank code of the credit account","type":"string","example":"54"},"debitAccountNo":{"description":"The account number from which the amount will be debited","type":"string","example":"20382932823"},"debitBankCode":{"description":"The bank code of the debit account","type":"string","example":"32"},"naration":{"description":"A narration for the transaction","type":"string","example":"Yeah"},"orgtranParticular":{"description":"Particulars of the organization transaction","type":"string","example":"23e56t43"},"orgtranrefno":{"description":"The reference number of the organization transaction","type":"string","example":"12"},"paymentDate":{"description":"The date of the payment in YYYY-MM-DD format","type":"string","format":"date","example":"2024-01-23"},"serialNum":{"description":"The serial number of the transaction","type":"string","example":"1"}}},"example":[{"amount":"2000","beneficiaryName":"ALIYU MUSTAPHA","creditAccountNo":"3309485732","creditBankCode":"54","debitAccountNo":"20382932823","debitBankCode":"32","naration":"Yeah","orgtranParticular":"12","orgtranrefno":"23e56t43","paymentDate":"2024-01-23","serialNum":"1"}]},"scheduleCode":{"description":"A unique code for the schedule","type":"string","example":"scc-010"}}},"examples":{"Upload Fund Transfer Schedule":{"value":{"fundTranserDetails":[{"amount":"2000","beneficiaryName":"ALIYU MUSTAPHA","creditAccountNo":"3309485732","creditBankCode":"54","debitAccountNo":"20382932823","debitBankCode":"32","naration":"Yeah","orgtranParticular":"12","orgtranrefno":"23e56t43","paymentDate":"2024-01-23","serialNum":"1"}],"scheduleCode":"scc-010"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Response","headers":{"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 28 Feb 2024 10:13:22 GMT"}},"Server":{"schema":{"type":"string","example":"Microsoft-IIS/10.0"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"X-Powered-By":{"schema":{"type":"string","example":"ASP.NET"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"data":{"nullable":true,"example":null},"message":{"type":"string","example":"Fund Transfer(s) uploaded successfully"},"success":{"type":"boolean","example":true}}},"examples":{"Response":{"value":{"data":null,"message":"Fund Transfer(s) uploaded successfully","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

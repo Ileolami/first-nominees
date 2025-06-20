@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type * as Plugin from "@docusaurus/types/src/plugin";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -38,7 +40,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-           showLastUpdateTime: true,
+          docItemComponent: "@theme/ApiItem",
+          showLastUpdateTime: true,
           showLastUpdateAuthor: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -142,6 +145,25 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+   plugins: [
+      [
+        'docusaurus-plugin-openapi-docs',
+        {
+          id: "api", // Unique ID for the plugin
+          docsPluginId: "classic", // Refers to the preset-classic Docusaurus setup
+          config: {
+            petstore: {
+              specPath: "first_pension.yaml", // Path to your OpenAPI YAML file
+              outputDir: "docs/api-reference", // Where the generated API docs will be stored
+              sidebarOptions: {
+                groupPathsBy: "tag", // Group endpoints by tags in the sidebar
+              },
+            } satisfies OpenApiPlugin.Options,
+          }
+        },
+      ]
+    ],
+    themes: ["docusaurus-theme-openapi-docs"],
 };
 
 export default config;

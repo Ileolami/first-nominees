@@ -1,0 +1,71 @@
+---
+id: get-customer-by-phonenumber
+title: "Get Customer By Phonenumber"
+description: "This endpoint get user's details based on the phone number."
+sidebar_label: "Get Customer By Phonenumber"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVlFv4jgQ/ivWvOyeFCBAKTRvaZdWnApFQG9XqvpgnAG8m9he2+kth/jvJzspTdrdwupe74lSZj7PzPfZ8+0gQcM0V5ZLAREsNtwQFImSXFiyRktyg/qDIQlaylNDltRgQqQgdoNEbaRAIvJsiboJAUiFmjqkUQIRrNFe5cbKDPXldupCi0gIQFFNM7SoDUQPOxA0Q4jAw02eY+qFPSN9MLVTIQCN33OuMYHI6hwD4C78e456CwEYtsGMQrQDu1XuDGM1F2sIAH/QTKUI0SDs9s77YWfQ2e8fHZxRUhg0LqkThu6jXsqsjIAANkgT38QOrqSwKGxjKJhM3BHR7pTTYf0PV7DfB/CJWjw16TMmAekMyDUuSSfsnJHwIuqeRd2Q3IwXHm2O+gn1qXhjzrQ0cmUbo9G81Q6boQdZaCrMCvVvN8U2ufiGiQf5i+rtqXkxY6gqM3T5XxpT+TdqTBqXp+PMp83J0E1iHwArmHEZVKmUMy/R1lfj2PwJnlx+RWadSrUTtOWFFhJqq1FUa+oUxi1m5qRslKsl13bzfunhoNU+b/W6sA8AM5XKLeormeARAqfj65uwez2ehv1q5sTfrPcyR9fDu9nwc0xGs7sJGQ8X8S35NIxvh7M5iefzu6tRvBjdTRzoimtjjyPexJPRvY/PRXK8dBeZ0lOA5/FtPB4Rl5DxJElRHE25u40X95M/yyS55Cn6l+gYB+3zTr9/dlHQILg43oJaUcqYzAuh/Tq2fTbo9c+7/bBXZrGjE2qH4dm5i9aGTo/VMh1O2mF40Qn7F71ee1BcgcPPD6+U+CK312qrS+q1ok6WTU01pTSqygCosn+guM5whcZXLNaoKplykFU2qiOvTLwc68tU347u0YkGjaHrIww9b6fDmtRoNccnTIjJGUNjVnmabh2H5fcK3lLKFKmoArpNViXOhx/2TrSDJ5rm+PIq/U/rb9FaYfVk6irMlezsPUMZ2o0s7Y53Nn7+rZVqMCkEMit1iyreemq31mgbrDyusdw2VM0TGb+xC0OU6xQi2FirTNRqrTEzuVprmmDT/c1SmSdNqpRvxSDLNbdbn7ikhrM4dzU8PFZ/nbstV+ioEnPQoDvq2S55TboYv365WEkfyK2X+rXjnUxRGC4FmQ3nCxJPR+aNYfNOMpEsz1BYv3GJW8SUC0NompI6TjwdHWyncVbSjaIAajedHSnWOGXudXVlKWlsRv1bWIrpBi05kHm5JXXHWStu9+IJ/qPjLcdn8YdtqZRy4a64Z29XSuEBqlKAAKjirr82BPCeIB4D2EhjHcBu52q41+l+7/5deFt/57mhy9RZ3xVNDb7T5cdZ6ZL/IL920j9t5htu31jz8vUBr78nqrmrwivu2RL78orUwtNVst6YsOJCltfoxtu2fwGT1iBw
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/first-pension-rest-apis
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Customer By Phonenumber"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/fp-connector/api/v1/get-customer-by-phonenumber"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get user's details based on the phone number.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"phoneNumber","description":"Customer's phone number","required":true,"in":"query","schema":{"type":"string","example":8035670282}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Response","headers":{"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 28 Feb 2024 09:34:30 GMT"}},"Server":{"schema":{"type":"string","example":"Microsoft-IIS/10.0"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"X-Powered-By":{"schema":{"type":"string","example":"ASP.NET"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object","properties":{"dateofbirth":{"type":"string","example":"08/16/53"},"employerCode":{"type":"string","example":"MPMFG03FMP07"},"employerName":{"type":"string","example":"IFEOREWA IRON METAL DEALERS ASSOCIATION"},"firstName":{"type":"string","example":"GANIU"},"fundCode":{"type":"string","example":""},"lastName":{"type":"string","example":"SALAMI "},"middlename":{"type":"string","example":"OLATUNJI "},"mobilePhone":{"type":"string","example":"08162774953"},"nin":{"type":"string","example":""},"pfaaccount":{"type":"string","example":"1485763705"},"pfacode":{"type":"string","example":"10046"},"rsaPin":{"type":"string","example":"PEN100920795518"}}},"example":[{"dateofbirth":"08/16/53","employerCode":"MPMFG03FMP07","employerName":"IFEOREWA IRON METAL DEALERS ASSOCIATION","firstName":"GANIU","fundCode":"","lastName":"SALAMI ","middlename":"OLATUNJI ","mobilePhone":"08162774953","nin":"","pfaaccount":"1485763705","pfacode":"10046","rsaPin":"PEN100920795518"}]},"message":{"type":"string","example":"Customer details retrieved successfully"},"success":{"type":"boolean","example":true}}},"examples":{"Response":{"value":{"data":[{"dateofbirth":"08/16/53","employerCode":"MPMFG03FMP07","employerName":"IFEOREWA IRON METAL DEALERS ASSOCIATION","firstName":"GANIU","fundCode":"","lastName":"SALAMI ","middlename":"OLATUNJI ","mobilePhone":"08162774953","nin":"","pfaaccount":"1485763705","pfacode":"10046","rsaPin":"PEN100920795518"}],"message":"Customer details retrieved successfully","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

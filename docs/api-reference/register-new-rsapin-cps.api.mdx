@@ -1,0 +1,71 @@
+---
+id: register-new-rsapin-cps
+title: "Register New RSAPIN CPS"
+description: "This endpoint is used to register new RSAPIN CPS"
+sidebar_label: "Register New RSAPIN CPS"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV01z4jgQ/SuqvuzFxAYyNRPfMvnYorbCUoH9SFE5CLkBTWxJI8lhGIr/vtWyAYdAlkmFE7Zar1ut957kFWTohJXGS60ghdFcOoYqM1oqz6RjpcOMec0szqTzaJnCBbsfXg56fXY1GEIE2qDlNL2XQQqbuD4u7h03Ul0ZBxFY/F6i8191toR0FR6lxQxSb0uMQGjlUXka4sbkUgTA+JujolbgxBwLTv/80iCkoCffUHiIwFhK7yU6Gs24Rz2dSOvn4XFvacgogOkpCyH0x8+RYWFyvURkUoXnqbYF9+zuLr6+jh8eHh4g2uR13ko1gwiqGEhDSogAf/DC5BSStOOkHbcvPiewjqDGtlc6w9clUTahM9yrxB5IuEtw0+okne5FE73PiyPoihcB/STkO/mE7A/+5Ah7WqrscNXUSBqtSreYc19xpNnM3xzjQuhS+bM3c9JauiGftM4fX0gY3i6nmelNeEZrIvicv4VOo+8A3/SqkFmWozoKX43vb8b/gPel0gFcT2SOg7lWR9ANDTFVFhO0v1L/5+RLJ+m2O93zdQSq1z/GIHrgOZMZKi/98h2Z4NPFedL9cn7RTTq0JDPl4qggBreXFbO4c1rIQK6F9PPTs7WTpHNOeazjA6kOM7j2sHcn6SSdTwjr9Xr7MljQ/cYn+y99Ml3BM89LfGVTTcPY94ut1vel3pDqC+XUfG+qt1ZYUwGwmdnkbU24Pb5BsmMJ1Cx5sZuNzaz7vmv7rkehTRad0cpVfeokyet9ua8jIII58gxtCL2qDofWjRI6o204dCIc2KHZT2mAEl+TR5846R/MItb5wm5xwjpJ55wlF+n5Rdrtst/vRgFtiPYZ7al4d1JY7fTUt3q9YdxOzpIAMrJcuSnaX16UmJfqCbMA8je3y1PnXQqBptFDmv9va6AXaDFrfT0dZzg469+MKuJ/3LEdolSZ53xCaapbwTYrDZATonN8hm8XWAmwupGwYSkEOjct84jEyEiNQeY3mzM/eHLgKQvaYUEGbGvtrkJo5JxonSNXzaRU7gEnqMm8J31eraexnA+tuVFyXValvgL9XNMNzWgXtoAH94mnpiW0Uii8tjE3Mn5ux5tLXEvhomXDNa4lwj3OBfI7SMcrKG0OKcy9Ny6N4xkWrjQzyzM8o/8i12V2xo2B9SPNE6WVfhkmTriT4rKk/OPH5uiQCFN1rxGz7TylohpCFO0ExQQmE+Pud1fMm83GfLzXvvbVQ/b7Lq/dOe17jTYCqaY6dEz6oIbbcG0aoHJErfub4YhdDnpUz4F7f6ZFWaDyFQ9J3Fwqx3ies5c4l4Pe9iPB0f2OOFEBtc/I4ipr4IKsgfaHOFfwYAp1B46dk3uFrXYe855vk5o4Hn/42ORcKupR4O2qFsAYmgKACLiRtKB2+Gg5LIPHCOYkonQMq9WEO/zL5us1vf5eIlny+DGCZ25lZWbjx/XmPAv0f8IlpNtTbUQlRhuHeO2j62gzo7LwN2MfGzof/DkcQQST+pOrqKhj+YJWxheQQvh4o9lBceHdCnKuZmVlSxUm/f4DeB+1tA==
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/first-pension-rest-apis
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Register New RSAPIN CPS"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/fp-connector/api/v1/register-new-rsapin-cps"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to register new RSAPIN CPS
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"dateofbirth":{"description":"The date of birth of the employee in the format MM/DD/YYYY","type":"string","format":"date","example":"01/01/1970"},"employerCode":{"description":"the code of the employer","type":"string","example":"E-20239"},"employerName":{"description":"the name of employer","type":"string","example":"Mike Kaks"},"fundCode":{"description":"The fund code related to the employee's account.","type":"string","example":"20233"},"firstName":{"description":"the first name of the employee","type":"string","example":" Mike"},"lastName":{"description":"the last name of the employee","type":"string","example":" Kaks"},"middlename":{"description":"the middle name of employee","type":"string","example":" Nino"},"mobilePhone":{"description":"the phone number of the employee","type":"string","example":7082031234},"nIN":{"description":"the national identity number of the employee","type":"string","example":"59403849302"},"pfacode":{"description":"the PFA code associated with the employee","type":"string","example":"10024"},"rsaPin":{"description":"The RSAPIN associated with the employee","type":"string","example":"2025e"}}},"examples":{"Register New RSAPIN CPS":{"value":{"dateofbirth":"01/01/1970","employerCode":"E-20239","employerName":"Mike Kaks","firstName":" Mike","fundCode":"20233","lastName":" Kaks","middlename":" Nino","mobilePhone":"07082031234","nIN":"59403849302","pfacode":"10024","rsaPin":"2025e"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Response","headers":{"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 28 Feb 2024 09:49:33 GMT"}},"Server":{"schema":{"type":"string","example":"Microsoft-IIS/10.0"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"X-Powered-By":{"schema":{"type":"string","example":"ASP.NET"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"data":{"nullable":true,"example":null},"message":{"type":"string","example":"Registration Successful, RSA PIN with Employee name 2025e  Mike  Nino  Kaks"},"success":{"type":"boolean","example":true}}},"examples":{"Response":{"value":{"data":null,"message":"Registration Successful, RSA PIN with Employee name 2025e  Mike  Nino  Kaks","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

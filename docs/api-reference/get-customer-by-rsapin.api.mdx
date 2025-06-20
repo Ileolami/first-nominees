@@ -1,0 +1,71 @@
+---
+id: get-customer-by-rsapin
+title: "Get Customer By RSAPIN"
+description: "This endpoint get a user's details by their RSAPIN"
+sidebar_label: "Get Customer By RSAPIN"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVsFy4jgQ/RWVLrNbZbANCSG+OQmTonYhLmAms5XKQcgNaMaWNJLMjJfi37ckGzBJJrB7Xi6A3f3U6vekfhucgqaKScMExxGerZhGwFMpGDdoCQYRVGhQHzRKwRCWaTQvkVkBU2gyjZPhGHtYSFDEAgxTHOElmNtCG5GDuiknmkjGsYclUSQHA0rj6GmDOckBR1hpkrjXx1Xs8j/owyIKvhdMQYojowrwMLOB3wtQJfawpivICY422JTSAmujGF9iD8NPksvMPkoG44vAfcKL8DLA2+2zRdVScA3a5naCwH4d1zKpI7CHV0BSt4ENvhXcADetAacitStFm7OKWP7NJN5uPXxHDJyb9Aiphzp99BHmqBN0LlBwHXWvorCH7kczhzYFtQZ1Lt6IUSW0WJjWcDj1w6AdOJCZIlwvQP3rTdFVwb9B6kA+E1WemxdTCrLRQ5v/pZWIH6Agbd2cjzNN2uOB7cTWw7RixmYQKTNGnTL9r9qy+QaemH8FaqxCldWxYZUWUmKaUUQpYoXGDOT6rGwQizlTZvV+6UHf71z6/Wu89TDkMhMlqFuRwgkCk8fJKOiNhl+CbjNz7E7Vu60ax48PaPQwvov/QqOH2cMETZN4MkDT2cNkYLEWTGlzGuguHg8Hf7qEgqenS7aRGTkHOf4jiUexjc9ZmmbAT2a4WDFnGSQrwU8EB/2wF3auu2G3Y/M446fB5YIQSkVRyerXseFF//Kq170KLusserIvYRBc9Gx0fRWeusLCIOhf9ftX3X6nVwl+//rphe4O4nqprWMBvdTPKZEcaWQnhKYOMG5yvSP0mE8bc8TZETE1Lzao2ftmgxv9rZt46OHrRj1biYDWZHmCj93o2Y87BUYxWEOKdEEpaL0osqy0jNX/G3hzITIgvAloh1WTJhe+nynRBq9JVsDhxvmfxHdIbHB4NlENnmouto6PHMxK1H7F+RPXbX8hW1RwDtQI5RPJ/HXoL8G0aL1ca1621M7UaDd2K0dTqAxHeGWM1JHvLyHXhVwqkkLb/qaZKNI2kdLtQgMtFDOlS5wTzWhc2OWfnptvp3ZUVYJpxOzFZpfaWR8nPhvjZijjC+ECmXGa/miZRglwzQRHk8F0huJkqF/ZLmf+UkGLHLhxYxPZaUoY14hkGTrGiZPh3inqNvawbUUFFLatp6hmMaH20rRlSaFNTtwVV8vnHgza83hTHszeUV2bw0z/b/60bpiBn8aXGWHcnl7H16bm/Qk3ecceJpLZHYXYw79g/9nDK6GNzd1s5kTDJ5Vtt/ZxZUrdSWaazDPrWRck0/DOvn6b1Pb2d/SW+X1zB9+gbFro+iLBTmFrophd2mlq51xdTVVWZb0aWa+8UnXa6jNy79zVPz7E+N0=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/first-pension-rest-apis
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Customer By RSAPIN"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/fp-connector/api/v1/get-customer-by-rsapin"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get a user's details by their RSAPIN
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"rsaPin","description":"Customer's RSAPIN","required":true,"in":"query","schema":{"type":"string","example":"PEN400000014150"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Response","headers":{"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 28 Feb 2024 09:37:16 GMT"}},"Server":{"schema":{"type":"string","example":"Microsoft-IIS/10.0"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"X-Powered-By":{"schema":{"type":"string","example":"ASP.NET"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object","properties":{"dateofbirth":{"type":"string","example":"08/25/89"},"employerCode":{"type":"string","example":"MPWRM06MIX03"},"employerName":{"type":"string","example":"ANAWO MONDAY MOTOR SPARE STORE"},"firstName":{"type":"string","example":"DANIEL"},"fundCode":{"type":"string","example":""},"lastName":{"type":"string","example":"AKPAMA"},"middlename":{"type":"string","example":""},"mobilePhone":{"type":"string","example":"08161293132"},"nin":{"type":"string","example":""},"pfaaccount":{"type":"string","example":"1485763705"},"pfacode":{"type":"string","example":"10046"},"rsaPin":{"type":"string","example":"PEN100878873826"}}},"example":[{"dateofbirth":"08/25/89","employerCode":"MPWRM06MIX03","employerName":"ANAWO MONDAY MOTOR SPARE STORE","firstName":"DANIEL","fundCode":"","lastName":"AKPAMA","middlename":"","mobilePhone":"08161293132","nin":"","pfaaccount":"1485763705","pfacode":"10046","rsaPin":"PEN100878873826"}]},"message":{"type":"string","example":"Customer details retrieved successfully"},"success":{"type":"boolean","example":true}}},"examples":{"Response":{"value":{"data":[{"dateofbirth":"08/25/89","employerCode":"MPWRM06MIX03","employerName":"ANAWO MONDAY MOTOR SPARE STORE","firstName":"DANIEL","fundCode":"","lastName":"AKPAMA","middlename":"","mobilePhone":"08161293132","nin":"","pfaaccount":"1485763705","pfacode":"10046","rsaPin":"PEN100878873826"}],"message":"Customer details retrieved successfully","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
