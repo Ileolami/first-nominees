@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --ifm-color-primary: #001f4d; /* First Bank deep blue */
+  --ifm-color-primary-dark: #001a40;
+  --ifm-color-primary-darker: #001637;
+  --ifm-color-primary-darkest: #00122e;
+
+  --ifm-color-primary-light: #002866;
+  --ifm-color-primary-lighter: #003080;
+  --ifm-color-primary-lightest: #334d80;
+
+  --ifm-color-secondary: #e6ac00; /* Gold accent */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 31, 77, 0.07);
+
+  --ifm-font-family-base:  "Poppins", sans-serif;
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #1c1e21;
+}
+
+body {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #6680b3; /* Softer blue for readability */
+  --ifm-color-primary-dark: #4d66a3;
+  --ifm-color-primary-darker: #3b5080;
+  --ifm-color-primary-darkest: #2a3a5c;
+
+  --ifm-color-primary-light: #8099cc;
+  --ifm-color-primary-lighter: #99add9;
+  --ifm-color-primary-lightest: #b3c2e6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(230, 172, 0, 0.1);
+  --ifm-background-color: #0f1117;
+  --ifm-font-color-base: #f0f2f5;
+}
+
+[data-theme='dark'] body {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Hover states */
+a:hover,
+.button--primary:hover,
+.navbar__link:hover {
+  color: #e6ac00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Button hover background */
+.button--primary:hover {
+  background-color: #e6ac00 !important;
+  border-color: #e6ac00 !important;
+  color: #001f4d !important; 
+}
+
