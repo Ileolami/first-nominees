@@ -1,0 +1,71 @@
+---
+id: details-6
+title: "Details"
+description: "This endpoint get details of a specific list"
+sidebar_label: "Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVttu2zgQ/RWCTy0g25KviRd5yCbZNkXSZuuku9vEMGhpJLOWSJUcGXUN/ftiKNlxrlUBAxbJM4fDw+EhNxxFYvn4ll+cT64nfOrxCGxoZI5SKz7m1wtpGago11IhSwBZBChkapmOmWA2h1DGMmSptMg9rnMwgkLPIz7mNXTIPW7A5lpZsHy84V3fp7+HM51WYO7xBYgIjEMep9iarEL6tOECMkFfuM6Bj7lFI1XCPQ4/RJan1LXoHd3xcb/fu+N/sEwcHQz7vs/L0uMnIlxA60QrNDptSpeJHy2RwJHvsdzIlUDwWFZYbBlYiVRGAqEi10pBWK2jGfMSIG+JVK52BAgKW2cq1BFhG9IkP2XuCE4plYZBl1p5rOezUwhZ1+/2mX84dj/27vLasZ1di8Yp/NO543B4MBwNQPQHh9CNehB3w27QH0RDf9T3xSC44452AmYFpimxzkEZsLh2sddGKBuD+W2JwkWhlhA5ki/CrJvGfTIykaoKk6JpVNAO2EE0DwD60AthOBx0D0cw6I/mh/2eCOa9oNtth6kuothohW0FyN6cUPsvar918/3bOs5+tk7iFh2ihmJ9+G+QJH8G3Yn/fnLzNTKnobhQ5+tsef4F4WsKX96bFiy/6uA6Oz1bffTN6MPs76Ojh/Nd6bzphBefJgO/ddWtCdzxalyA0loWG52xeyV4SURhdQ4oXOR5KkPnJZ1v9oWTpeffICTfyQ05D8rKX0IDAiGazdevJ3Kegk5FJnn5yPZeC3KOKC2ZH2qzZqgZgkWG1H98db5zS2KNxUobiTALdVGtqyZWRTYHs0/slx6X0auQg4Hf9w+GBLR6NuwdzoLXcwVFSUiErGkCCJndQwljxJrf95d7+Ntp6XElMviFXqYANnFSfYrZRwXLpaCscpHAq/kEBNIWwcxygQvCqiJNxZwG0RSwh6WB0uOoUaQzYra/pK6wBmyR4uto39Vm3XTQ7V013vCVSAt4XHT3lfXsfdqoep4Wj18VSF0FD4qAdvrhRvu7Tbudbrfp+b3YbkXwSG7S9JGkwRPZSJvS6ZMLIzJAd3HfbrYz0rtgJiNKjpbvmOk18L2QBqLtPj452FIhJM8U/2hQlt49uVBJQbnX7N8LMFStL5tQBLEoUnSCtW4mfJ8tb8J0n9iOKijLqcczwIWmR08CzpCchLzT65ACnU2tQ0mc7hqsVCpMSs8WxNyOOx2RyzYuINMrCdG8rU3CidpCWBiJaxcxB2HAHBdEfzvdH55QrlV97oN2qdMs2yVRuwI5A5cq1g4psfY4YJeUBTsVKObCwpNC/gwxGFAhjdByqt6g7bd9Xhm5CMlvyvoUZ8L5aq31/WPvke/uboDffXnWi0T4gZ08FdI5n5N3U2/GLe9xj9fw8bYwpx5faIs0vNnQSm9MWpbUXdUAaR5JS64T8XEsUgseX8L6YfnVLsA51dML8PwxdEoNIytDe26aF7V587k+QG/ZS0vfGrha78+5S71efUkeXr23XQrV6HEYQo57cU8u4wcV/+6Mno3/A7/GGnU=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/list/{list_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get details of a specific list
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504075}},{"name":"language","in":"query","schema":{"type":"string","default":"en-US"}},{"name":"page","in":"query","schema":{"type":"integer","default":1}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Details","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"max-age=0, private, must-revalidate"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 09:09:09 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"e98675ea459e2d3ef2c2145d60740a51\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 8db1ee4e3ce665297e547b943a1b3122.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"oJY5ggB12S0HSUZdrDcaLnIymkIVteZleVHr-ekZo1TmDEvN0r7J_Q=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"created_by":{"type":"string","example":"Ileolami"},"description":{"type":"string","example":"This is a story to test this API endpoint"},"favorite_count":{"type":"number","example":0},"id":{"type":"number","example":8504086},"iso_639_1":{"type":"string","example":"en"},"item_count":{"type":"number","example":0},"items":{"type":"array","items":{},"example":[]},"name":{"type":"string","example":"True Story Of Nnekka"},"page":{"type":"number","example":1},"poster_path":{"nullable":true,"example":null},"total_pages":{"type":"number","example":1},"total_results":{"type":"number","example":0}}},"examples":{"Details":{"value":{"created_by":"Ileolami","description":"This is a story to test this API endpoint","favorite_count":0,"id":8504086,"iso_639_1":"en","item_count":0,"items":[],"name":"True Story Of Nnekka","page":1,"poster_path":null,"total_pages":1,"total_results":0}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

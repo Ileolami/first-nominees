@@ -1,0 +1,71 @@
+---
+id: details-2
+title: "Details"
+description: "This endpoint get details of a specific company"
+sidebar_label: "Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVltT2zgU/isaPbUzTmI7d+/wkIbrbmlZCO22wDCyfJwIbElIciBk/N93JDs0QEu9+2RbPt937udojQ2Zaxxd4Onn45PJp6O9M3zl4QQ0VUwaJjiO8GzBNAKeSMG4QXMwKAFDWKaRSBFBWgJlKaOIilwSvsIeFhIUseijBEe4lg6xhxVoKbgGjaM1Dn3fPp4r262EsYcXQBJQTnKSmdbZktpXTReQE/tmVhJwhLVRjM+xh+GB5DKzR4vuziWOer3uJf4D5WRnNOj5Pi5LD08JXUBrKrhRImtKJ4s4Y9RDOXlokTnsBMNRd1DRCc6BVpY347oFkC2SsSVsCAxw09rjVCRWtiHN/JFJR7BLDDQF7SvmoXCIdoGi0A97KPCjsBf1+ujgeObY9maksQlfO5d4kA5Tmgz8MfVhMIohGIf9NA4pBHQI6TC9xI72DNQSVFNiIYEr0GblsDNFuE5B/ecQ0UXBbyFxJF+IWjXFfVZszngFY6QpKmgHyIfEj7skIF0Yjf1R0huR3jAchnGv2036PWjTTBRJqgQ3bQ4GvZva7337/d7p+6c1yR9b07Rl26aZ3i/n37qBz4Z81r+e0Wt9wPYmf59w/yvhXz590Iffv+nH/uDxJhCD++Xo6HtyOKZ0srPzXN+JkE0Vfjw87futk7AmcA3VFHvMtEapEjn6EQnH89DKIW/c3odHsy2UbcmmyHE/6G9D4UEyVQ2jRkl+avwafwuNy2rg054/DNOxPxh140EShBDE3eFgOIIBGaVjXFpeWs0DS0WkzBh1U7Rzo38xYUR8A9RgD0tlZ65hlTPPRupbVuGymrN3BVGmHra/lv5QqJjwWw9NScZSoTgjjkDkIOssvDGUjZE66nRysWSg2wnTHFZtKnJLwZItMC/yGNQ2OCw9nIm5uJbELN5W07lP1PQ+P+Uf9/9c7InD0cFZusq/jfp/Hc7aks+tNk7y3xj7lWQG7ToT0QmjprBVUnpYuOFwTUXBTTVSfs1xfmYRkijg5nqzG6M15kWWkdiKGFXAFsL+cFVQn7hsbPZhtMZLkhXwemPilyn8aZ620/RGLqpUhM/C/fuYbkL687i9DpuNzevQ1P6XLgaSKJJD5dDFesNfy16zBL+8pRBUcHZXgEYsAW5YykChVKj6WsKcIcxKOq/sXeSuYAqSTR5eNRfjBuYvC7G88nAOZiHszWYOrvfqKHU7tXmd9Q87S+xh7fZf5Uihsq0EEMnaZgEuD0ncFmqOrQINtFDMrBwiBqJATQqr5OJq+/eZtbgqk22hJwesFlw7Zr8rITfAGE+Fk2TGFetsAejYWoF2iSEx0fAqwKeQggJO7R/rTnUatP22j6vJRaidXC57QpucuOFTZ+7Hve7FcHoaef/jnln7aeDBdGRG7Nr2qgiv66xc4K4zboOItiroyvaENlZovbYun6usLO3xXQG2TC+uPLwkilXderHGCdP2PcFRSjINb/jy7rSurveoUWH+1JP6sLK87n7b7m7tbPdCeVVu7svOzkpgQilIswV9tVKeFfPBnl2r/wJEdw4e
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/company/{company_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get details of a specific company
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"company_id","description":"a uniques identifier for companies","in":"path","required":true,"schema":{"type":"integer","example":2}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Details","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=17836"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Fri, 27 Dec 2024 10:24:45 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"6f7fcd609c0e68be1925fb2ce1c7ef7f\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 0ed0b3a1a3e8908d48a47272b433d54e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"VUY310i7nT5_Tc_sGiEAQPn0WanVNBsHZYsz56zj1o6wv8IZdH9ccA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LHR50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"9515"}},"x-memc-expires":{"schema":{"type":"string","example":"17836"}},"x-memc-key":{"schema":{"type":"string","example":"60c4072f90683b6d12e1b37678e6a8f9"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"description":{"type":"string","example":""},"headquarters":{"type":"string","example":"Burbank, California"},"homepage":{"type":"string","example":"https://movies.disney.com"},"id":{"type":"number","example":2},"logo_path":{"type":"string","example":"/wdrCwmRnLFJhEoH8GSfymY85KHT.png"},"name":{"type":"string","example":"Walt Disney Pictures"},"origin_country":{"type":"string","example":"US"},"parent_company":{"nullable":true,"example":null}}},"examples":{"Details":{"value":{"description":"","headquarters":"Burbank, California","homepage":"https://movies.disney.com","id":2,"logo_path":"/wdrCwmRnLFJhEoH8GSfymY85KHT.png","name":"Walt Disney Pictures","origin_country":"US","parent_company":null}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

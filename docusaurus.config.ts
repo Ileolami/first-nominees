@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Ileolami/first-nominees',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,6 +91,12 @@ const config: Config = {
           sidebarId: 'guides',
           position: 'right',
           label: 'Guides',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'api-reference',
+          position: 'right',
+          label: 'API-Reference',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -143,7 +149,13 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      
     },
+    //   algolia: {
+    //   apiKey: "441074cace987cbf4640c039ebed303c",
+    //   appId: "J0EABTYI1A",
+    //   indexName: "docusaurus-openapi",
+    // },
   } satisfies Preset.ThemeConfig,
    plugins: [
       [
@@ -153,10 +165,11 @@ const config: Config = {
           docsPluginId: "classic", // Refers to the preset-classic Docusaurus setup
           config: {
             petstore: {
-              specPath: "first_pension.yaml", // Path to your OpenAPI YAML file
-              outputDir: "docs/api-reference", // Where the generated API docs will be stored
+              specPath: "openapi.yaml", 
+              outputDir: "docs/open-api", 
               sidebarOptions: {
-                groupPathsBy: "tag", // Group endpoints by tags in the sidebar
+                groupPathsBy: 'tag',           // ✅ groups by tags
+                categoryLinkSource: 'tag',     // ✅ uses tag as folder title
               },
             } satisfies OpenApiPlugin.Options,
           }

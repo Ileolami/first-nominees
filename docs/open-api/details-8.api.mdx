@@ -1,0 +1,71 @@
+---
+id: details-8
+title: "Details"
+description: "This endpoint get details for a specific network based on the provided network ID."
+sidebar_label: "Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VltT2zgU/iua89TOOInthFy8wwMLtFBKYZO0pQSGkeXjWGBLQpZD0kz++45sA2FZWu/DPtmWz/ed+zlag6HzHIIZfDmcfj8bn8C1AxHmTHNluBQQwDThOUERKcmFIXM0JEJDeZqTWGpCSa6Q8ZgzItA8SH1HQppjRKQgJkGitFzwCKOnv8cHbXBAKtTUKjiOIICacAgOaMyVFDnmEKzBd137eGnPQSUMDiRII9Sl5F5qWpMFs685SzCj9s2sFEIAudFczMEBXNJMpfYo6e5eQdDrda/gD5LR3WG/57qw2TiwT1mCrX0pjJZpUzpVhClnDsnoskXnuOv1vFFNJ4VAVlnejOsOUbVoyhf4SGBQmNahYDKysg1p5j+5KgkOqMGmoGmBDul65AAZ8V2/Rzw38N2gt0M+nk5LtsMpbWzC984V0Kgbusyn1MXQ3fHZTpcO6MBn3hDjaOgPrqCknaBeoG5KLBUKjblZldippiKPUf/nELGkEHcYlSTfqF41xZ1pPueignHaFOW1PTIc+qOBh2Ec+33m024Yh+6wH4/C3tCNvYHfZqksolhLYdoCDXm3b78/2O/3pb6L1l72s7Uft2zbNNPbc6er4dflxfhgFEb9bCzwMix4Ml08uFk6Plx4w96RnO+PB+nN8eHk4v7+dunTvd3dl/rOpWqq8PPZZMdtnfs1QdlQTbGnPM9JrGVGniNR8ixbGWaN2/voeLqFsi3ZFDkY+oNtKC4V19UwapTkp8av8XfYuKzYiFHq9vo+xcFo5DMf+5HbZ/HOwPMHbtfGc+MAq+aBpaJKpZyVU7Rzm78xYWR4i8yAA0rbmWt45YwdnfcF1aaen2+bNaFKSS0dciTv7iiPJGwcSGSGqg7rL6asMSoPOp2Hh4d2YsI2k+1bZeE82gKKIgtRbwM9f+NAKufyRlGT/FpHBz9NfuAH78fx6q/wMpqOvyyLxbcTenl2fNJWYm7VCZr9xtKj6Z9WUJadfcNkIUw1D96GfDqvElKflFF8XE3BGhY0LfB1pP8lnNvRfCNkVcQ8/0VUfu/6o+ele6+9q13YlG4oqmmGlZGz9SOwXto3PLI22O1b6rZr+r7gGiMIjC7QeV13XBicv0rr5tqBDE0i7dafY1mXtTPdTq2ss37WugEH8nI3VGYVOt0KElW8bRLM5IJjFLalnoNVkCMrNDerEhEi1aj3Cqtkdr39e2JNrvK2LfTkgdUCtWf2uxIqm5uLWJaS3FR7M0Fyaq0gB9RQe/+Bf96ixhijRsHsH+tOdeq13bYLVVdTZru6zIXMTUbLfq7z8HznecG6fh4H/881rQ6FwaXpqJTaredUSVjXiZtB19ZZhQIHgq2SubalnRsrtF5bdV91utnY4/sCbQXOrh1YUM1paMM4W0PEc/seQRDTNMdfuPtuXFfge/KWnfUhFSsb86ofARwoZ/J2aW+uN4+XydKKSmCPMVRmC/pq3r6o5o+Hduf8DYz3xt4=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/network/{network_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get details for a specific network based on the provided network ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"network_id","in":"path","required":true,"schema":{"type":"integer","example":12}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Details","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=14190"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:20:45 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"ad3b0c2aa0eb052c53a7a72c18efd827\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 882971ebff26c2a3bfb086f9b480f172.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"40Ty8UxXRD9bd6mRneZbuihTvw0mlREv184HogCR7l_IESXqqjx2aA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"7827"}},"x-memc-expires":{"schema":{"type":"string","example":"14190"}},"x-memc-key":{"schema":{"type":"string","example":"c9caa0462ae7992c2e6d06cf57127032"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"headquarters":{"type":"string","example":"Sapporo, Hokkaido"},"homepage":{"type":"string","example":"https://www.htb.co.jp"},"id":{"type":"number","example":12},"logo_path":{"type":"string","example":"/eJSYeF1YIyQbZdTRNxuvVKaZOIK.png"},"name":{"type":"string","example":"HTB"},"origin_country":{"type":"string","example":"JP"}}},"examples":{"Details":{"value":{"headquarters":"Sapporo, Hokkaido","homepage":"https://www.htb.co.jp","id":12,"logo_path":"/eJSYeF1YIyQbZdTRNxuvVKaZOIK.png","name":"HTB","origin_country":"JP"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

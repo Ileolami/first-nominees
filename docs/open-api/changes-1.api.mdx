@@ -1,0 +1,71 @@
+---
+id: changes-1
+title: "Changes"
+description: "This endpoint get the recent changes for a person"
+sidebar_label: "Changes"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v4kYQ/ivWfLqTbLDBhOAqHyKg0amJQgO93ilBp/V6bG/OXu/trnNwyP+92jUQaJvWqvoJ1p7nmdlnPC870CRTED3CYn6/uJ3D2oUEFZVMaFZxiGCVM+UgT0TFuHYy1I7O0ZFIkWuH5oRnqJy0kg5xBEpVcXChEiiJwX9IIIK9UQAuCCJJiRqlcbkDTkqECJAnXxKiEVxgxuW3GuUWXFA0x5JAtAO9FcZQacl4Bi6klSyJhggsrGncI5fSROr/jU2Q7N95GNeYoQSjXErqQkMUnJFYWb6w5MAkiM7BBYnfaiYxgUjLGv+RGDekFAVCFFyEk6HfNGsDV6LiCpVBDHzf/JynbtoKDy7kSBIr+g6uC+0tX6j5+7YiR3+QD6+eIArD4RP85JTk6vIi9H2jEUwJzdGbVlzLquhKJ+q4YNR1SrLxSIZXFweyinOkbdzdmL4iCo8U7AUPBBq59m6RZzrvShKEFjwzee8IWdXoOsPAmSF1Bv4gdAI/Gg6iYOjc3K0s23xFsq5sv/efIKDj2I9xTFMajwaT5CJI0jEdxyM/JmQS4BNY2iXKF5RdiSuBXKLSW4v9SOS2K/JesozxFsZIZyV7gUMmaRgnBINgOEpG/ji5GCRpOB6ReHyZ0BH2aFHVSSorrnsctfNuas4/m/N76++Td13+8KapZ/pGN79ZGa9Ws1rMNqv883KgyvtRzMVw4y3mz/Rj+unHjI5+/XzDb+NfZr5Hv0+qBQ6ur67O/S0q0dXh7f1y5HuLwZ7AVkFX7B1TykllVTqvSliejVdi2bkm7z4sl66zXN0/zE/Qpp66MvinONwIJts20gV7KNk9+it2/rLiwSjBIJ3QMKRjMhn6Y5IM8MIPR/FlGI5MITcu0LaSDRURomDUTpL+s3qjN1TxM1Jthos0c0ez9ir7qXNiSKQkpoEzjaV53pzE9ri2vvdni5q+EryQosYzUmvfWEyJOq/MnMvQRmGaewT9Yb/t+/3dsf83fXrsyMpWczsGa1mYTqu1UFG/TwTr6RzL6oVhEvcqmYFp9wppLZneWkSMRKK8ro2rx/Xp66WRp4361OgogvFyGGI2J9bIJpTxtLKWTLedLkfnzkThzIgmMVEIf14OHjBFiZyaN+Y67dOg5/d8aDNJqMmkoReV0iWxOdwPxtf5dMa6e/0E/tP2sb+pxo3ui4KYXua2Gu/22XmEocnUARCdTuhDitYu5JXSxni3M5f/TRZNYx63i4BJQ8IUiQszwVNSKHTBFsPpPrP/cgDMPvCG+dnK0gWw30peTdfmIJmx/fu43tT33cN+CXnvvKXcoXr49tTnMZajdM26OSwaNoj2/TWlKPQJ8i81baI/1tDN3MzQPwBnuIN+
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Changes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/person/{person_id}/changes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the recent changes for a person
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"end_date","in":"query","schema":{"type":"string","format":"date"}},{"name":"start_date","in":"query","schema":{"type":"string","format":"date"}},{"name":"page","in":"query","schema":{"type":"integer","default":1}},{"name":"person_id","in":"path","required":true,"schema":{"type":"integer","example":164930}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Changes","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=600"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"14"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:32:13 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"1c7b0be7cfcb529d61df7c7b50baa91e\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 a9f4bdae1135d507d62df475ab78dc5e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"gmbTTDupDxThYS2smO5bnp3x-PEjcVfXzDc5QYGnLbKD0-cw9oPe2A=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"MISS, STORE"}},"x-memc-age":{"schema":{"type":"string","example":"0"}},"x-memc-expires":{"schema":{"type":"string","example":"600"}},"x-memc-key":{"schema":{"type":"string","example":"b25de1f9c44c7a9307ad2e6045b8445e"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"changes":{"type":"array","items":{},"example":[]}}},"examples":{"Changes":{"value":{"changes":[]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

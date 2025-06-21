@@ -1,0 +1,71 @@
+---
+id: create-session
+title: "Create Session"
+description: "This endpoint is used to create a new session."
+sidebar_label: "Create Session"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/RWBT7uAbOvq2FrkwZuk3QLrtGjcZoHEKHgZWWxkUiUpJ47hf18MZefSpoWD3TwYEck5Z+bMcIYb4ujCkuKKTD7N/jo7n707mczevT8n85AIsNzIxkmtSEFmlbQBKNFoqVwgbdBaEIHTATdAHQQ0UHAbWLBWatUnIdENGIrG7wQpSHfqotsmITHwrQXr/tRiTYqN/5QGBCmcaSEkXCsHyuEWbZpaco80+GrRlw2xvIIlxf/cugFSEM2+AnckJI1BXifB7mHBui9O34A3fB7TJHCwbLShZo1hCFBO0rqLTKrAVRDQ1lW43DkQNEZzsJaEe2LrjFQLEhK4o8umxqVoGI1FwhlLY56kyZim4yzPxShLs3FC86MyGo14KUZku90+2Hl3Tzop9yoVG7KidQsvRPIqEs9jwDZa2Y4oiaIf1dix24ccVUAFGG8wqV3vYsVf1P4FCar0+JoUWZZekz+CJT0eDbMoIujGiVYKuJM/yeMLWDcATY/WcgV7AKyM3pniWuDZA2GY8ean1MGhJrOqDYNkGJwCD5IoyYI4K+K8SKPg7XTm0S7ArMAciqcbUAasW3vbmaHKlmBeHQmvWnUDwoN8pmZ9qN17IxdSdWaSHmoV9+OAJYzmWULH8VGWx2IsRjlER4LRiJdiTLM+r3UrSqOV6ytwwW8n+P0Gv3/3fP/0Jsv73knZw15wGO/9pfp7oqeC6htqZuNRNqXDe3OXvu29fdNbnYspi87Ox/Uqs9Hd8mt6NJX3559vj4+f833QzaGEp28u86Peh2QHcEJ5dXClTKW1QWn0MnhUwuNwROlhNzO6PhStaVkteRgs6V2PLuC4uzng6MElcjm4JmMej7Iko2We5TDkyTAdxiJPGRMiGgkWXRMPu3pFBVHOoXE92Besbyz/U6vetZ0vUvzah5QBY+M4yXPI0iwGlmZMjMZxJGgmSlZCKVhGRyOyDYltue/Wj4BM6xqoeoqIA+dnndi+0ImfOnq4N0+c2RF2bXkJrtKI1GjrRaGuIgUZpIPnk2ewox0ouEUw33hwcG9Ia2psuc41thgMaCP7roKlXkkQrK/NgmznaMBbI93aWzCgBsykRaqr+dPtC8xWJ8HTQw/6IQvS+2Oopz/kCwkT/vFxqp/t9f0vsyskUpXa80u368kQTDG24JQ6yqgF8v1L5SOUYEBx3EGRutW4H/Uj0pUr5Viu6DSqvqQ+wYr6iL6bwd+Bbx7L/fUvop2GDu7coKkp9uKwy95ml/crkpKQPM+8z/beGcz+PCQVFktxRTYbVOCTqbdbXP7WAl7mq7m/1pIylOxqvt2Pcp/8G1hjmLsxOkOfwn11/3iDt+HeYuIv/y/Pzp/U84f3FzMSErZ74C21QBtDsXrxtyD+jYjW3VMN1zakpmrR0gWe7TDx71/mRI/P
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Session"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/authentication/session/new"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to create a new session.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"request_token":{"description":"A temporary credential used in the authentication process","type":"string","example":"0609d2cbb31c2329a39455d843492a57f088cfd8"}}},"examples":{"Create Session":{"value":{"request_token":"0609d2cbb31c2329a39455d843492a57f088cfd8"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Create session","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"br"}},"Date":{"schema":{"type":"string","example":"Thu, 26 Dec 2024 14:15:30 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 b2ba542a917451d9d85e07dba0cfd9a4.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"zWnLAoMdaokarT984Ma6zrx3G-GF-vNdMb0EN9lv4s0xmj37MizNVw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"DFW57-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"9c18424af545e6c26361d53bbdd08db0\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"session_id":{"type":"string","example":"3bebb91255e4341eb34bd8910da4dfbfefdb4a88"},"success":{"type":"boolean","example":true}}},"examples":{"Create session":{"value":{"session_id":"3bebb91255e4341eb34bd8910da4dfbfefdb4a88","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

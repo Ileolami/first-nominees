@@ -1,0 +1,71 @@
+---
+id: validate-request-token-with-login
+title: "Validate Request Token with login"
+description: "This endpoint allow users to validate a request token by entering a username and password."
+sidebar_label: "Validate Request Token with login"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9V21v2zYQ/isEv2wDZFuW5TcN+eA6WZuhbYrESYomRnCizhYbmVQoyolr+L8PR7/ERrpWXbf5k0Txnnvu7iHvvOQWpgWPbvjgcvTm5P3odDgYnZ6952OPJ1gII3MrteIRH6WyYKiSXEtlGWSZfmRlgaZgVrM5ZDIBiwyYwYcSC8usvkfF4gVDZdFINWXg9iuYIQOVsByK4lGbpM49rnM0QI5OEx7xLdr5GmpESNfSpm/1VCru8Y2LVzpZ8GjpXqXBhEfWlOhxoZVFZekT5HkmhUNufC4ojiUvRIozoCe7yJFHXMefUVju8dwQDyuxoK9bfvR8mAqb4o49RU9h/VIwEEKXioA2wIWluLnH8QlmeUZLrVYZlrbb46tdGHcuU3t8dmaHXgfM4izXBsyCCYMJKishI+cJk4oRKShtSsvriFlutMCiqB8wCPshBO1+L5n043anBS1ohxDEsUgwgG6r12mH0BZhnxhu6/V9cuR9k4ad0b7XP3Wq2LFGvlqtdusuzVdb6WyqzVy52aO0KctcwaMlKaLEw6I8p/JFJqvHuB/iAUdH02CRa1WseQa+/1IJ3yfv8RQhQeMwBpmtXczFV1X4FbGkraNbHoVh65b/zmZw1OuEvs+J2VArhWJNohrWPWJeg0zOcQtAZ6R2ooROaG9FmNg482OwWNVklJYeCzrsGAUL/CBkzXYUhJHfZ6/fjRzaBZo5mqp4OkdlsLALZzsyoIoJmh+ORKSlusfEgVyBWVS1OzOS6urMJFS1atabrNXvBk3o9oJmT3RF0MN+Gzv+BP1W1/e7fVEXmS6TidHK1hVa9uuQ3v+g99+cv4+1wexLbTipnSZV/R5/Prk67z0EyWUwkA+fPqa9T6/ezE5Pu/3Tp4taGbQhEVfi1XUx/7KQr8P48vrkeDg4Ojr090HnVR2+Pbto+7UPwQZgCCKtrJR3sijYxOgZe86EwxGEUqN73eisKlpexpkUHpvBUw2meLQ+OWihskSuG7ccsJ00/bAVtlsijvtdaGHYFM0uBEHH7076t9zBzn9AQSAE5raGW8G6u+Zfalr4lEuDxR3Yb3Ogg1hrBrWgw5qdqNmNgg67HA0rtaV/1kuKUlAz2gOMtc4Q1D4iNfCf7BD7GfjbMH+qZewi2bBdN4sZ2lRTX8p14eoCNuURb7Qah1254Tw2tjPOHYVxt+0VhbsJaR5b8tJk1AOszYuo0YBc1m2KMz2XmMR1baZ8NSYDURppF84iRjBoBiU5vhnvf74g+ayzub9pVwryQu7dNiqN2+SUTQo8fx64Tral+r96scelmmjHVdpNQ0H2jvLAjsFCDAW+GEfOcYIGlaAvlND1arPu132+Pmsg6IRQgFSvGTgRbZxX6eoH/pbPx/e/nZM35bL4ZBt5BtSHvLVQlhvB3fAW9/ih5MjQVcPjX5Pd2OMpaTa64cslpfPSZKsVLT+USNfazdhdcBJiyv/NeLUdapzq7nHBo91AMSKG3vY4vrzLVt7WYuCuwW/uHe8dqw9nFyPu8Xgz9M90QjYGHklz8Mgj7v5HkLXTuVtb8gzUtIQp7V1j0u8vLV1Ybg==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Validate Request Token with login"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/authentication/token/validate_with_login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allow users to validate a request token by entering a username and password.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"password":{"description":"the password to user's account","type":"string","example":"33u4ut78"},"request_token":{"type":"string","description":"A temporary credential used in the authentication process.","example":"494a2598df9b563a3a54a2bbcde2a738654a5c49"},"username":{"type":"string","description":"the user's username","example":"John Doe"}}},"examples":{"Validate Request Token with login":{"value":{"password":"33u4ut78","request_token":"494a2598df9b563a3a54a2bbcde2a738654a5c49","username":"John Doe"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Validate Request Token with login","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"br"}},"Date":{"schema":{"type":"string","example":"Thu, 26 Dec 2024 15:24:09 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 39721a78218c7c28e95e60fe0370079c.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"DjEVR8q2dU2AiqZXh8ZBHmII79IxS-u25adcVcBWsvzyiG4bUWEDCA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"ae5d1043453cbb97a3e41c17a22607f9\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"expires_at":{"type":"string","example":"2024-12-26 16:17:26 UTC"},"request_token":{"type":"string","example":"494a2598df9b563a3a54a2bbcde2a738654a5c49"},"success":{"type":"boolean","example":true}}},"examples":{"Validate Request Token with login":{"value":{"expires_at":"2024-12-26 16:17:26 UTC","request_token":"494a2598df9b563a3a54a2bbcde2a738654a5c49","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

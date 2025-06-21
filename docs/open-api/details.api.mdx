@@ -1,0 +1,71 @@
+---
+id: details
+title: "Details"
+description: "This endpoint get the public details of user's account."
+sidebar_label: "Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVcFu2zgQ/RViLtsCgu3YW7vVLWiKIoftAt30FBjGSBxbbCVSJUdGDUH/vhhKduS4adLdkwDqcebNe8OZFhh3AdJ7uH7//u8vn+5gnYCmkHtTs3EWUrgrTFBkde2MZbUjVlyQqpusNLnSxGjKoNxWNYH8H0FhnrvG8gQScDV5lCi3GlIYoJBAjR4rYvKSuAWLFUEKgUIwzm6MhgSMZP7ekD9AAiEvqEJIW+BDHaHsjd1B95jqEELd3qit8wobLsiyySMJ5bxij/k3Y3eqbnztAgXokhOBgfmIQI1cQAKevjfGk4aUfUM/4WMs0478JaFzTZTR0K0lXqidlexpC/PZTD7n925OWuXOMlkWCNZ1OdQy/RoE115ScdlXyllE9iI/mz4L7pHRP4/b+ZciCwzFpSUJ0A+s6lKO5rMlrZbzmcblUs9XbzWt3v45z+mNpvlyvlhB13UJcKWzl/LfREPSFmxTlphJlt6RU1L50XUxsNGjsLapMvJjevOr1Ww1e/NOkDYvG00b1E3Jo0uZcyWhHd/aYhlIrgS3WVwtl5urX2vw6SMM6OXi3XNgsgLuu/FXOEFJZz2PvC3JlViZXurhPAp67LC0hT2WDZ03ybgNeqNf4OaDl2du9Zb0fhxFv9A86nouq2h3Jp3oc5QHYCzBWZ29+xVx4WTs7Ch2U6QC08V0eIvT9uG5dzJjyO+PA6nxJaRQMNchnU6xNhMuqHJ7QzqbOL+LjzhQ3njDh3gjI/TkrxtJcr8e//5HHmgv+Rh0Mk2yHEdc7LkIgiiY3bqINBzNvCtI/SUs1A0yZhgIHs+bz7QlTzaXP1JOf3o1mU1mwyzBXDpcwtcucIVxigwqPkyds6jtwxD6H8tgqJfpB0/rEk3s9ah0O7hzDwtIjlMYEkhHA3mdQOECC6htpfQvvuw6Oe6XhJigTZCZoE/d9GQV/2FPPFHANzo8Xl3Dc4LYJXv0ph9Uv0Xw1edh5bxWlyvkCSrDIdrDmMSR4kjLbt0lUBBq8pFWD7jOc6p5dPVi3Ug9p2f18cMddN2/+rnKlw==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/account/{account_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the public details of user's account.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"},"description":"session ID for authentication or tracking purposes"},{"name":"account_id","in":"path","required":true,"schema":{"type":"integer"},"description":"user's account id"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Details","content":{"application/json":{"schema":{"type":"object","properties":{"avatar":{"type":"object","properties":{"gravatar":{"type":"object","properties":{"hash":{"type":"string","example":"206e7620da66d278de7842ce5de26237"}}},"tmdb":{"type":"object","properties":{"avatar_path":{"nullable":true,"example":null}}}}},"id":{"type":"number","example":21707059},"include_adult":{"type":"boolean","example":false},"iso_3166_1":{"type":"string","example":"NG"},"iso_639_1":{"type":"string","example":"en"},"name":{"type":"string","example":""},"username":{"type":"string","example":"Ileolami"}}},"examples":{"Details":{"value":{"avatar":{"gravatar":{"hash":"206e7620da66d278de7842ce5de26237"},"tmdb":{"avatar_path":null}},"id":21707059,"include_adult":false,"iso_3166_1":"NG","iso_639_1":"en","name":"","username":"Ileolami"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

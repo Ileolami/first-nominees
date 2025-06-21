@@ -1,0 +1,63 @@
+---
+id: create-guest-session
+title: "Create Guest Session"
+description: "This endpoint create a new guest session."
+sidebar_label: "Create Guest Session"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVV1T2zgU/Sue+7SdsRPHiWPHHR7SBCjbUjpLKLuFDKPI17HAkVRJTqGZ/PcdyaEQtu26T7ble865up8bMGSpIbuC8cXs7eGH2clkPDs5+wBzH3LUVDFpmOCQwaxk2kOeS8G48ahCYtAjHsev3rJGbTyNWjPBO+CDkKiIxZ3kkEFje2yNzhsb8EGhloJr1JBtIApD+9gX3EnskYMPJZIclYONKxOcr6l91bTEFbFv5kEiZKCNYnwJPuA9WcnKHpX9g2vIBoP+Nbz2VuQgHQ7CELZbHyaElhhMBDdKVG3pZL2oGPW9FbkPyBIPdlSCc6TNFdrx3CHKgFRsjY8EBrkJDjkVubVtSbP8xqQjmBKDbUGzsva9aOhNkXpRGA28Xj8bhFkcecenM8d2OCOtXbjsXsMgpv1RmA6TYdGP0zyheVwkRY9EmJIhDUfX4GjPUa1RtSUWErlCbR4cdqYI1wWq3w4RLWt+h7kj+UTUQ1vcmWJLxhsYI21RvU7Po0UxjGkR9XMShQkdJkmcLBISx2nUi3qjtEMrUeeFEtx0OBrvj4n9PrLfr5ze38F49S2YFIHtpHa6F59SQ8XNm2B8fBtV0nxer96pf96N3qj3x2civ59O5cViOHo/VX9+Pkrfjor88qxYHhzs630Usq3g9OgyToKP0Y7ANVNb7CnT2iuUWHlPkYCtJaJNH1g4kbJi1A2U7q3+SWeJxS1SAz5IZcePYc1owXvJFOobYn7tiK3+oBcFUfLUAxezCWx9cBPoZjeBblj+a6JwSOOk3xv0i0WaUkwwXRRxRMKYJEkvHBWWUdeUotbPiBZCVEj4cyajanSR2J048x8OxWwDa1LV+PK+P73Uj+70/44/83vn29b5t0JTCsuwRBd/YkrIoNvvktqUyM1j6vY0uxy/WkY3B+wC2kCtKjuljZE663aJZB1T4kqsGeaLjlBL2M4tgNaKmQeHWCBRqMa1FbyaP/99bsujCdlzo+/xtipW3pnZ+DsjV8GMF8JZMrObkeidWi+8KTFkQTTCy934FxaokFP7x16nOe11wk4ITSUTauvP0kuhzYq4pHHitCdNTt2C9J425J7E5qkffmsT765r8N50ZUXsFPObQG92ibqCPviwn6qXBQI+2HTNfSiFNhaz2dhAXKhqu7XHX2q04/Rq7sOaKEYWNnJX8+3junbZusMHyGBMKUpbJ7uS/W932zx+r6njQ7uH/gXWAN8b
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Guest Session"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/authentication/guest_session/new"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint create a new guest session.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"create guest session","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=0"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Thu, 26 Dec 2024 13:40:52 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"45c3908676f358d7cd5f7f1a2e8a6c09\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 cff65cf23da207c67757b7a558212198.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"UV8tco_B-AGj2lptZvmKrYK9BrLGOodxDDpUb69LDrJZF8H9fdWOfg=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"DFW57-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"expires_at":{"type":"string","example":"2024-12-27 13:40:52 UTC"},"guest_session_id":{"type":"string","example":"06c573143fb88ce7e8bf52a05a77109f"},"success":{"type":"boolean","example":true}}},"examples":{"create guest session":{"value":{"expires_at":"2024-12-27 13:40:52 UTC","guest_session_id":"06c573143fb88ce7e8bf52a05a77109f","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

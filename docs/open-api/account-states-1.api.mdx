@@ -1,0 +1,71 @@
+---
+id: account-states-1
+title: "Account states"
+description: "This endpoint get the rating, watchlist and favourite status."
+sidebar_label: "Account states"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVttu2zgQ/RWCTy0g27rakhZ5MNJsm7RpitjbbpEEASWNLDYSqZCUE9fQvy9IObbSJoAWfdJl5py5cDgzW6zISuL4Ci+/osXJ5enJAt9YOAOZCloryhmO8bKgEgHLak6ZQitQSBWABFGUrSz0QFRalFQqRFiGcrLmjaAKkFRENXKMLcxr0MqcnWY4xiRNecPUQhEF0sEWrokgFSgQ2o8tZqQCHGMJUlLObmmGLUy1G/cNiA22sEwLqAiOt1htaqOqBGUr3LbWHr1qQKrbP+OQICjIDvw8IQQ1jN43IBHNgCmaUxAo5wIRpNbI4J4M1kQV2MIC7hsqIMOxEg28YJ8yBSsQuLUwPJKqLkFq6e7d0e9rUjaAY8d1D0ruM4F3EHh9gWN7oXOQ+X2Z7/VQQU8Seb4dHETTPsiLooNk1pOEvm3P2ra90SHLmjPZxeHatn48T+O8qwRTKSCxhQsgmSmDLZ6XarRYp/r1tbPaO4BjXHhH1zj2fe8a/4UqchROfdvWp4mPSVrA6JgzJXg5lK5ukpKmFqrI44is4Gg67bg4Y5B23g8jugOoR6Ska3giUMDU6ISlPNO6A2lWP2ltCN4RBUNB3yCzkO2gM8KQa7sBcvw4iGInRO/Pl4btZEkGu/Btco1tD6YknzpR5MwykgRZmqVuEmSuk5BkFvrX2NAuQKxBDCXmNTABUm0MdikIkzmI/52itGjYHWSG5CsRm6G4C0FXlHUwSoainLGDZhCBPY3AsxM3yFPihZkX+VEaRBBEoe2O05I3WS44U2MGCr051t9/6++3xt6/o3n1c3Scj3RfHGb38+3J54+nyfpiwysJ39mny2nlfaznx1/qh2Dmz93RWT4L3Pffz8oNPf8QPCxn/v386Oi5vS+8Hmrw08UisEdf3B2BuU1DsedUSpQLXqFDJgzP46iCavDd/nC67KH0fRyKdN1w5vax8FhT0XWkIfjdtd+B72BwUeWhHeXEhtBzM38aQug5Ye57URL6s3zmOrjVvGnXDTQVqeuSpmZITn7IV/oLT35AqvTEFHqkKtpFokeunrg9zYTzEgjr+5STUkJrYZr19FhTJSD6at10EURBNoxvP/6HqLe/jLdfJsBhjvSjMtDOccd1987tfvfsP9lojZ0KVMH1wrECkzM9iGM88SZqPdnuZ3s72e0jt/spJE376paRRpR6uihVy3gyITUdqwIqvqaQJWMuVlhPOgmpXnk2BpEAESDmjbZ2ddMXL/R5dlH2lfZZ01aeVhOTRaNkKpCynBtNqkx9LQtA59oL9I4okhAJv+0ol5CDAJZqiQ6n++uM7bGNu9IjqT4zTV9zqSpiim63+/w2mp+Rbw+l+8fL4S54BY9qUpdEt2KrS/t2d2ZX2NN6a2zhuL+T/XJwNxYuuC6DK7zd6pT8I8q21b+7pU8fTkYlScpe9Zg7/XzX3FUgxnoVfAXwwnp5gN3oD0E17mWjr+byzeVuTXyLhq2YLyZv95OwTd+tQ6xPGWxv2qeVy/jZyedpCrXqIX9rTTrA/eV6f6Kb83/6aRvM
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Account states"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/account_states"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the rating, watchlist and favourite status.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Account states","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=66"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 14:59:18 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"03e6af619917dab5dcdc2b5d21bab784\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 7e9e069e30b25fca38d3949c59e59802.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"N_ENKIbvOyomseYnLR6m3KpACPpw574A2-Jf752GYJlyiMH5wT74qA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"22872"}},"x-memc-expires":{"schema":{"type":"string","example":"66"}},"x-memc-key":{"schema":{"type":"string","example":"f809fa0e832d468e8318f439b847f721"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"favorite":{"type":"boolean","example":false},"id":{"type":"number","example":122},"rated":{"type":"boolean","example":false},"watchlist":{"type":"boolean","example":false}}},"examples":{"Account states":{"value":{"favorite":false,"id":122,"rated":false,"watchlist":false}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

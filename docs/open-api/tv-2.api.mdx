@@ -1,0 +1,71 @@
+---
+id: tv-2
+title: "TV"
+description: "This endpoint get the list of official genres for TV shows"
+sidebar_label: "TV"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV01z2zYQ/SsYHDLtDCWREvXZ8UGxrXw4dhNLtduxfViCSxE2CTAApFjR6L93AMqklDYtO711epLIt+8tFthdLLfUwFLTyR19c351fT6nDx6NUTPFC8OloBO6SLkmKOJCcmHIEg0xKZKMa0NkQmSScMYhI0sUCjVJpCKLG6JT+UVTj8oCFVihdzGdULPuUo8WoCBHg8q63VIBOdIJzUAsV7BE6lFu3X5eodpQj2qWYg50sqVmU1hDbRQXS2qXmcAqM3RCUdDd7sGjCnUhhUZtzbu+b3++CeaGfODaUI+mCLFbwpZOM9Oar5n9+31v+Ax5kdlXae/knk7CsHdPfyI5nIwGoe/T3c6jp8BSbJ1KYZTMmsoVqyjjzCM5PLdgiSfdXiUnhUBWrryZ1hNi0YKMr/FFwKAwrXPBZGxtG8osv/LCCZyBwaakmeIe6Q7JGTLS9bshCYJJMJ50++TN5cKpnS+g8RJuO/eUjcMgxNCHMY798Wg0wgCHYRKPg4Alwzi4p052jmqNqqmwLFyimo3jLhQInaD6x1vE0pV4wtiJ3IDaNOX9rPiSi5LGoSkraAeE4SgZ9SGM43HYGyYYRSz0/XEIMIz7wz60WSZXcaKkMG2Bhvxwap9n9vlH5+/X1jT/2jpNWrYWm/l9DGdwfXZ1dfFb7/TxXVd/at1eXt68Ds5b74N5lLxPiwiuUnkxiOOb1/nsk2ESB9OTk2N/H2XR1OGHt9d9v/WxuxdwBdWUe8m1JomSOal3wuk8t3LMG5f323eLA5YtyabMrj8cHlLxueCqbEaN6FXh7/lP2DitRn43TmKf+VE3GEVRz4+COMLeOBhGvRCHA7qzuqzsB1YKiiLjzLXmzqP+ToeR0SMy2ywLZRu54WUwZas/sAOlwPZqbjDXf8/n8YGNWOURqsNgAn/YH++8/cXwV1FPXXMkr8g0XqMwK4VlnJXFXenMKb4I/inL2xsOaivBc7c9FdjrV+CpzDHeVMjIrxHF81pvXHs9k2yVozC2V1TuRjWsIIca8If9oMJmkPNscwgOuhV4wWNd+xuEteTlRhtUx7xehV7hF30EhRV0jZBxc0ysY58z3ppx8orMQBjQx2b1/s0lFEfQsIIWkD0dQfWab0GRV+SjzLjhrF5frybfoo1K0N3D4VG7vHq53CdbuoZshYe5+n8m/LczYeeyIUeTSjtpLtG1HTApndBOr+PSoGPWnayc/rSbGcq8WKnMTnXGFHrS6UDB2ybFXK45xlFbqiW1o6VGtlJ2KywjQlCopiurfvdwCM9tCy2z8dCoamLWy8tQa59LI9f0uUiks+TGNbdFiuTSroKcgYEINNJvR/NrTFChYBax4ZRvg7bf9mnZ7YHZcrDyhdQmB9fnXzb/5lvBbX1D/Luxfx+twWfTKTKwA49X7vN2fyh3tEe9sjqt/Zp61B3Ng0dTaWv4jm63NuhfVLbb2dflB4Hd/phriDKM6SSBTKNH3UV5+AWxL3/qjm4Nilt7d1Yvg78TKnlTxrAwB6w/3I1WpUqtN+d2Pvgdq9E+SA==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TV"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/genre/tv/list"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the list of official genres for TV shows
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"language","in":"query","schema":{"type":"string","default":"en"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"TV List","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=23400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Fri, 27 Dec 2024 11:19:25 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"c9414e40a9e909888e1e74fd911cf7d1\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 ce8f85a4dd9437febbc40094aa7d575a.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"j4FaRDNNKY3CjI2sQ-WMMVB1E-J1SbfJhpbaNhoK6ddVBmFQtcoe6A=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LHR50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"2077"}},"x-memc-expires":{"schema":{"type":"string","example":"23400"}},"x-memc-key":{"schema":{"type":"string","example":"802dfd0c0b218bb30b1dbe3917b34e76"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"genres":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number","example":10759},"name":{"type":"string","example":"Action & Adventure"}}},"example":[{"id":10759,"name":"Action & Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":10762,"name":"Kids"},{"id":9648,"name":"Mystery"},{"id":10763,"name":"News"},{"id":10764,"name":"Reality"},{"id":10765,"name":"Sci-Fi & Fantasy"},{"id":10766,"name":"Soap"},{"id":10767,"name":"Talk"},{"id":10768,"name":"War & Politics"},{"id":37,"name":"Western"}]}}},"examples":{"TV List":{"value":{"genres":[{"id":10759,"name":"Action & Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":10762,"name":"Kids"},{"id":9648,"name":"Mystery"},{"id":10763,"name":"News"},{"id":10764,"name":"Reality"},{"id":10765,"name":"Sci-Fi & Fantasy"},{"id":10766,"name":"Soap"},{"id":10767,"name":"Talk"},{"id":10768,"name":"War & Politics"},{"id":37,"name":"Western"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

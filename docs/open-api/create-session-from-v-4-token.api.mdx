@@ -1,0 +1,71 @@
+---
+id: create-session-from-v-4-token
+title: "Create Session (from v4 token)"
+description: ""
+sidebar_label: "Create Session (from v4 token)"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1T6kgQ/SupedpbFSDkA4QtHxA/Fq4BkSCCWtZk0pCBZBInE5RQ/PetGeCq69a93Nr1BSfpPn1yuqe7N0jgeYaaD6g18v666Hmddsvr9HvoSUcBZITTVNCEoSZCOkpS4FgeOwFqIsIBCxhCltGEXfIkvrO9ZAkM6YjDSw6ZOEuCNWpu1JFyCFBT8Bx0RBImgAn5CqdpRIkCrSwyGWiDMhJCjOV/Yp0CaqLEXwARSEcplxQEhUz5EgJZ9ixU0HfrTHDK5uif/JVZyccZBBrORQhM7ANr80QIYJq/1lY4ogEWlM21/Tdoyk+jTFvZaLvd6gjecJxGOwptpYG2F0H7Y8aTWFvZO6dv0mKFoxy+skWw7ob+FaF92u2Mik61R7uNsnwYjAe0TztvbrF0pl7HnixIMV20bNccGVNvULjxNJ4Uo7e+R6qT8WU8GXayTuzQKe3UXI8UPW9ZuIuO47btN3dxYbvFaH3d7r4EV0uJa/YKYrtFuOydD9aT8cB0zTvqLlzTLeZG35vQ63a3CMadve007Huj10k8MftXtwvXu7CnC2JNx72FG18o24nZeJ3eu7QfZXRyf5beW91oMh7IdyG5imaB1U2DqxG9H77SIL5bEzNa+ZIrM8qDdX15dSbcxBVt54W59eVZLX82B+H92cjtXq/CZQZZFoAUXmnPIUsTlu3ENw1D/nxO8y8yoqMQcABcAbQiURquyL/W3I8q2qcbNVFonT6ipm1bj+hPLcanJzXbMJCk1U4YA7JjcBzWEiAt4Yiu4AAgb0TpgpEkkLZHwvhcuZ9jAce6eGGua6aldTHTTMN0NKPRNGtN80S7cj2FNgS+An4sXpIC45CJtfL1OGbZDPhvfwkJc7aEQIHcYb4+1q/P6ZyynRvFx3pVy1XNrDuWb1dtx6k5jtmwZxZpmLZvmsFsBoEDZRIleTDjCRNlBkL7oy3Pl/L8TcW7L7XiotSelWQ7PC6u2R3fhGZ9NhkMr+e8Rezv2cnzjRXkaZx3b29xgc/vi5PV5fW1u55Nrcb3NZjjwenp53g3SXpswOv+0DFKN+YeoI1JeHSluDTLNHV/3pVQOESilGQX50l0LFqa+xEluhbjtxKew+nu5oDAR5fIuPKIGr4VVM2G5QfgWFXHMWdVYtQDw7dOnIZj4UekYFe/UUGyMaeiBIeCVY3mfxpR2a4NPdPg5xzqpF4nxDwxT4hjWDOwAsMgtuVjo25BrRpgv1azjTpBWx1luZokHwD9JIkAs4+IctD+l2n1kfjx7D6Q2xPYte0YRJhIpDTJlEhYhKiJKlbl8ySu7MNWSMJWwEXFlpCqHckdZYNyHslGLESaNSsVnNKyCCFOVhQCv5zwOdo+SQeScyrWysMHzIG3chnw4enj66HM4U6Yj0Y/VJVRZHhlJlVWRqq8ZBncvu84FwfVv0z5faq3OqJslihwKvZtGDRXEtfOscByLfmysdzCDDgwIt9IBXZPq2WjbKBdhWIiK1QyksLGWNUmw4ruLwfhp2Cb94qXm95eAgFvopJGWDZYfSf+Zp+8B2QhHX1On0qWCrfjJ1OIdGTLZTKUmW8+oM1GfuuIR9utfPySg7ypD0/qzlLsS3EenraHOa1yuIS1/KD9jPQkN/1Qql+v51Y/eLTUzf6p7dOH4rzpDz2kI3+/tcZJIH04fpUbLX497MDSW1WNerZBEWbzHM+l7Q5T/v0NqY3Q3A==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Session (from v4 token)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/authentication/session/convert/4"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"access_token":{"type":"string","description":"token-based authentication gotten by validating request token in v4"}}},"examples":{"Create Session (from v4 token)":{"value":{"access_token":"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMzk5ZTI4YjczZjA4M2U0ZTQzMmZmYzUxOTc1YWFmYSIsIm5iZiI6MTczNTkzMjI5MC4xMjE4MzUyLCJqdGkiOiI2Nzc4MzhkNDQyYWQ2M2ViMjM2Mzg0OTYiLCJzdWIiOiI2NzZhOTUwYmY2OGRjMTE4Zjc3ZWNjMmEiLCJzY29wZXMiOlsiYXBpX3JlYWQiLCJhcGlfd3JpdGUiXSwidmVyc2lvbiI6Mn0.Qy7kGBtMoMtC5qnM7kB6u_2QhXBUMJLvhksessde"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Create Session (from v4 token)","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"br"}},"Date":{"schema":{"type":"string","example":"Thu, 23 Jan 2025 09:26:28 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 2753b41455655294f3c924b22dffed5e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"2JWPh27fYQSLgrAc4Ks8_P3dupmuJRRazaDXz8vFLLMyfZ39Kye2WQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"9b3d1293bde531552f1c07d0b385953a\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"session_id":{"type":"string","example":"7c77cc2828c503fe3d00c43ba073e61dab66407c"},"success":{"type":"boolean","example":true}}},"examples":{"Create Session (from v4 token)":{"value":{"session_id":"7c77cc2828c503fe3d00c43ba073e61dab66407c","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

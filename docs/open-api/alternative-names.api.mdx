@@ -1,0 +1,71 @@
+---
+id: alternative-names
+title: "Alternative Names"
+description: "This endpoint get company's alternative names"
+sidebar_label: "Alternative Names"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1v3EQY/iujudBK3l2vvZvdNcoh5KNEbdqQr1KSVTQev96dxh67M+Ml25WPiLYIuOSAxBHEATgApyJR8WuiIjX9D2jG3sRp0uLeOdljP8/zfsy877wzrMhIYm8fL9/b2Fy6u766jYcWDkBSwVLFEo49vDNmEgEP0oRxhUagEE3ilPDpBxKRSIHgRLEJIE5ikNjCSQqCaO56gD1cQdwtAQJkmnAJEnsz7Ni2flw2uVSRnbPGQAIQhrMUqcb2hOpXSccQE/2mpilgD0slGB9hC8MxidNIfxq7iwfY63TcA/whislif6Fj2zjPLbxM6BgaywlXIonqyqWZHzFqoZgcN8gIFttOp9Mp5BLOgRYx1NM6AkgbJGITmAso4KqxymkSaGxNmdFjlhqBFaKgLmlNMAs5PbQCFDm200Ft23MGXrePbm3sGLXVHVLbhfutA+yE4aDb7wz6vkvcgNr9fmfQWYBe1+11XBp0DrCR3QYxAVFXOEmBC5Bqarg7gnAZgnjvFNFxxo8gMCJ7REzr8u4JNmK8oDFSl9VutlHYHYSubdtB1/ch6LkutNu2E9iU+LbT9aFJoyQLQpFw1eSg0I1lvV7T65vG3qeNpfhxYzls6EKqZ7d/uPcgub27u3tnfcGZfv7R3cO13S1KVtMHn9Hl7tHjaX/3k5Dfc7py77Zid9b2xivu6mhx8bK9zSSta/DOx1tdu7HplAKmoOpyN5iUKBRJjC4yYXSOGzHEtcv74/WdCkuXZO1dWrA7/SoXjlMmir5Ui39e+SX/CGqfK6e34Dp9t9/rueAGtOt0aT/og98dEDschDqhuYVp0RC0FEnTiFHTWFsP5VtaTOI/BKqwhVOh27BiRTAsqGB4Fvsgqs44uWnKWaRkBUeEIFNsYaYglv9tQ7f/d4e8wiSHKdpkVGU6y7lVgt9FKvJwvt6fG7qiNhfDOLfOQWffn7x+9hy9Ojk5++nJq6+eoNcnL87++O7s2Y/X4wvR6//dJ5FCNQFoUyRBZq6Ct3h2+vU3L5/++c/fP5/+8Mvpb3+dfvHr6bfPr4degF78/vLpl1ehw2qO5jfkGxeoN8MTEmUwPw5OZcv/T+pbkpqbxKZEkBiUGT4uUlUOQYcswG9OTARlnD3KQCIWAFcsZCBQmIhycGImsUwjU6LGZiJ6lDEBAfaUyMC6WteMKxi9WbT50MIxqHGi56wRmJLUeh5uua3Svdbsws+8VRnGDufjmjS3cRFaJiI9LymVSq/VIilrqjHEyYRB4DcTMcLapASaCaamhuEDESCWMm12f1j9va1jKA5eFXQekraCy1D1ugCZbsp4mBgkU6YH7IwBbWgv0ApRxCcSrqR8C0IQwKn+o8MpvrabdtPGRRslVLdRs5+JVDHhF03r2nnzkv7sohO/9zxcxqvgWLXSiOhhwioyPSv3ax+7xkmjgi3sXTpbVzdtaOFxIpUmzmY6HbsiynP9+VEGerTZH1p4QgQjftkzAyb1e4C9kEQS3hHdja3yLN5EtY7xtdHNbxATTdl2MLawuR+rlZMP8/lkb/wsAEuUQqoq1Ct336Wjf2tVDwD/AuFkczM=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Alternative Names"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/company/{company_id}/alternative_names"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get company's alternative names
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"company_id","description":"a uniques identifier for companies","in":"path","required":true,"schema":{"type":"integer","example":2}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Alternative Names","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=12444"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Fri, 27 Dec 2024 10:29:58 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"2ff958498b3a3dc0884946e753743cd4\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 f59f3000d5bbed733e1102d0cab025be.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"8_VYoKUUULI62ywBN_FURcaEpYZcC5kzy8UQfnO25sVKtiLFVhD3Eg=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LHR50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"16048"}},"x-memc-expires":{"schema":{"type":"string","example":"12444"}},"x-memc-key":{"schema":{"type":"string","example":"27632838773e3dc525c8d8eb59a0f9f2"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":2},"results":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","example":"Disney Pictures"},"type":{"type":"string","example":""}}},"example":[{"name":"Disney Pictures","type":""},{"name":"월트 디즈니 픽처스","type":""},{"name":"Disney","type":""},{"name":"Walt Disney","type":""},{"name":"Walt Disney Productions","type":""},{"name":"华特迪士尼公司","type":""},{"name":"迪士尼影片公司","type":""}]}}},"examples":{"Alternative Names":{"value":{"id":2,"results":[{"name":"Disney Pictures","type":""},{"name":"월트 디즈니 픽처스","type":""},{"name":"Disney","type":""},{"name":"Walt Disney","type":""},{"name":"Walt Disney Productions","type":""},{"name":"华特迪士尼公司","type":""},{"name":"迪士尼影片公司","type":""}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

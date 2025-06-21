@@ -1,0 +1,71 @@
+---
+id: check-item-status
+title: "Check item Status"
+description: "This endpoint check if an item has already been added to the list."
+sidebar_label: "Check item Status"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVu9P4zgQ/Ves+bQrpW36I23IiQ8IOA7tcgu0y64OEJom08aQ2MF2KkqV//1kJ5Syu9zlpPvUxp55M3623/MGDC41RNfw+XQ6m8KtBwnpWPHCcCkgglnKNSORFJILw+KU4gfGFwwF44ZylqJmmCnCZM3mRIJhklDCjGQmJZZxbbrggSxIoQU8TSACB3JqKJ8aNKUGDwpUmJMhZTvZgMCcIIIMxRLLJYEH3LbyWJJagwc6TilHiDZg1oUN1EZxsQTb+gLLzEAEJDpfp1BV3hYtlytOdzz5VzQuDC1JgQf0hHmREUT9YBfJrmoHqECTggeKHkuuKIHIqJLa4YaBP/LDcVXd2nxdSKFJ25SB79uft1txWJNvad8ylxImjrYNHGSmM13F9u/7DG1LQzrcv4FoNBrewG8sx/1wPPJ9yxgcYpxS51AKo2TWFi7Hpw4uad/3WKH4Cg15LC+16ShaYcYTNFSDSyEorlfUDvmBqOhgxldbAEPCdI5FLBMb2xJm+cwLB3BkW2mZdCaFx4Y+O6KYDfzBiPlhFPSjIGQnZzOHdjzD1i18690AJsl8bzLw/fEgDDDAcbgXjib+OE7mYTDH0Q042CmpFam2wLIgoUibtcudKRR6Qeo/UxSnpXigxIFcoVq3zfui+JKLOo1j26x+t89GgT/3h8l4EfoU4h6Og/HQp73RJPD7/mhC3TiTZbJQUpiuIMM+HNrv3+33R1fve+cgf+4cLjpWWdrV/Zw9Pl+Gfz6uKb38fpmL42/n98GRvrsqp3/xT/FjKQ7GV2Jy8ccMF58GJ53+hb8+vtjff1vvXBatC36ZBn7nfNAAuOvV+gByrdlCyZy9MgGVBYrre2DTsSgyHjuB7d3rd26WnN9TbKzYKivHhtdKw5N/bsBJ1GQMlQdWee4KRbop2yTNpcwIxW6WVUDXZDPiKv0sX9EGVpiV9NLHttiPtRq8ymHmZFJpo5fklmPlN4LesGd1ubdp1LnqOQj9IpTaXajaX0qVWQE0ptBRr4cF75qUnD8k865US7B6rCkuFTdrlzEnVKQOSlvq+nZ3emp5rhe4G7Rlx1Z5cRnHlgtyR4GLhXSR3DiqZymxM9sFO0KDc9QEP7rxJS1IkYjtjF1OPdrv+l0f6iOBsd0bC19IbXJ0h6Exrl8ZyBv8zeup+n+MvyHB0JPpFRlakfBq+jfNxl3DEDxnqeBBtGOtO7t360EqtbHBm43l5avKqsoO1yZudyjhGueZtd8FZpo8eKD12zdEc9QArJW/E77zSHgNv7Ufitv4X5d6l8MPl82j4CN7j4xmEMV6t+a2/YaP6rZ68XrXQj17EMdUmJ28n4TA9r69LyfH1rL+BhE+UKU=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check item Status"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/list/{list_id}/item_status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint check if an item has already been added to the list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"langauge","in":"query","schema":{"type":"string","default":"en-US"}},{"name":"movie_id","in":"query","schema":{"type":"integer","example":15}},{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504086}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Check item Status","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"max-age=0, private, must-revalidate"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 08:51:58 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"addb972006285a5a68984706cdb85ba4\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 450b03d6f80e8a9a65630e947501047e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"LlqzR8NqyehRXRmnEWPj5Ds_VuSZiKcqunA6Vn7QHTafK2G-1Q0yEQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","example":"8504076"},"item_present":{"type":"boolean","example":true}}},"examples":{"Check item Status":{"value":{"id":"8504076","item_present":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

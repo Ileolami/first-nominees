@@ -1,0 +1,71 @@
+---
+id: delete
+title: "Delete"
+description: "This endpoint delete a list."
+sidebar_label: "Delete"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/RVhnlpAtuVrbC3yEMTptkCCprW7WyAJghE5sthIpEpSTlxD/74gJadOs+k6wD7ZIuecuXB4hluwuDIQX8H5h8VyATchcDJMi9IKJSGGZSZMQJKXSkgbcMrJUoBBLoztQgiqJI3O9AOHGJptCKFEjQVZ0o56CxILghgMGSOUvBUcQtD0vRKaOMRWVxSCcN6+V6Q3EIJhGRUI8RbspvRQq4VcQV2Hj2wuhIbKQ0u02b/QPmMS0tKKNIRAD1iUOUE8HUej6GhS1zcOb0olDRkHGUSR+3lakfkuyYyQ+wy3cJLbzmLN3N+XQt/zB9nw+Bri0Wh4DX8EBR5PJ6MocsnBqZKSWOPpMK47orKDuVjTjsCStJ0zyRR3tgfSJNrD52jpUMiFkmEwjII5sWAQDUZBNIujSTwaBH9eLD3bgvSa9KF8qiSpydiNxy41SpOSfnUmLKvkHXFP8hfqzaG4j1qshGxgAg9F9bv9AGdjHB3xCGkw7fMxS2Z8PKRkjAmf4Ww07bJcVTzVStquJBu8OXXf79z3W+/va+ek+NE5TTvuFh3m9+T9w+wkek/55e1mnnXuzWK+uV/ONiNxOcaHD0MbqbOvX8SnqFyU787l/PzCJotPx8dP/V2q8lCH5x8X46hzOWgJTpFlh3eKMCZItSqCn5XwPMyxdJiSVqv8ULaySnLBwqDAhw6u6Li5OWTx4Bb5u3cN0XgySWfT6VGf85QfpRPkNJgiUpqM+5Mjfg2edv2KDkLGqLQd2jVs7VNsLqRDYlnmgnm57H0zL1xxlXwjZp2GaieuVjRSZCzaytwyxWnPWFZF8lTL+sM63BkXZAyu6PdBLzMKhKWip4kpzYN7NK3M88BUjJExaZXnmy444mZhjzFRKieU+5ROeH3q7Yo3b1Uz3sIa84qepdQfPg/7FbHthda6r30IBdlM/TKabAYx9IY9N0B623aM1I7Cy1UzsiqdO6G2tjRxr4el6NqMCrUWxJOu0itww8IQq7SwG49ICDXpk8rRX93sby/cGTdl2Dd6rKHzsht6vqbeyLefkKnylsI+ntaFiyKYo8UEjUvp6Xz6TClpksztuHSa1X436kbQtCMy146OvlTGFugbsZ2qj9PtCen2Zxv/14ugzcnSg+2VOTpFDZtqbtvaX8EQQj++IYR4N8ZvQsiUsW57u3WJfdF5Xbvl5lHgSsyFwSR3wz3F3NBvgnzzuX0HvA1eiumONr++SdrWBH+4a9TCefv/PbeLKDf7PncR7QpS39S7N4YPodk98Rqzh3smKi72x7afn52fLc+grv8BcI5VJA==
+sidebar_class_name: "delete api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/3/list/{list_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint delete a list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","required":true,"in":"query","schema":{"type":"string"}},{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504076}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Delete","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"br"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 09:06:42 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 a95a47d0ae281d5cb9d53eb5abd9a948.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"AHx9A0HelP_yDh-wsSDywT9y4iP5axI3t0oEXUiQ0pSpFLnDLMtbSQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"0566f98871ddfd7f6ade28aaefb5167d\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":13},"status_message":{"type":"string","example":"The item/record was deleted successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Delete":{"value":{"status_code":13,"status_message":"The item/record was deleted successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

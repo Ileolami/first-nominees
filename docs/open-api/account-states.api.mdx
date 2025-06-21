@@ -1,0 +1,71 @@
+---
+id: account-states
+title: "Account States"
+description: "This endpoint get the rating, watchlist and favourite status of an account."
+sidebar_label: "Account States"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zYQ/ivCfWoBydabK0tDPmRpVmRYmrbO2gFJEFDUyWIjkSpJuUkM//eBlJwobbOp2D7Zou557oWne24LmqwVZBdwevbx5HgFVy4UqKhkrWaCQwbnFVMO8qIVjGtnjdrRFTqSaMbXrvOVaFrVTGmH8MIpyUZ0kml0lCa6U44oHcIdQqnouJ6BC6JFAxX8pIAMhhcrTTQqcKElkjSoUZqItsBJg5CBQqWY4NesABeYielLh/IOXFC0woZAtgV911pTLRlfw27nPqDXHSp9/d84GrFhOMK2RFfggsQvHZNYQKZlhz+gYlzjGiW4gLekaWuELAh3uysDVa3gCpWxDn3f/Dyt+2FfG+ehOBWSwlZmC4e19lYbav4+F/7IJVTRwSVkcRxdwi9OQw6Wr2LfNwnCEaEVekeCaynqqXRtl9eMuk5Dbj2yxoOBSnCOtA9+Gs8NYuuRmm1wT6CRa++YU1EY24k063vWWoLXRONU0KngrhP5zmukTuiHseOnWRxlcei8OT23bMfnZHIIn+aXUNIoKMIiDP10EZVpEiQ5SYK4wJRQxDS8BEu7QrlBOZVYtMglKn1nseeScFWi/OkS0arjN1hYko9E3k3FnUm2ZryHMTIVFcwCJ46SRZjERZDiKxL4cbEM4iiJEz8u45T4yxmtRVeUUnA946idF0fm+Tfz/NL6+8s7bO69o9Izg2Ka30XxRr713ie/e+SsEmL59tMy+hW1J/Lk+OspW9LrhT66STbBZ7m6T5a4Tk/K+P3BwVN/70Q71eEfZ6uF770LBwL7MU1uQKaUU0rROI+VsDy3XoPN5E/79GS1GsHM9zgV6o9xeNsy2U+jn8be4OSGCjAkOUEfk3JBabrI83SRplEeLuJlEqUR7Awv7SeBoSJtWzNqFWP+WT0zW0T+Gak2+iGNvmjWJ2LUyIjRyDIXokbCxzGVpFa4c4EVIzveNfl3c9sFSTQW/+54Q+oO/5FtOVvYTB/kc0qMBjAc9SrwVCHGjh9Tt9A+uyAcZTCYmkCehLF3tbPuGtSVMEq9Rpum0b0M5tHcKuJ8uxfG3XyQ8mu1lytlB10v5J2sjQxp3apsPictm+kKLbbIZ0KuwUiiQmp2hzuLyJFIlIed8XdxNX69Mrffpzs2eiif8bKXdVtOa2T7lfFSWEumbTeeV+icmiic10STnCiEb7efD1iiRE7NG5NOfxrM/JkPfaMSai7P0LdC6YbYFh32hu80/An59rHR/+ctayiFxls9b2tiRrjbX8J2uMMLiMDt9xpwIRstON9c5JULlTCNcQHbrSnRn7Le7cxxv0CZyyqYInlt+mroNjsRnu5tQ78BmLXqGcAPVrVH2JV5kMzgfuz02dq++DDsaS+d52ozHBJ+N/a5j+uhOrur3X4PszH0rw8pxVaPgN8NLRP8w6f05tgsGH8DD6XX7g==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Account States"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/movie/{movie_id}/account_states"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the rating, watchlist and favourite status of an account.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"movie_id","in":"path","required":true,"schema":{"type":"integer","example":12}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Account States","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=0"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 09:43:42 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"fc31d2d220953f9717ba714de9acee92\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 4375274d19e6a104d814374704f49a08.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"5dGrN-Q7J-aOhoo8NW83Bet-ob7EwMi8c_5tCk7v1jrSz78eg9If4Q=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"MISS"}},"x-memc-age":{"schema":{"type":"string","example":"0"}},"x-memc-expires":{"schema":{"type":"string","example":"0"}},"x-memc-key":{"schema":{"type":"string","example":"1e2abae0e7f5cc95bb95993b25487393"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"favorite":{"type":"boolean","example":false},"id":{"type":"number","example":12},"rated":{"type":"object","properties":{"value":{"type":"number","example":8.5}}},"watchlist":{"type":"boolean","example":false}}},"examples":{"Account States":{"value":{"favorite":false,"id":12,"rated":{"value":8.5},"watchlist":false}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

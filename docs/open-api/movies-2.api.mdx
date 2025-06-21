@@ -1,0 +1,71 @@
+---
+id: movies-2
+title: "Movies"
+description: "This endpoint get the list of official genres for movies"
+sidebar_label: "Movies"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0tz2zYQ/iucPbUzlESRlCip44PHzzycpJZid2r7sASXEmISYEBQY0Wj/94BKIl0OmnZ6TUnidjdb5/YXWxB47KE2QNcXXy4vZjDkwsJlUzxQnMpYAaLFS8dEkkhudDOkrSjV+RkvNSOTB2ZppxxzJwlCUWlk0rl5HLNqQQXZEEKDcybBGZQH/vgQoEKc9KkjOItCMwJZpChWFa4JHCBG8VfK1IbcKFkK8oRZlvQm8IwllpxsQRjaIpVpmEGJGC3e3JBUVlIUVJp2H3PMz+v3bk5GLciTKwFWzjNdG++Zubvj5XRC+ZFZo5WwckjzMIweITfnBxPJuPQ82C3c+EM2Yp6Z1JoJbOucEUVZ5y5To4vPVzSiR8G46iGk0IQqw3vhvVMVPQw42s6AGgSunchmEwMb0eY5TdeWIBz1NRV6J4S1/EmzlsUju/5I8fzZ0E088bO1c3Col0ssLMJ94NHmE6ScRqmcYAeeSyKRmGIkR9FaeDHSHH8CBZ2TmpNqiuwLGyl6o2VXSgUZUrqP4eIrSrxTIkFuUO16Sr3UfElF7UYx65Sw/7QmSTxkCikgNF4PPKnEY3CKJ6GAQ7jYOj7fZbJKkmVFLovSDu/nJnvS/P9q9X3R+80/9Y7S3vmOnbTmwV/vrvLOX5avBsP1Zuq+Pp+Ps/49bTiWY56/fstLjmKt4vk9i67fj4r/M93k9OTk9f6Psmiq8L3H+cjr/fJ3wPYC9VV9oaXpZMqmTtNJCzOSy+nvPP1vn6zaEmZK9k5S5Hvt0XppeCq7kVdxJuLv5d/ps5llUaT4TQasumIBX6QpKOxP6LAS4YRixlFY9gZXFb3AwOFRZFxZrvz4Ev5gw4j4y/EtOnYyvRyzWtn6l7f4kOl0LRqrikv/12eJy0eUeUxqbYz/mTn7ofCP7l8WndG69jx9KFG9ycHhCObW1OGfkNJ1iR0paghjhui4Dm+kgxGR+KZzCnZHCkTr6Eonjd40+mRcC5ZlZPQplUc1TVWnivMsSF40Wh4pF1izrOWVNiiCI1lQwoa+695qWVLlx81JKmUVC1lodcE5aYqOWscGIeNjTebUlPbfC8KGwdvZY6CNb5PokZyzjgJRs4l/y4ZXhQ1sVvcOXY6H8mjoKGtFM8yUq9C1Fh9jw0laDy9J2OxgN1Tu0psDe73gNkW1phV1C7rnzX0s4Z+UEM7W0c56ZU0K+2SbHNDvYIZDIKBraCBXXQHZkM226tdTuqqqlRm1keti3I2GGDB+3pFljuJ+1ItwaywJbFKcb2xEjGhInVaGQUPT23y3PTquoDbTMeGabQclmfzXTPZ6cJFKi0n11kdF6qD5pyjxhhLgu8fAbeUkjLhBxeMO/XpsO/1PajHCjIzVgx8IUudox0oh6Qfdu5XoNtmHP2fR8beX00velBkaHYrt470dp+ZBwjArW83uPUzBFyw+XlyYSVLbXi2W+P5Z5Xtdua4fn2YHCS8xDijBGYpZiW5YMdy+7my7yBg87dGxQ2/TdjhmWGBarlTxqjQLam/TWKDciyxqwuzjfwFLABomQ==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Movies"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/genre/movie/list"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the list of official genres for movies
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"language","in":"query","schema":{"type":"string","default":"en"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Movies","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=24367"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 08 Jan 2025 02:37:06 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"98d6f4fb3a0e0c77544a7277f32baebb\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 8db1ee4e3ce665297e547b943a1b3122.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"l3ZKVmiaPTK61rIupqLSSliH9uilmatvQRagianJTdRVlHkCp2UV8A=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"1722"}},"x-memc-expires":{"schema":{"type":"string","example":"24367"}},"x-memc-key":{"schema":{"type":"string","example":"f781971c95c323df5625e30d17cbce76"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"genres":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number","example":28},"name":{"type":"string","example":"Action"}}},"example":[{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":14,"name":"Fantasy"},{"id":36,"name":"History"},{"id":27,"name":"Horror"},{"id":10402,"name":"Music"},{"id":9648,"name":"Mystery"},{"id":10749,"name":"Romance"},{"id":878,"name":"Science Fiction"},{"id":10770,"name":"TV Movie"},{"id":53,"name":"Thriller"},{"id":10752,"name":"War"},{"id":37,"name":"Western"}]}}},"examples":{"Movies":{"value":{"genres":[{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":14,"name":"Fantasy"},{"id":36,"name":"History"},{"id":27,"name":"Horror"},{"id":10402,"name":"Music"},{"id":9648,"name":"Mystery"},{"id":10749,"name":"Romance"},{"id":878,"name":"Science Fiction"},{"id":10770,"name":"TV Movie"},{"id":53,"name":"Thriller"},{"id":10752,"name":"War"},{"id":37,"name":"Western"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

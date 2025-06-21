@@ -1,0 +1,71 @@
+---
+id: alternative-names-1
+title: "Alternative names"
+description: "This endpoint get the alternative names of a specifc network."
+sidebar_label: "Alternative names"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVktv20YQ/iuLOSUAJfEhSxYLH+RH87Kd1FaaFrYQrJZDcS1yl95dKnYEAg0C9NRbCvRP9Fr01j8TNED+RbGkFMlxHix664lccr5vdnZmvp0FGDrVEJ7B8cHo2eOTRzB2IELNFM8NlwJCGCVcExRRLrkwZIqGmAQJTQ0qQQ2fIxE0Q01kTCjROTIeMyLQvJBq1gYHZI6KWq4HEYSwgTu2MA8cUKhzKTRqCBfgu6593NzD8GNv4ECCNEJVYYapaZ3OmX3VLMGM2jdznSOEoI3iYgoO4BXN8tR+SoKdcwi73eAcviEZ3dnudV0XytKBPcoSbO1JYZRMm9LlxSTlzCEZvWrRKe54XW8Q1HRSCGR1DM24Zoh5i6Z8jisCg8K0DgSTkbVtSDN9yfOKYJ8abAoaFeiQwCP7yIjv+l3iuaHvh36f3DsaVWwHI9p4C88659CNsDeJKY17264fea436GMc9T2vF8S9YOKfQ0V7imqOqimxzFEo1Oa6wo4UFTpG9a+PiCWFmGFUkXxP1XVT3GPFp1zUME6bory2R+IeYoSDrtcLBkGEXtCnMfNjz4v6QRAja7NUFlGspDBtgYbc2bPrb+36buXvh9Ywe9nai1u2k5r5vb5gp8HDJH+4O9+exIfaV5eX+tnBi6N9jw9PpqfJbnr19PhhsfXjA64OL+771JjL73Z2bvp7IvOmDg8fn265rSf+kqBqqKbYI641iZXMyPokKp6rVoZZ4/a+/2C0gbIt2RTZH/iDTShe5VzVstQoyR8af4mfYeOycrfdfuQz6rIei/q9rWirj4xtb8dx0I8GzMpB6QCr9cBS0TxPOauEtXOhP6MwcnKBzIADubIybHgdDI82bESRTVBtbsbzy0qUi9ToDUOqFL0GB7jBTH/didXpryRKzmaUR5KMMMU511wKsqskjRjVxhqXzhL9JZb6ZD6sz1aev06/YgconTVqtNvqffrX37/89u6PP9+/evP29c9vX//+9vWbd7/+9f6nV58lug34tOnx06Oh4FmVzLVFruRU0SzjYkomqWQzKMebsa6uvo9uxnABc5oWuEq0528k839/OmV1QjlVNENTjQfrkJdDyXMe2Sq2c0VOTVINIJcFVxhBaFSBzu0+4sLg9FaTlGMHMjSJtIPNFKsWsIQhdILO0llnsfZadjamn+erOUZXt1+90UKldj4xJtdhp0Nz3jYJZnLOMZq0pZqCdamRFYqb6woxQapQDQvr9my8+fvUBlHXw6bRh5isF1jGate1USVfXMSysuSmngwSJEd2F2SfGjqhGuHjKfEEY1QomP1jw6m/em237UKtW5RZ3aqyI7XJqFiLxCfnuxv8i7X0/eeBdBm/wSvTyVNqL3OnPvnFMn9nEICzKhdwILxRObeTOHYgkdpY4GJhj+epSsvSfr4s0I4WZ2MH5lRxOllKVMS1fY8gjGmq8QvR3jlZFudd8rm9r/RZWHVe9j6AA9X1s1n15bhczc3VLmqDIWOYmw3oravlRqHfO7DX6z8T0jLo
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Alternative names"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/network/{network_id}/alternative_names"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the alternative names of a specifc network.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"network_id","in":"path","required":true,"schema":{"type":"integer","example":12}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Alternative names","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=14193"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:22:27 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"4de6bfaaf6802d10197efd71163f63b2\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 f6eede9416393de137afc2f11d733fec.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"yjcS3JhpJBv8bfLs2rqqsWEwMD1iARgShBlxUNJu5YIirLjH2attqQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"7929"}},"x-memc-expires":{"schema":{"type":"string","example":"14193"}},"x-memc-key":{"schema":{"type":"string","example":"0807d2ca0c6cd765d57ecc88ff37d9ce"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":12},"results":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","example":"Hokkaido Television Broadcasting"},"type":{"type":"string","example":""}}},"example":[{"name":"Hokkaido Television Broadcasting","type":""},{"name":"HTB-6","type":""},{"name":"北海道テレビ放送","type":""},{"name":"HTB北海道テレビ","type":""},{"name":"NUMAnimation","type":"programming block"}]}}},"examples":{"Alternative names":{"value":{"id":12,"results":[{"name":"Hokkaido Television Broadcasting","type":""},{"name":"HTB-6","type":""},{"name":"北海道テレビ放送","type":""},{"name":"HTB北海道テレビ","type":""},{"name":"NUMAnimation","type":"programming block"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

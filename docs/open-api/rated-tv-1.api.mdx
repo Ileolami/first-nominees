@@ -1,0 +1,71 @@
+---
+id: rated-tv-1
+title: "Rated TV"
+description: "This endpoint get rated TV shows for a guest session."
+sidebar_label: "Rated TV"
+hide_title: true
+hide_table_of_contents: true
+api: eJylU02L20AM/SuDTi1M46R7863QsOyhLeSjlyUExVbsofbM7IycNhj/9yLH2XXSDQR6MtY8SU/vSS0wFhHSZ3hcz5crtZwvl08/vsNGQ04xC8azcRZSWJUmKrK5d8ayKohVQKZcrX6qWLrfUe1dUKiKhiKrSDEaZyegwXkKKDWeckihz1kdZqDBY8CamIJ0b8FiTZBChbZosCDQYKTtS0PhCBpiVlKNkLbARy/AyMHYAoTmHpuKIQWyn9ZL6Dr9Ws3fU8lYpoLCuNRsXCS6wNvd8X5GZJtaFM0Cybhb5AnGDPQ4IOKeRD6zv0KPGfSibgdRtyY/U/HIJWgI9NKYQDmkHBq6zazrNgKO3tlIUd4/T6fyuXRaWkNNXDpxrCDuzeISUkgekgsuSXtNrUt6ixM+iEQUDmd/m1BBCiWzj2mSoDcTLql2B0P5buJCAUIuUtYEw8c+Y0cYKHxppPPzZvy8lAFPE4xBr/NKl7ND8n8C9XMZu3c90nBF/VqT+iYs1Fdk3GEkuN78Be0pkM3kRcY5RWeT6WQqnjrLmDGkrZT3LnKNVjoM3i2GK7ku2/aZZPk/bmsYl+kPJ75CY6HTJ6HbwbFneAB9uT+gIX1nofqOUvMga1m6yJLdtiLJOlRdJ+HT7os5uYm4q2Tn9lhF0vCLjpfne8CqoX6d9E24vx/6doVv6I38BCPw90ndVPzDYriZj+qWjkMQ7UXPM51/FOw246t5nK+g6/4CDDbRCw==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Rated TV"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/guest_session/{guest_session_id}/rated/tv"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get rated TV shows for a guest session.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"language","in":"query","schema":{"type":"string","default":"en-US"}},{"name":"page","in":"query","schema":{"type":"integer","default":1}},{"name":"sort_by","in":"query","schema":{"type":"string","enum":["created_at.asc","created_at.desc"],"default":"created_at.asc"}},{"name":"guest_session_id","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

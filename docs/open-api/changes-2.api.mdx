@@ -1,0 +1,71 @@
+---
+id: changes-2
+title: "Changes"
+description: "This endpoint get the recent changes for a TV show."
+sidebar_label: "Changes"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21z2jgQ/isafWpnDMgvGOybfMiRpC9zaXuBpuklTEa2F6zWll1JJkkZ//cb2QZMUxK33+4+gbz77Gof7Wq1a6zoUmL/Gs8u0fT04s3pFM8NHIEMBcsVyzj28SxmEgGP8oxxhZagkIoBCQiBKxTGlC9BokUmEEWzSyTj7K6PDZzlIKi28CbCPm7ULGzgnAqaggKh/a4xpylgHwOPbiOqABuYaaffChAP2MAyjCGl2F9j9ZBrRakE40tclsYWKxUV6rfROV0+j2NcwRIE1twsaJEo7Jt7WwDBQN6yCP/IHkUFZ98KkIhFwBVbMBANW2qFKtzGe05VjA0s4FvBBETYV6KAJzZTGhjuaZonILW0+W/q/yuaFIB907J2StaewN4J7LbAJPbY3MmctsyxW6hhS+LZDhnuRG4bZHveTjJqScYOIaOyLOc6ZJlnXNZxWITon30aJ3UCYQPHQKMqedb4OFG96SrUfw+d9NYz9nFsH91g33HsG/wHSunR2HUI0bmAJzSMoTfJuBJZ0tVcXgQJCw2U0vseXcLRcOzWxjLOIaz33c3SV4C8RxO2go0BBVz1TnmYRVq3o5nld5ZXBk50KXQEfYLIQMREbylHFrGGyPR8i/hkhF6dzyprpzPaeQufBjc4ckN3MRwSGrh24JrWKIhGgUs9NxyNiQ3eDa7MTkGsQHQ1nOXABUj1UGFngnK5APHLFIVxwb9CVBm5pOKhK+69YEvGaxijXVFm30ShF7kLattm4IJt0sAjYWTZxIvIYuQOI9IPk6yIFiLjqs9BoRcTvT7T65eVv6vecfq9N1n09EXazS9Lr7z7KzuzL9/F6fvs/PXb6clYnNw6n/9Z3amT8OJVcnb6p+t87r27OxndwVj8fXl2d3S07+9Dlnd1+Nf76ZD0PliNgaqcumLPmZRoIbIU7Zio7Nz3Ukg7F/frN7MWShdk51Ny2kC4z5moL6Iu4E3RN+iv0Dml3LHnBSSCgBDiRJQEbgBjQszQ9oLAtse41HbD+i7QpmieJyyseurgizxwu2TBFwiVbrNCd2DF6lCa/ttSpEJQ3eqYglQ+b+BHtV+E0+19eJiQItctPNJtjUXPcDca2dFwOPJGlI7BASs0rVEE4wors1vbdN1b82kbG13X9rqoKpbC01oWsZyeafVsE5mmb419y0YfZxMNbjrecyxJoDLjt3vR8yINqofH1pFj2UOXlMZGvdF4CmKZZVml0/bL9e5MtsTXvB8md59bjPf408uao4NEtHhoRVqH8ygaveV5aeCmog7TXuPwo/CazPxvBNrEuQ1m3g6nyo3JroK3xrdV/X8It07QFFSc6d0uoaoP/ST28cAeqNVgvX1ll4Nw+x6U1TuiDr0QiX7nKZVLfzCgOeurGNJsxSAK+plYYu1aQlgIph4qRABUgDgutJvreVs81VdrTXhbaZuK2stmVNDrWqlqBowvskqTqSpFZzGgc70LdEIVDaiER2PCBSxAAA+1RIdTfzX7pE9w3QVoqLuANp9nUqW0uk2b8WP3Ot6zut61j9+c4ppYFdyrQZ5Q/QQyapbXzdlcY1vrrbCB/fYUtDmguYHjTCqtuF7r0D+KpCz153rY0ocQMUmDRE88C5pI2GRHayZsEkzfxAfV98bALoBm8tupzvVCMK37830dZPfFRTO0vUTdBr6fErvprfyhva1dsWzYrS7Geg6q9lnLj8MQctVCPnow6AC3BfbqVD+Y/gVx+TLQ
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Changes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/changes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the recent changes for a TV show.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"end_date","in":"query","schema":{"type":"string"}},{"name":"start_date","in":"query","schema":{"type":"string"}},{"name":"page","in":"query","schema":{"type":"integer","default":1}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Changes","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=586"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 19:20:07 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"d6c6f550ab63b6127bd7b6a96c7803e9\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 c9d6fa331b6e31ab90cd2309d0f765d0.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"imX9xX3o3VNhmOoMHJSD8rD_4YZvwtDcRGlFEB64Y-NwD7we8rQVFw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"14"}},"x-memc-expires":{"schema":{"type":"string","example":"586"}},"x-memc-key":{"schema":{"type":"string","example":"6899b0deb0004da0b6be8001c39bb338"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"changes":{"type":"array","items":{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"action":{"type":"string","example":"updated"},"id":{"type":"string","example":"6773d55797aa8e4e2c127de8"},"iso_3166_1":{"type":"string","example":""},"iso_639_1":{"type":"string","example":""},"time":{"type":"string","example":"2024-12-31 11:28:23 UTC"},"value":{"type":"object","properties":{"season_id":{"type":"number","example":423560},"season_number":{"type":"number","example":21}}}}},"example":[{"action":"updated","id":"6773d55797aa8e4e2c127de8","iso_3166_1":"","iso_639_1":"","time":"2024-12-31 11:28:23 UTC","value":{"season_id":423560,"season_number":21}}]},"key":{"type":"string","example":"season"}}},"example":[{"items":[{"action":"updated","id":"6773d55797aa8e4e2c127de8","iso_3166_1":"","iso_639_1":"","time":"2024-12-31 11:28:23 UTC","value":{"season_id":423560,"season_number":21}}],"key":"season"}]}}},"examples":{"Changes":{"value":{"changes":[{"items":[{"action":"updated","id":"6773d55797aa8e4e2c127de8","iso_3166_1":"","iso_639_1":"","time":"2024-12-31 11:28:23 UTC","value":{"season_id":423560,"season_number":21}}],"key":"season"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: remove-movie
+title: "Remove Movie"
+description: "This endpoint is used to remove a movie from a list."
+sidebar_label: "Remove Movie"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCTxvgxWmzDYVv3cehwIYNTXYKgoK2mVidLbmSnNYw/N8HSk7iJFuxDc0liEQ+Pj0+Mh043FhIlvDlZr6YwyqCnGxmZO2kVpDAopBWkMprLZUT0orGUi6cFoYqvSWBotJbSWJtdCVQlNK6CUSgazLIEDc5JBBiv3IgRFCjwYocGa7bgcKKIAFL1kqt7mQOERh6aKShHBJnGopAMpWHhkwLEdisoAoh6cC1tU91RqoN9H20R2MeAcqn1uiK38CeIUnlaEMGIqAnrOqSILl6N307vXrf96uQT9Z90HnLSadwmVaOlOMrrOtSZl6B+N6ykt15NZ3eU+ZYEcN6OUmWbyvKJTL5Q6RqqvSY1sVl3/f73z7vNnQkyJx0sMWyoWNAn+UTDdlaKxsyL6dT/jru/BHciz3OOnSNvct0Ts+/b9ZHu+CKrMUNnXd8FA+LgoR0VMWGMm1y8YhW5FSSo1zYJsvI2nVTlu0EGDgcjBBTrUtCNYbkpv69yEcPu5idk/8HhiOCA4nQtIpcoXmgam29tGzrBOJZzH6Pu8H1fRwG7o6rMRiZ7W7aGlNCAoVztU3iGGs5cQX5Ec7TiTYbYJ9byhojXeszUkJD5rrhUsvV+HrOPQ+yjIP2mnKV3bx6jX0QzymwbW4P0/R5p/mJWXl819pDSrdvsxdffEKHKVr25qlx12RIZXzD7w6nF5PpZDr4GDP2MfNgISv0Dh42x4ntj6C7wxT872IcpHH05OK6RKnYjr4p3dDOJcwg8gsMIkgOi2zc01UEBVsgWULXsQg/TNn3fByWJPctlxbTkrfTGktLzzzl1e2wyF6LPzH8Se3pjh6cD94xWzSSq7185eEQVTuuuWO0k6df9REUhDkZTyHcfgyF3iwY45B9tr/4jyNkXGcZ1e7Z2NVoDr9/my8ggnT4Q6j88IPBR+4XPgam2j/cj4k/66BEtWnCUgiY/PkFB1aZEQ==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove Movie"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/list/{list_id}/remove_item"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to remove a movie from a list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","required":true,"in":"query","schema":{"type":"string"}},{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504086}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"media_id":{"type":"number","example":12}}},"examples":{"Remove Movie":{"value":{"media_id":12}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Remove Movie","content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":13},"status_message":{"type":"string","example":"The item/record was deleted successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Remove Movie":{"value":{"status_code":13,"status_message":"The item/record was deleted successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

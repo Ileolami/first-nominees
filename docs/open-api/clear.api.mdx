@@ -1,0 +1,71 @@
+---
+id: clear
+title: "Clear"
+description: "This endpoint clear all items from a list."
+sidebar_label: "Clear"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vttu2zgQ/RVhnlpAsmVZih0t8pB1ukUWSZPWabdAYgQUNZaYSiRLUm4cw/++ICUndtMUDrD7ZIvknDM3nuEKDCk0pNdwdjq9msLMhxw1VUwaJjikcFUy7SHPpWDceLRCojxSVR4zWGtvrkTtEa9i2vTAByFREWt4mkMK7jD4IIkiNRpUlmcFnNQIKWjUmgl+y3LwQeH3hinMITWqQR+Ypf7eoFqCD5qWWBNIV2CW0pkaxXgB67X/iEYFnzNVvxoqE6JCwnewbDStW85WElP+AvcZFOMGC7QB4z2pZYWQjpMwDscH6/XM2mspuEZtTaJwYH92Uz3p8lUiyV2yVnBcmWC6oPbvS1nYooNyeHQDaRwPb+APryZH44M4DG1sMBGcI22J9sP6higDUrEFbgAMchOcIS9MuS/IYeyMT4jBfU3OBfe9YeidIPWiMIq9cJwmSZqE3vvzK4c2RbVAtS+ekMgVarN0tl+IWu5reaFYwXhrxsi+VoPewEvGw2hIcT46jEbD6CCLR9FgNBgjjeIsJAR7tBJNPleCmx5H472Z2O+/7Pdbx/c1OK4fgsk8sBdpP977r6dNfjKKpBQfgsnd4XQokz/ffx68e4jF8QP5+119MTg75MXVWX47/ZF8FMUXFX88OtrluxRyX8Kzi2kSBpdRBzAhtNy/yEx34vGUCYdDLUpABTdKVPuiySarGPW9mtwHpMCjtuXRkGJfhH/6NxDGwzBK4lGUjCjNRngwHscxzfPkMEySMIxuwMEuXtFBhFKUJkBORd4qlg2xvUnWkkhZMeoUs3+nX7ibIrtDaqyOKquvhrUSog0xjb6lIsetw7yps10NGkRrf3O4Rq1Jgb93+qpEp+59hVSo3PtBtNfInBjMPd1QilrPm6pa9sACtwu/UNQtSCuYLvRuxR1v1S5dwYJUDT6LaBA99/oVrm151rGvnQc1mlLY4SSFdjm14p5Cf9i3qt9fddq/7m+Gl3Zi006uRlVWZI2ROu33iWQ9U2ItFgzzrCdUAVbnNdJGMbN0FhkSheq4sSTXs+3tqS1zm4ntQ49ptCybgeXS6g65DmR8LtxJZh4Ldm698E6IIRnRCD9P8U84R4Wc2h0bTrs66IW9ENqOJNR2pIW3mamJ68VuIG4G0w7m6qmRX/dI6AI0eG/6siJWYf02tauuHNcwBN+NYfAhfRrHbU1mPpS2eOk1rFY22s+qWq/tcjvlbd5zpklW2WE9J5XG37j+5lM31996L/n2DZc/v1e6ngWwz4b/gezpOfPENHPawyzVfx9jt0j4cptz486mBOvZevM8cS60u8dO5bbsnsma9f3x5l1eTO0c/xfEeII1
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Clear"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/list/{list_id}/clear"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint clear all items from a list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","required":true,"in":"query","schema":{"type":"string"}},{"name":"confirm","required":true,"in":"query","schema":{"type":"boolean"}},{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504086}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Clear","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"94"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 08:55:50 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 58323cef7927326b4721718ec24b0aae.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"xXIudD72ppoN-Cj9S3p5BGU1Ez4oAzaJEmO1L9ngTLd_Sw5QogVr4Q=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"04302547257ccb7e68844cdd59055002\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":12},"status_message":{"type":"string","example":"The item/record was updated successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Clear":{"value":{"status_code":12,"status_message":"The item/record was updated successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

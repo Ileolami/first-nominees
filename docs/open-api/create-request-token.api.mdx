@@ -1,0 +1,63 @@
+---
+id: create-request-token
+title: "Create Request Token"
+description: "This endpoint obtain a new token from the authentication server."
+sidebar_label: "Create Request Token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1v2zYU/SsEnzZAsj4tWxry4DlpmwFOs8RJhyVGQFFXFhuZVEnKdmr4vw+kldZJl0ID9mBYpO4594P3HmqHNVkqnN3hyc38w9nF/Hw6mZ9/vMALBxegqGSNZoLjDM8rphDwohGMayRyTRhHBHHYIC0egaNSihXSFSDS6gq4ZpQYKFIg1yAH2MGiAWn3zgucYSqBaLiCLy0oPTcU2MESVCO4AoWzHQ593/y9jGNqYajDoWdgBaQAaWGTWrvXa2oeFa1gRcyTfmoAZ1hpyfgSOxi2ZNXUZquKTu5xFsfRPf4NrcjJOIl9H+/3Dp4SWoE7FVxLUfela9q8ZtRBK7J1yRJOOirBOdBDCv14HgEal9RsDc8EGrh2zzgVhbHtSbP8yhpLcEo09AXNq9ZBYYJOgaLQD2MURFkcZcMYvZ/NLdvZnPQO4ZN3j1Oax/HID4owT4rI/GhYJoldBJSO7rGlvba90pdYNMAlKP1ksXNJuCpB/ucS0arlj1BYklsin/riPkq2ZPwAY6QvKhgEKAxG+TgCSmlQDJMgTMp0SKNyFCTp0E+G/oDWoi1KKbgecNDol6lZvzPrX62/v9zJ6qs7LV0zSf386vgPdR7F18l4Kdfsw+Xy93oY0dtc0ng2vXiYlGp9e8OutuHlbDsUf5+ziKTqz5OTl/4uRdPX4em7T8ORexl2BHaY+mJnTKmDoHyvhOV5qS0uJXWdE/rYe9a1blTmeZvNZqArWIk1gyIfCLn0jpjBi8sRDcYjP00jH0K/CNIwHaVQjsoiTtO8GI/DaOyTBO9NUPQwm8Y1aZq6C877rN6YdpF/BqqxgxtpJFGzg9zBtmES1APRP0/CTKQbhG6YoCDu5vJmPsV7I59WFR+sIv+cpX+KDlYtpaDUEWEuRA2EHzNq2YItR7djzf9VrbMdXpO6hddJv5nZD4n1j/4o+C7AvQ1yBboS5hpagj0JoiucYS/yXnaYZx16HDaGyaqTuS13uJX1UT+Rhr3qJ7xfGABtJdNPFpEDkSAnrXF0tzh+fW0a5FCvY6NvxTZejHtrZopvjew8MF4Ka8l0p9yAZiYKdEo0yYkC/Poiv4ISJHBq3ph0DrvBwB/4+NDLhJoONPSNUHpF7IlxYn2/cf2+cLH7PhH/x2dDVwUNW+01NTGS6xzqv+vO7Q5H+LU2GGAXnDm9hYMrobSx3e1MXW5kvd+b7S8tGM2/Wzh4TSQjuSnk3WL//E1hD+8RnnCGJ5RCY9qla98fx90c67fWen9mLst/AJlDG8U=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Request Token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/authentication/token/new"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint obtain a new token from the authentication server.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Create Request Token","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=0"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Thu, 26 Dec 2024 13:43:54 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"9cb44701d2b6d3b6d3c2f66b6d3b1cc7\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 217b83eccc1d56126f95c3f716950650.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"t4JsI34S68grviHPgBl53cVbrc4MCN_AfsvVUiRx2PMx5oZIi3a9sQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"DFW57-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"authentication-callback":{"schema":{"type":"string","example":"https://www.themoviedb.org/authenticate/4f7c18709930e20d192979ef7fd499bd882380a6"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"expires_at":{"type":"string","example":"2024-12-26 14:43:54 UTC"},"request_token":{"type":"string","example":"4f7c18709930e20d192979ef7fd499bd882380a6"},"success":{"type":"boolean","example":true}}},"examples":{"Create Request Token":{"value":{"expires_at":"2024-12-26 14:43:54 UTC","request_token":"4f7c18709930e20d192979ef7fd499bd882380a6","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

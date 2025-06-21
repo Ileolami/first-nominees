@@ -1,0 +1,71 @@
+---
+id: add-rating
+title: "Add rating"
+description: "This endpoint allow user to rate a TV episode."
+sidebar_label: "Add rating"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vm1v2zgM/iuCPm2AE783iQ/9kHXrXrBee02uK9YGhWwziTZb8iQ5XRb4vx8kO4mzdjt3N1w+OSKfhxRJkdxgRRYSRzd4eoVeXbydnL98NcEzC6cgE0ELRTnDEZ4uqUTA0oJTphDJMn6PSgkCKY4EUYAIml4hKKjkKfSxhXkBgmjw2xRHmKTpJVGULbCFCyJIDgqEtrrBjOSAIyxBSsrZHU2xhak2+aUEscYWlskScoKjDVbrwqgqoZmqytqhFyVIdfffOCQICrIGH16eoJLRLyVIRFNgis4pCDTnAhGkVsjgtgYLopbYwgK+lFRAiiMlSnjEPmUKFiBwZWH4SvIiA6mlzberv1ckKwFHruftlbwDgb8X+G2B6/hDdy8L2rLAb6HClmTkB064Fx21Qf5otJcMWpJh4DiD6jCKRHJ2x8o8BvGrUdnZwpHXJm/q6/exu1U1q5Eg1QuerrX690QJZwqY0iJSFBlNTF3bn6Qujs1DOzz+BInSlS70K1C0zm0Tsp3a7hI7b4b9UMfyoCLGaaofmC7WNsc2/gZhQAJkwZmsUZ5jSuiwjFtUFl4CSc0T3OBxpnqTVfLoXZp30nISL/3jWxwFgX+L/0A5OR4eBY6jXxI+4YxBUlvrxvUZoOiRjK5gS6Aj3XsPbKGWXUlGgQG/JAq6QqbL0kKOh94RhjzHC5EzjPwwCj30+mxq2CYgViC68vECmACp1gZ7RcS6K/Jc0AVlNYySrii376JhGrsAAfgJHB2F3mgAYTCIR4FP3Nh3Pa+fZLxM54Iz1Weg0LMT/f9U/39u7F33xvm33sm8p1t0N7tr6oyDN97F++thSl6fnV7nH/6i704nJH0Tf55/G40+kss/RakylV2VL+5PT8cfk9PF8fGhvQtedDX4/nwSOr0LryE4Icmyc5LPqJRoLniO9pEwPIlm6elnLXjWla0o44wmFsrJ1x5ZwHFd8qDIoivDB/sWO4HveGEw8MJBksQDOBoOgyBJ03DkhKHjeLfY0K6eUEEkSaBQPWAJT+uZVv22niUVUaW8S3j6887l6hnVKOcgJVnAvz1AQFRBbgtIuEjRPZGoLFKiIEWyTBKQcl5m2bqvJ2Rz0GKMOc+AsDal7tVdu+fBtVzvoetP8K/lXuNC3Y9zUEuud5+CSxNYPaUibPu2Wtmb3bJR2fXE1EetyVnZzayzN4dDr7J3LVyaFlVvUaXIdGtWqpCRbZOC9tUScr6ikMZ9LhZYzzkJSSmoWhtEDESAGJfaq5tZWzzRxVHHr620C762st2pTDKMkqlbXV+X+2n6apucg4Glx/acG0KqdtVwpp1FL4kiMZHwYAe7hDkIYImW6FvXp27f6Tu4LneS6HLXXuiI58QUerM4HIy+A+LN/qk8fcltAqLgq7KLjOg+btWp2DT5vsG+1lthC0ftBbNOdn16uDA19Fr0YN1prjCz8FIXVXSDNxsdrb9FVlX6uN53dXpTKkmc6SVmTjIJFv4M6+/X7CYnGOsV6weARzbrPWxmOhXVuMeN/jDUzy6bJes56rZdPxrq5pCwddut/V238X70fl18+1XD7ZT+z8a/K5pqVm2XPZOiWmm7aE011Z7kwajQvteIsZkyP9WdtZrexflkii0cNyt1bjotFuTeVPF97TA39zeNxpxtcEbYoqw7cM2pf/8AqFXxPQ==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add rating"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/tv/{series_id}/season/{season_number}/episode/{episode_number}/rating"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allow user to rate a TV episode.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}},{"name":"season_number","in":"path","required":true,"schema":{"type":"integer","example":2}},{"name":"episode_number","in":"path","required":true,"schema":{"type":"integer","example":1}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"value":{"type":"number","example":8.5}}},"examples":{"Add rating":{"value":{"value":8.5}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Add rating","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"94"}},"Date":{"schema":{"type":"string","example":"Thu, 02 Jan 2025 08:35:52 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 8db1ee4e3ce665297e547b943a1b3122.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"yi0A4H2PLX8daGMFXmWQiJFSadHbkfz99ZaRNrutltlVuBwFFAZcFg=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"04302547257ccb7e68844cdd59055002\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":12},"status_message":{"type":"string","example":"The item/record was updated successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Add rating":{"value":{"status_code":12,"status_message":"The item/record was updated successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

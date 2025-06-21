@@ -1,0 +1,71 @@
+---
+id: keywords-2
+title: "Keywords"
+description: "This endpoint get a list of keywords of a TV show."
+sidebar_label: "Keywords"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV9ty2zYQ/RXMPiUzlETwIons+MGxnTRtPEks1W5qazIQuZIQkwANgLIVDf+9A1IXOumFbV+rF4LcPWexu9jFaguGLTXEtzC9JpOLq7cXE5g5kKJOFC8MlwJimK64JijSQnJhyBINYSTj2hC5IPe4eZQq1XbNyPSa6JV87IMDskDFLMHbFGLYq3nggEJdSKFRQ7wFz3Xt47nBn3fa4MAKWYqqVj3NTG+yTuxSJyvMmV2ZTYEQgzaKiyU4gE8sLzL7aeWf3EEcBP4d/EBydjIeBq4LVeXAGUtW2DuTwiiZdaUrynnGE4fk7KnHlnhCh763o5NCYNJsvRvXPWLRYxlf457AoDC9C5HI1Op2pFl+5UVNcM4MdgXdYOoQl5KfmCCe64WERrEfxu6IvLmc1mwXU9Z5CzeDO/A8HEfoBtRNQwwD3/f9yPWH3tCnbJyMx3dQ005QrVF1JZYFCoXabGrsVDGhF6j+cYiSVSnuMa1JrpnadMW9V3zJRQPjrCuK9ikZp3OKGKCf4HAYetEIw2A0jwKf0blPPa+fZLJMF0oK0xdoyIsz+/7avr+s7f3aO82/9s4WPVs43ez6ry7LT++C+9fu+nzE3E3+6qnXe3X9MQ3lx/VvD5/z15NiciNGVw+Pp+df3E9vbn66HH08OXlu74Msuhp8934Sur0P3o6gLqiu2EuuNVkomZNjJGqep16Oeefy/vHttIWyJdkVOQqjoA3Fp4Krpht1SvKh8Hf4e+x8rJjnIo0oBsk8pGGC3mIcjYIhjsLUDcPEtoPKgaTpB5aKFUXGk7qPDr7oP+kwcv4FEwMOFMp2XcMbZ3ja0hFlPkfV3gwNfL+qu3GZGd1SZUqxDTjADeb6P5sJI1o5IFiOf1OpKIxiGeHCYJbxJYoECbOPDXmRcPayic0BcNtYDiO6Z+9C4TQoSkMaHHBaJpxlRDPDFR51hjSi0UGJpWVmCBM8r7NxUPNd6kbDg1rKlQ3SURpFo6MlNtelSo9SGvnR6CB95Mb2u73Qo+MWNJU5asMTksgc0w1Us3Y86kwcrs14C2uWlbhPj011K9P/h65qfg4UTLEcTT1h3G4PXqHiqD/zFL4dhRgpBX8oUROeojB8wVGRhVSEEbMmNc5WjlUtmFnV085DyRWmEBtVovN99dqQL1HBN8ncrWkrmdTzjkreM4F/FPhtAXX9MT3Kgrasqf+dJGxJIj9ww6No2Ab5UXSUjFqSceC6o6qqZg7kaFbSTn1LrNuFDUQMA39g1oPtIbbV4P445ul6OGiSUKrMjm/GFDoeDFjB+2aFuVxzTOd9qZZgbWhMSsXNpkbMkSlUp6W1cztriyc22k1A20qH4FsrsEuKfW+U6u7OxULWmtzUDWq6QnJpd0HOmWFzpvG703GFC1S2dMAB607zlfbdvgtNW2eJbev1yZPa5Kxu6LtT15p6n9FujxfCvxvFd74afDKDImN2rnGaKG93ybkF3+qtwYG4ffgPGZo5sJLaWM3t1vr+i8qqyn5+KNGOVbczB9ZMcTbfNeeUa7tOIV6wTONf+PTialciL0m38vpDf/aXl7BX1+5MQuPCs4quZtX+X0W9z0Z+miRYmBbyu4v32cF+c2GHj98BE/1XrA==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Keywords"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/keywords"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get a list of keywords of a TV show.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Keywords","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=16320"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 19:35:07 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"22e89e0410d5e54333390362631a8c88\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 8db1ee4e3ce665297e547b943a1b3122.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"3BMuYL4kF0vD7a0ymBx--BVQd5oQvZq_mFSpSWn7RqwADj0YGWJM7Q=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"7594"}},"x-memc-expires":{"schema":{"type":"string","example":"16320"}},"x-memc-key":{"schema":{"type":"string","example":"a20e191e4cb515ce2f89746e75d055ce"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":1433},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number","example":591},"name":{"type":"string","example":"central intelligence agency (cia)"}}},"example":[{"id":591,"name":"central intelligence agency (cia)"},{"id":11514,"name":"social satire"},{"id":161919,"name":"adult animation"},{"id":301096,"name":"direct"},{"id":309974,"name":"absurd"},{"id":319397,"name":"witty"},{"id":321874,"name":"domestic comedy"}]}}},"examples":{"Keywords":{"value":{"id":1433,"results":[{"id":591,"name":"central intelligence agency (cia)"},{"id":11514,"name":"social satire"},{"id":161919,"name":"adult animation"},{"id":301096,"name":"direct"},{"id":309974,"name":"absurd"},{"id":319397,"name":"witty"},{"id":321874,"name":"domestic comedy"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

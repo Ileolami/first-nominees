@@ -1,0 +1,71 @@
+---
+id: details-5
+title: "Details"
+description: "This endpoint get information about a specific keyword"
+sidebar_label: "Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVllv4zYQ/ivCPO0Csi3Llg8VeQhy7XYbZBu7TRvHWIyokcVEEhWScuMY/u8FKbl2GuxC7ZN4zPfNwTm0BY0rBeECvlz8eXdzez6DpQsxKSZ5qbkoIIR5ypVDRVwKXmhnRdrhRSJkjubewUhU2kFHlcR4wpnzRJu/hIzBBVGStEKfYwghJo08UwG4IEmVolCkINyC73nm81bneS0MLqSEMUkreZrpzmzNzFKxlHI0K70pCUJQWvJiBS7QC+ZlZo7SwckDhMPh4AF+cnI8mYyGnge7nQtnyFLqnIlCS5G1pSurKOPMdXJ86eCKTvzReDSp6URREKstb8f1RFR2MONr2hNoKnTnomAiNrItaVavvLQE56ipLWiG2nX8iXNOzPE9f+j0vXAwCQPfubqeW7aLObY24a73AEOWEE0oiPqTaR+DaTSe9H02GCSIFMcJewBLOyO5JtmWWJRUSFJ6Y7FziYVKSP7nELG0Kp4otiS/o9y0xd1IvuJFDePYFtXv9h2fjQNkNIxj3xsyb+RPoxgHLGHoJaOhx7osE1WcSFHobkHa+XBm9pdm/9Hq+6Nzmr92zpKOKZt2ejXX7PLLK45nP/Ny0snE/br/K+OXWfT6afz8Jf70eLf5huJejPEKnx+f8PJe+KcnJ2/1fRVlW4W/3MwCr/PVbwhsQbXFXnOlnESK3DlEwvK8dHLKW5f39efZzHVm85vbiyO0Kc22DN4xjl5KLuuO1AZ7qP4G/0StcyseTEfeNJkOBt4kjhgFfWLBKAiiMU2G/VECO8PL6qZgqLAsM85sK+09qu+0GRE9EtPgQilN49W8dobHRzJFlUckj40ZBqOdCwXm9GObc6FTkrVlzaml3zfqcAtrzCraqxwGoz3tEXZn8SVKzEnbrr7Y7qWaufGNm9HBzRAoUad2WjxXXFIMoZYVue8954Wm1Xu3dksXctKpMNNnRTY0hjGE3qDXaOttD2p34IKyPaq2q5KZmSJalyrs9bDkXZ1SLtac4qgr5AqMAkWsklxvLCIilCRPK6NksTy+nhmb64gdC/3jgtECjWtmXwvZ/DLD1kpybV9inpJzbaxwzlFjhIrg3xP7lhKSVDBzY9ypT/tdr+tBnVjITGLZxxBK52hTqnmIw+x9w7o9ZOT//yVo3NX0ontlhqbDunWgt83jLGAALhwQ4VFeLF1IhdJGaLs1nv8ms93OHD9XZHr7YunCGiXHyIRqsYWYK7OOIUwwU/QDlz7cNmn20fmenc0hFhsT1zrboTb2bf7ulrv9j4u1ohY4ZYxKfQR9V9ZvMvbqwkzjvwE/hTau
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/keyword/{keyword_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get information about a specific keyword
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"keyword_id","in":"path","required":true,"schema":{"type":"integer","example":456}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Details","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=26768"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Sat, 28 Dec 2024 10:38:52 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"4cfee8e5b1891a59b7812c33faaeddfc\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 2c75ace4dd204c0629bda3cfca0f640c.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"titcFKza7SJip8-loZv1QciFlbzH7qKdHjWy_aoZo7aGaqjkaFZo2A=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"MISS, STORE"}},"x-memc-age":{"schema":{"type":"string","example":"0"}},"x-memc-expires":{"schema":{"type":"string","example":"26768"}},"x-memc-key":{"schema":{"type":"string","example":"d39609f93308dbce51ec5655b7e8416f"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":456},"name":{"type":"string","example":"mother"}}},"examples":{"Details":{"value":{"id":456,"name":"mother"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

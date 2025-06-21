@@ -1,0 +1,71 @@
+---
+id: account-states-2
+title: "Account States"
+description: "This endpoint get the rating, watchlist and favourite status of a TV episode."
+sidebar_label: "Account States"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vm1v2zgM/iuCPm2Ak/gtaeJDP3Rtbtddi/aWrLdhLQrGpmOttuRKcq5d4P9+kO0kTl8AbzfcJ9sin4cUSZNcUw1LRYOvdH5Fppens4uT6YzeWDRCFUqWayY4Deg8YYogj3LBuCZL1EQnSCRoxpcW+Qd0mKRMaQI8IjGsRCGZRqI06EIRERMg8yuCOVMiwj61qMjRgAU/jWhAIQxFwfVMg0blUovmICFDjdJ4tqYcMqQBVagUE/yWRdSizLh1X6B8pBZVYYIZ0GBN9WNeqWrJ+JKWpbVFLwtU+va/cSiUDFUN3g8QkIKz+wIVYRFyzWKGksRCEiB6RSrcxmAOOqEWlXhfMIkRDbQs8AX7jGtcoqSlRfEBsjxFZaTNu2PeV5AWSAPHdXdK7p7A2wm8tsCxvbGzk/ltme+1UMOWZOL59nAnGrVB3mSykxy0JGPftg/K/SiCEvyWF9kC5c9GZWuLBk6bvCmyX8fuluWNQapccFWnwLVt89ivgKO6iEldxdSiCUJUVfCaHqW6N1uF5vW1MmtZpIl3eE0D3/eu6W8kg8PxyLdtU4j0GMIEe8eCaynSrnR5sUhZaJEMHnqwxMOGSnCOYe18N547xLwHKVvhhkAj170pD0VkdDvSLL+zvCI4AY1dQfOksIjtkg/AiWu7Q2KPA8cOPIe8P59XbNM5dHbh78E1PXAnkR+FEwhd9O0oGrte7Cxsb7zwnKGDB9e0op2hXKHsSixy5BKVfqywcwlcxSh/OERhUvA7jCqSK5CPXXEXki0Zr2EMuqKcvkOihe26ByPPj4cwGnlOHGPkergY+jj0HA/7YSqKKJaC6z5HTd4cm+/fzffbyt7n3lH2vXcc90xH72ZXw4V7ND35E99J/o3dZeeF+vLXmX/68bN9cTaaHM/f+Z++eH+kk/sz+34qPp0r9iFfHh7u27sUeVeDZxezod27dBuC6mfqij1nSpFYiozsIlHxPPQyzDr/2uens1kLZv7HrlC7jcOHnMm6G/0w9g47FxTEseNGng3DeITeyB2PF0MvHIE/AWcI4Ziaxk7DuhMYKsjzlIXVaB98U6/0FrH4hqE2c16aRUCz+iIsauls+/fWmdFwYo9Ki0rQ2NZcCJEi8LZqDKnCyrX25HzSoXcjqjZd8W/pNxRlRZOhToRZVZZY+W3GSUAH3kCvBuvtVlAO6tFmjlojrhw0Q2mw3p9O5aDZfG7VZmioqt3Ua08hUzMMtM5VMBhAzvo6wUysGEaLvpBLagaTwtAsW48VYoEgUR4VxruvN23xzOSgvnRbaRtEY2WzBFVBrZSqqmE8FpUm000rRnJuvCAnoGEBCp9tQx8xRok8NBJznfrU6dt9m9blAqEpF0OfC6UzqAqlGeHPJuke+XpXbr98LW2CofFBD/IUTCu16jSsm5x/pZ7RW1GLBu1tsE54fbq/3TT0RvRsN3mS/huLJkJpY2W9NoH9JNOyNMf1kmpSHDEFi3RboRat/ub93bgpa0rNXvQK4IV1eAe7MR+SGdzLRl/NyJuPzYr1lnRbiV8MeXMI/LHt1u6um7i/eL8uvv2s4XZq/2fjT4qnvCk3K2aVolrpKAwx1y34s35scrvtZu+nZnf6F3eCtCc=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Account States"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/season/{season_number}/episode/{episode_number}/account_states"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the rating, watchlist and favourite status of a TV episode.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}},{"name":"season_number","in":"path","required":true,"schema":{"type":"integer","example":1}},{"name":"episode_number","in":"path","required":true,"schema":{"type":"integer","example":2}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Account States","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=0"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Thu, 02 Jan 2025 08:10:31 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"729d4dc9ac2e40dd823f1b038b3151e7\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 db0227634f5a6631ffed23eb54e5313e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"taO2AEDKeBrnjikmMusYQL4IRX0OL69CTB4UY3Hl9qL0qEoUMsiJpg=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"MISS"}},"x-memc-age":{"schema":{"type":"string","example":"0"}},"x-memc-expires":{"schema":{"type":"string","example":"0"}},"x-memc-key":{"schema":{"type":"string","example":"aff12d30a5f6e36288b53c6a49a15ac8"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":65906},"rated":{"type":"boolean","example":false}}},"examples":{"Account States":{"value":{"id":65906,"rated":false}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

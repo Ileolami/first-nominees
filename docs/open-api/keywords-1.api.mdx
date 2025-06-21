@@ -1,0 +1,71 @@
+---
+id: keywords-1
+title: "Keywords"
+description: "This endpoint search for keywords by their name."
+sidebar_label: "Keywords"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWNty2zYQ/RUOnpIZSuJNvKjjB8Vxk0zrycXKpbU9HRBciohJgAZAxYpG/94BKItMTCdsn/Nkkzx7dhfAWexqhxReS7S4RBdny3enL9G1jTKQRNBaUc7QAq0KKi1gWc0pU5YELEhh5VxYN7D9wkUmrXRrqQKosBiuYIpsxGsQWJu/ytAC3eNcZKMaC1yBAqFd7pA2QAt024DYIhsJuG2ogAwtlGjARpT1PkpSQIXRYofUttZWUgnK1shGcIerutSvMKOVcYz2e/tIX+M1oJ+xUaZgDQLp9HPclAot3P3+Wgcla84kSA32HEf/+XaF/jgkiGxUAM5Mcju0LNXkYkP0v2NCL/yTK7QIAv8K/WZV+CQOA8fRaaBTTAqYnHKmBC/H0tVNWlJiWxW+m+A1nMSOG7dsnDEgbeTjqG4A6gku6QbuCRQwNTljhGcaO5Jm/ZXWhuA5VjDWaNWAbfmu9RyI5TleYLnOYj5feJ714nxl2M5WeHQIH2dXKIxwTuLASzLHwSlxfC8N/TAInTQgJCBwhQztBYgNiLHEvAYmQKqtsV0JzGQO4j8vESkadgOZIfmAxXas3WtB15S1ZhSPtXKnrpUHuZ+7boxJmMcYp2HqpHEUhdgPYpeEMCUlb7JccKamDJT15FQ//66fnxp/nybL6uvkNJ9oqY/z+2dVLeWH+P2z5Xu6vlmf/w2fTifL8q/TuFpVy7dnz85frbYe+7C9WAUf3c1tQ9/iyduTk2/9veH1aIevL+bO5I13IDB6Gmt7TqW0csErq1sJw3M3qaAare6Xr1Y9K63I0bsURPOwbwt3NRVtNRpjfxT+wfwGRh+ruZc5jheHeZpHrjefO7GX4Dz08jzJw3keoL3mJW090FS4rktKTAGefZaPVBiefgai9F0g9D2haJtLfViTA4o1VWqq8TEcd29qcVMq2cNhIbCu51RBJX/uhWY/9OElURB4e/twc4y9ava9D5etk5bpnqiPtluAm/hzz7W7O0oo6yHKc4Mo8Y8o0ijePIoLemw1CDKIdEM3cZMusKwpBwnj0E+68CQeRs2jwO3ctos+hPPCwHeOOAGTIY9RknQYym6sGuuWYwAa+m7YuSUl3g6hEn1muxRqzKgsBoF+5HbAL5xnFsFiA4PYedDfthJLRQllj2Dn8w6LG1VwIYf2JPHdoNsT2cgaWAbZEGcUOEF0hKZQrilmQ0A/caNujSQtC96AUoOB+knodIFCozXzGGvUO9YVz6AcSshx510+hFd1o0D0gdd7GymucPmPFr78oSqDI/ah/h+iY6cvSIM9NmiLHdrgsoGu4Li9ovJLur+k+0u6P5fud8oNHqjTSHBvZFiBKrieAtdgbmOsCrRAM3/WDpKzw3CoJzLTcbcybESpRyKlarmYzXBNp6qAim8oZOmUi7UJQgJpBFVbY5ECFiCWjaa/vO5/vtANSFsH+qBjBdFe7gfCdl80yLRMlOXcIKlqp5ECrHMdhfUcK5xiCej7afkd5CCAEf1Fp9O+dafO1EFtr4SJ7pU0fc2lqrDpkg7L3Zskv6HddV3W/5nHD5kquFOzusR6VLDbNd4dduQS+WYLNBmy70d2/WNAwaXS33c7ne97Ue73+nU7R+uVz6jEaamH9hyXEn4Q+ZN3h/n+qfVYUKY7PQ7ph1qNzOF84KfFHob7DnqtHwTVWHMU7odyE2xrsyQEatWzetC4apbj0X1xppv3fwEQpJ0n
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Keywords"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/search/keyword"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint search for keywords by their name.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"query","required":true,"in":"query","schema":{"type":"string","example":"animation"}},{"name":"page","in":"query","schema":{"type":"integer","default":1}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Keywords","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=8018"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:55:22 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"67afc8429d00abc032b636460b4cc4ce\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 f4f3f118ac6f8aab6b0b8776a3481c6e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"LmmAsV8UBAUigkgMZeXC-AlYC8mTmAQEBMITy2nVyST4W1vquiQa-Q=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"14756"}},"x-memc-expires":{"schema":{"type":"string","example":"8018"}},"x-memc-key":{"schema":{"type":"string","example":"52d00286fbf712550829af62ff9f65f4"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"page":{"type":"number","example":1},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number","example":297442},"name":{"type":"string","example":"animation"}}},"example":[{"id":297442,"name":"animation"},{"id":193521,"name":"part animation"},{"id":214793,"name":"cutout animation"},{"id":214794,"name":"papercut animation"},{"id":161919,"name":"adult animation"},{"id":286391,"name":"salt animation"},{"id":257414,"name":"object animation"},{"id":226430,"name":"re-animation"},{"id":287990,"name":"ink paint animation"},{"id":263164,"name":"clay animation"},{"id":292550,"name":"spanish animation"},{"id":293710,"name":"wood carve animation"},{"id":295421,"name":"plasticine animation"},{"id":295551,"name":"authors animation"},{"id":193149,"name":"suspended animation"},{"id":274047,"name":"belgian animation"},{"id":239174,"name":"silhouette animation"},{"id":239601,"name":"european animation"},{"id":239742,"name":"model animation"},{"id":10159,"name":"computer animation"}]},"total_pages":{"type":"number","example":4},"total_results":{"type":"number","example":80}}},"examples":{"Keywords":{"value":{"page":1,"results":[{"id":297442,"name":"animation"},{"id":193521,"name":"part animation"},{"id":214793,"name":"cutout animation"},{"id":214794,"name":"papercut animation"},{"id":161919,"name":"adult animation"},{"id":286391,"name":"salt animation"},{"id":257414,"name":"object animation"},{"id":226430,"name":"re-animation"},{"id":287990,"name":"ink paint animation"},{"id":263164,"name":"clay animation"},{"id":292550,"name":"spanish animation"},{"id":293710,"name":"wood carve animation"},{"id":295421,"name":"plasticine animation"},{"id":295551,"name":"authors animation"},{"id":193149,"name":"suspended animation"},{"id":274047,"name":"belgian animation"},{"id":239174,"name":"silhouette animation"},{"id":239601,"name":"european animation"},{"id":239742,"name":"model animation"},{"id":10159,"name":"computer animation"}],"total_pages":4,"total_results":80}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: content-ratings
+title: "Content Ratings"
+description: "This endpoint get the content ratings of a TV show."
+sidebar_label: "Content Ratings"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWM1S20gQfpWpOSW1kq0//2mLgzGGEDBhbUOSAhc1ktr2EGkkRiMDcelx8iR5sa2RDJZgNxnvYU+cLKn762+6Z7rH3WssyCLF7hWeXqLJcHw8nOCZhgNIfU4TQWOGXTxd0hQBC5KYMoEWIJBYAvJjJoAJxImgbJGieI4Iml6idBnfN7CG4wSkKGbHAXbxRntcKmMNc0iTmKWQYneNLcOQP3XawYZgi1kCCYAXiH4o9MnKl4+pv4SIyCfxmAB2cSo4ZQusYXggURLKT0t77xq7jmNf4z9RRPa6bccwcJ5reED8JeiSi8ehqrkk80LqaygiDzpZwJ5ltp1uaS5mDPzSAzVb3wASnYR0BU8GpNf6kPlxIHUVzSy+06QwcEAEqII+Q6Ahw0QfCUOWYbWQ2XMNx7VNdDSaFtaGU6K8hM/Na2zYbYe0Wjbx2k7H6BCz7Rt2F4jdM8DrkPk1LsxOgK+AqxqOE2AcUvFYYKecsHQOfOcQ+cuMfYOgMHJJ+KMq7hOnC8pKGCWqKLNhosBpOx2nEziOHXTsjuG3e5bda/V6nt+1PYc0/DDOgjmPmWgwEOjdQL4fyvf3Bd8XvR991wdzXSaRGu/xaJ6cTYZn91l2+9G7HdALdtcakMPV167+MTww9WGX3C9MfXhy/5dIpvro4eRodb+3V+c7jxNVwtNPk5ahn1sbA0VCqWJHNE3RnMcR2kaisPOgRxApp/eH42kFJVNSFWn1rG4VCg8J5WVRUoI/J/4G/w2Uj5VlWl7b7LS6xPYCx3Rsz7YsCGzftzpG25LlKdeeCqc0RZIkpH5RU5u36b9UmNi7BV9gDSdcVmBBS2doUNFhWeQBry7GdGw7L4pyFoq0oko4J49Yw1RAlP6e5qmCx/xXRvIK89Us1zBN4xvbbLdvzF+HrH+B5SqLC+E3B6uPzNYfZQi3XC8WeDWrU0v7W/PPNrTfwS4mVdj0UjcdBdSgX0WZjgrT4biGMRQgB8MapK0AOdqvQVoKkP36wlT8PzutQSwFyOSotj9mVwFz/qGKOdqZ5VwFMvpa80VlXaMvVci+iifTKuJsrAAZTnbe/BfnRWVb+tOdWY6HOx+xwYedWc5Pd4aMP+28sIOTnSFnu7NMahE75D9/MGS20M8fXKVuHFfBJ0qR2B/unNKnFy/jPatW4OJOePm33l3jFQkzeLql5FVUuYneavZbzX6r2W81+61m/681Oy/qdkI4iUAUM5erNWYkKv5uA6eQ3tAAv5wUEZQxepdBimgATNA5BY7mMUcEiRUqcLINkKoJEctiDHSXUQ4BdgXPQHvdz1AmYAEyXrVbZPNsVq4P07K2SlZNYG8FdlVgGnbX3MqcqqzsiDaSVkXSsx2jtRW1qyC719tKOhVJ1zGMTp7nMw1HIJaxnIktoGigZCBc3LSbYtVcP8c2b246vxv+PP9Ki6lJuRcZD+VcS4gkdZtNktCGWEIUrygEXiPmCyypUvAzTsVjgfCAcOD9TNJdzariiQx6Gdeq0vMeSBa82Rv5XioVbS9l87jQpKLou6ZLQCO5CnRABPFICq8OyRjmwIH5UiLdKb+aDaNh4LLfJb7sd4sDGKciIkWnuzl8r6eCNevrbcP8H+eWG58FPIhmEhI5+NHKaK83e3WFbam3whp2q7nwcsNmGl7GqZCA9VqG4oKHeS4/32Ugx08yF1eEU+I9dac0lc8BduckTOEXvr0bbxLnPVJLun9066k/Z7I735xUjDVcTDEqeZ7LJr2cvhbrLOV934dEVJCvBhS14340lEOavwFW9CbD
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Content Ratings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/content_ratings"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the content ratings of a TV show.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Content Ratings","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=21648"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 19:04:31 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"0364a553ab64707a16c038ea390eb7af\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 d464747d443d7370c69239599bc83b4a.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"IMfpNSENwuujJbjCiUnq5CaFvY8-JlD1-E8awg1-EKwQtpT-MxKGvw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"2928"}},"x-memc-expires":{"schema":{"type":"string","example":"21648"}},"x-memc-key":{"schema":{"type":"string","example":"212b61758a3bd4143b322ed3cc270620"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":1433},"results":{"type":"array","items":{"type":"object","properties":{"descriptors":{"type":"array","items":{},"example":[]},"iso_3166_1":{"type":"string","example":"AU"},"rating":{"type":"string","example":"MA 15+"}}},"example":[{"descriptors":[],"iso_3166_1":"AU","rating":"MA 15+"},{"descriptors":[],"iso_3166_1":"US","rating":"TV-14"},{"descriptors":[],"iso_3166_1":"CA","rating":"14+"},{"descriptors":[],"iso_3166_1":"FR","rating":"10"},{"descriptors":[],"iso_3166_1":"DE","rating":"16"},{"descriptors":[],"iso_3166_1":"GB","rating":"15"},{"descriptors":[],"iso_3166_1":"BR","rating":"14"},{"descriptors":[],"iso_3166_1":"NL","rating":"12"},{"descriptors":[],"iso_3166_1":"SG","rating":"M18"},{"descriptors":[],"iso_3166_1":"PH","rating":"G"},{"descriptors":[],"iso_3166_1":"SG","rating":"PG"},{"descriptors":[],"iso_3166_1":"MY","rating":"18"},{"descriptors":[],"iso_3166_1":"MX","rating":"B"},{"descriptors":[],"iso_3166_1":"PT","rating":"NR"},{"descriptors":[],"iso_3166_1":"ES","rating":"16"},{"descriptors":[],"iso_3166_1":"DE","rating":"12"},{"descriptors":[],"iso_3166_1":"AT","rating":"16"},{"descriptors":[],"iso_3166_1":"IE","rating":"15"},{"descriptors":[],"iso_3166_1":"CH","rating":"16"},{"descriptors":[],"iso_3166_1":"PL","rating":"16"},{"descriptors":[],"iso_3166_1":"RO","rating":"15"},{"descriptors":[],"iso_3166_1":"DK","rating":"15"},{"descriptors":[],"iso_3166_1":"NO","rating":"15"},{"descriptors":[],"iso_3166_1":"SE","rating":"Från 15 år"},{"descriptors":[],"iso_3166_1":"FI","rating":"K16"},{"descriptors":[],"iso_3166_1":"BE","rating":"14"},{"descriptors":[],"iso_3166_1":"LU","rating":"16"}]}}},"examples":{"Content Ratings":{"value":{"id":1433,"results":[{"descriptors":[],"iso_3166_1":"AU","rating":"MA 15+"},{"descriptors":[],"iso_3166_1":"US","rating":"TV-14"},{"descriptors":[],"iso_3166_1":"CA","rating":"14+"},{"descriptors":[],"iso_3166_1":"FR","rating":"10"},{"descriptors":[],"iso_3166_1":"DE","rating":"16"},{"descriptors":[],"iso_3166_1":"GB","rating":"15"},{"descriptors":[],"iso_3166_1":"BR","rating":"14"},{"descriptors":[],"iso_3166_1":"NL","rating":"12"},{"descriptors":[],"iso_3166_1":"SG","rating":"M18"},{"descriptors":[],"iso_3166_1":"PH","rating":"G"},{"descriptors":[],"iso_3166_1":"SG","rating":"PG"},{"descriptors":[],"iso_3166_1":"MY","rating":"18"},{"descriptors":[],"iso_3166_1":"MX","rating":"B"},{"descriptors":[],"iso_3166_1":"PT","rating":"NR"},{"descriptors":[],"iso_3166_1":"ES","rating":"16"},{"descriptors":[],"iso_3166_1":"DE","rating":"12"},{"descriptors":[],"iso_3166_1":"AT","rating":"16"},{"descriptors":[],"iso_3166_1":"IE","rating":"15"},{"descriptors":[],"iso_3166_1":"CH","rating":"16"},{"descriptors":[],"iso_3166_1":"PL","rating":"16"},{"descriptors":[],"iso_3166_1":"RO","rating":"15"},{"descriptors":[],"iso_3166_1":"DK","rating":"15"},{"descriptors":[],"iso_3166_1":"NO","rating":"15"},{"descriptors":[],"iso_3166_1":"SE","rating":"Från 15 år"},{"descriptors":[],"iso_3166_1":"FI","rating":"K16"},{"descriptors":[],"iso_3166_1":"BE","rating":"14"},{"descriptors":[],"iso_3166_1":"LU","rating":"16"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

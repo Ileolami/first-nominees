@@ -1,0 +1,71 @@
+---
+id: external-ids-3
+title: "External IDs"
+description: "This endpoint get a list of external IDs of a TV season."
+sidebar_label: "External IDs"
+hide_title: true
+hide_table_of_contents: true
+api: eJylV9ty2zYQ/RXMPiUzpMSrJKrjB9eXxE0cJ5aadGp7PCC5lBCTIA2AqhwN/70DULYoO22Z9EkgdvfsfRfagKILCdMrmH8ms5PD2cWHGdxYkKJMBKsUKzlMYb5kkiBPq5JxRRaoCCU5k4qUGcG1QsFpTs6Opf6mZP6ZSKSy5AOwoKxQUA1zlsIUHpnPUumDBQJlVXKJEqYb8BxH/+xrPumggwVLpCkKw36YK3u2SvRRJkssqD6phwphClIJxhdgAa5pUeX6aukfXMM0CPxr+IUU9GAyChwHmsaCI5os0T4quRJl3heuquOcJRYp6NqmCzxwo8gLW7iSc0xa8/th3SFWNs3ZCh8BFHJln/CkTDVvT5jFN1YZgGOqsK/QF0wt4nnkN8qJ53ghcZ1pOJ66EXlzPjdoJ3Pa24Qvw2uIx140dibUTSZ+7GbeKEi8NKNRkmUu9X3vGgzsDMUKRV/gskIuUKoHIzsXlMsMxQ+HKFnW/A5TA/KZioe+cheCLRhvxRjtK+UOXOKNQz8O3CAMR2HoRUHmJ5EXxJ6XZhmmIQ6SvKzTTJRcDTgq8upIf5/q79dG3x/2YfHNPsps3T89S/3s0Kbnf84+HD+gDEYrcRrHYzFy352WF0UgxBd3eXq7+LSK7bu39mX67lKufxWfDg729X0sq74K31/MQsf+6G0BTEP1lT1nUpJMlAXZRcLgrO0Ci97t/fZs3pHSLdlX0nMnblcU1xUT7UTqleSnxt/K32HvshonYz9JXEwxpV7kBE6GfpglUZxEaYBpAI3GTdp5oKFoVeUsMeN0+FX+w4Qp46+YKLCgEnr4KtY6kwnEmEq8ZaaQeJ3nNNZmKFFjxypNaKwde9GPv+XamsDrIkbR9dWbjEN31FigVml8+1/Mrh8FY8dwC7roa/Jf7I6lVNF9+O/E/ZPreoHvjkO/jfCWYsK0t3CmG1jRvMYX8dMan8eovdOn1tmOr1uH9vxp2fdsfmZYY4yrqKAFKrP1rjbAaWG8QsFQaqnnu5qSmrP7GiVhKXLFMoaCZKUglKgVMXJgAdOsFVVLs4XvayYwfYzri4piXOECBTwL1fbsdsLket6Oydsj+DuC3yW4jj9xd7SgSwv8jlTYoUR+4IQ70qgr5EfRjjLuUCaB44x1TDtR1M+U26cK/KGofG+WQNPcWFCgWpY6nws0fagBpzD0h2o13Dxlrhm26vVVx4xm+PhIumWpfvNIsynb7Nci1wNeqUpOh0NasYFaYlGuGKbxoBQL0OolJrVg6sFIxEgFisNam3B10yXPtENtJrtMT/5pLbD1W3+3TGbUMZ6VhpMp4/d8ieRcW0GOqaK6JV6U5SVmKJAnmqLdaW/dgTNwoJ1xNNEzzpR8KVVBzXTbJurZM3APerObkP/nobr1WuFaDauc6nVvtfHebDN4BfrNqlZgwbTbfy1Ge7tfT3uZvLFgWUqlcTYbHaPfRd40+vq+Rv0WubqxYEUFa2fc1QZSJvU5hWlGc4n/4very221vib9+v+73m4vKX/QSWqbBsACs9I6I0d30E/Z9rOKu1FtbprH/wEmSC3PYZJgpTrSL1blXmO+OdHPhb8BLepSPA==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"External IDs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/season/{season_number}/external_ids"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get a list of external IDs of a TV season.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}},{"name":"season_number","in":"path","required":true,"schema":{"type":"string","example":"2"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"External IDs","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=19925"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 22 Jan 2025 10:57:19 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"b729708a1c83b1f264c2dfa9cff1a332\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 2753b41455655294f3c924b22dffed5e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"hIA-aMZSNDyes46vrFbb7r61KFoOm4rrW1hF_gQvb-kH-RdKRsxBrQ=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"2181"}},"x-memc-expires":{"schema":{"type":"string","example":"19925"}},"x-memc-key":{"schema":{"type":"string","example":"7c73cc1ededa29040fe35fc9bc9d4ed4"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"freebase_id":{"nullable":true,"example":null},"freebase_mid":{"nullable":true,"example":null},"id":{"type":"number","example":287516},"tvdb_id":{"type":"number","example":2139470},"tvrage_id":{"nullable":true,"example":null},"wikidata_id":{"type":"string","example":"Q112431753"}}},"examples":{"External IDs":{"value":{"freebase_id":null,"freebase_mid":null,"id":287516,"tvdb_id":2139470,"tvrage_id":null,"wikidata_id":"Q112431753"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

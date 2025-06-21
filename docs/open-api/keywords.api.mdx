@@ -1,0 +1,71 @@
+---
+id: keywords
+title: "Keywords"
+description: "This endpoint get keywords associated with a specific movie"
+sidebar_label: "Keywords"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2zYQ/isEP7WAHOvVsjzkQ5ZkbdZl6eqsLZYYAyWdLCYSqRwpJ67h/z5Qsi0ZQwsN/TSgn/TC55574R15t6GaLRWd3dHrm49Xl3O6sGgKKkFeaS4FndHbnCsCIq0kF5osQZNHWD9LTBVhSsmEMw0peeY6J4yoChKe8YSUcsWBWlRWgMwwXaV0RveS1KIIqpJCgaKzDXVt2zyOFb/rwDmwFLCBnhV6NF8l5lUlOZTMvOl1BXRGlUYultSi8MLKqjC/cu/0ns5837unP5GSnU4nvm3T7dai5yzJYXQuhUZZDKWr6rjgiUVK9jJiSzgNw2DSskkhIGktH0b1CFCNWMFXsCfQIPToUiQyNdiBNMsvvGoILpiGoULXUljEs8kFJMS1XZ849syzZ65D3lzfNmyXt2ywCZ/G9zSI7OlkMommaeiHNmSBnwSR5zpeOJmk0zS+pw3tHHAFOJRYViAQlF43srfIhMoA/3OIkrwWj5A2JB8ZrofK3SBfctGKcTZUyjlxSBixaZwyN4qyyJtGaeZktmdHjpeEnhNFcJIUsk4zlEKfCNDk1bn5/sV8v270fR6dlV9G59nIlM1AveUFfH5efvnj96L6xHzO7dHjz7/i5erh7dX84S2fj6r5x5sprqBQnwJeFn9dlU/Pp6fH+t7LaqjC327mgT167+4ImnoanIBcKZKhLEkXiYbnZVRCObi6317d9qRMRQ6Olm+7074svFQc29NoiPyh8HfijzA4rRi4YRbFsZPYqZu68cSBII4Sj7m278VuTLeGN2nPA0PFqqrgSXOKjh/UV04YGT9AoqlFKzRnruatLzztYURdxoB9Yxx3a3WncodkiGxNLco1lOr7tXhBuLWoYCV8OzQZV3nr/uHfXctuKPYMO5jVrgSTYHJYUetUwNoirFYaWcHZARaF9gFVMQShSZLzIiUIRRNalZuDdId2HD/s9DGhc5SVLCVWOVdlB7Ntt1OeM4wldot+OA0Oi7VIAZ+Zhh4gsKNOicoZPh7WPG/idcIVmAQQvdUwiI7CQTQTfelw0rm7RGCaxAyRAxIEyHom+NOoFz5gRNeoC+ghJpE/PSBKrhQXyzZ2HSiMfK9TyDINmCCkXCuluVj2nTZQ5wBNa5MEX8NO7SDoR0iiHmnAkpRQSlyTQip1hJ50liaFfBZHmWIAod+FjekckCgpCEItzNXdIR27R1Wh1OZyXwFphbpAu8G0t08lFDJFVjLNE7pd9DO5qZN3vUpbsaKGffE4br8Mf+T8j5z/H+f8tsn7iiErQTdt+93mgDZzwd88NXeLaNJS58008FRzhJTONNZgDbvCTeexsGgJOpdmulhCczMZxhkde+NG13izV7kd98YP1TSirWk1FiaTta7UbDxmFT/ROTRSaXwicUmNFgVJjVyvG4kYGAKe1UbT3aK/PDeGt8XeBx38MFrozj/z3YKaToKLTDZIrhv/bnMg18YKcsE0i5ky89TxiPQBMkAQiVkx7rR/nRP7xKZtC8ES00I0+yGVLlnTPOz2ojdgHdFuuubjO6e/ndMaXvS4Kphppq023JvdPt1Rj1p0j5/10uOwWQuL5lJpg91sTBj+xGK7Nb+fajDd/N3CoiuGnMW7hiHlyryndJaxQsE33Hv1YZd4r8nXzN13RML0Q7tDm7b29fN5u9ju59TGhnb5LEmg0j3Bf/VyRxn85tL0s/8AbyUWtg==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Keywords"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/movie/{movie_id}/keywords"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get keywords associated with a specific movie
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"movie_id","in":"path","required":true,"schema":{"type":"string","example":"12"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Keywords","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=7756"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 10:30:21 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"590866698d7470ef54c593213766d8db\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 79a8bda299f9389df1f030913c73199e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"1mDeXwgzQNlpWa4ii0-kBJrEvjHISjHiS-pSVO8rvelsW5imlZImqw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"14028"}},"x-memc-expires":{"schema":{"type":"string","example":"7756"}},"x-memc-key":{"schema":{"type":"string","example":"ae27f9bb1c0d2d2b61e5b9c3a2043b2b"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":12},"keywords":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number","example":1357},"name":{"type":"string","example":"fish"}}},"example":[{"id":1357,"name":"fish"},{"id":5656,"name":"sydney, australia"},{"id":970,"name":"parent child relationship"},{"id":11477,"name":"anthropomorphism"},{"id":10026,"name":"harbor"},{"id":14785,"name":"underwater"},{"id":15097,"name":"shark"},{"id":33635,"name":"pelican"},{"id":33759,"name":"fish tank"},{"id":33760,"name":"great barrier reef"},{"id":154896,"name":"sea turtle"},{"id":156948,"name":"missing child"},{"id":179430,"name":"aftercreditsstinger"},{"id":179431,"name":"duringcreditsstinger"},{"id":180557,"name":"short-term memory loss"},{"id":180568,"name":"clownfish"},{"id":180574,"name":"father son reunion"},{"id":181068,"name":"protective father"},{"id":325835,"name":"melodramatic"}]}}},"examples":{"Keywords":{"value":{"id":12,"keywords":[{"id":1357,"name":"fish"},{"id":5656,"name":"sydney, australia"},{"id":970,"name":"parent child relationship"},{"id":11477,"name":"anthropomorphism"},{"id":10026,"name":"harbor"},{"id":14785,"name":"underwater"},{"id":15097,"name":"shark"},{"id":33635,"name":"pelican"},{"id":33759,"name":"fish tank"},{"id":33760,"name":"great barrier reef"},{"id":154896,"name":"sea turtle"},{"id":156948,"name":"missing child"},{"id":179430,"name":"aftercreditsstinger"},{"id":179431,"name":"duringcreditsstinger"},{"id":180557,"name":"short-term memory loss"},{"id":180568,"name":"clownfish"},{"id":180574,"name":"father son reunion"},{"id":181068,"name":"protective father"},{"id":325835,"name":"melodramatic"}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

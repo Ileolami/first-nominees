@@ -1,0 +1,71 @@
+---
+id: alternative-titles
+title: "Alternative Titles"
+description: "This endpoint get the alternative titles of a TV show."
+sidebar_label: "Alternative Titles"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVttu2zgQ/RVinlpAtiXLlm0t8pB1st0WTS+J2xSbGAEljiw2EqWSlOvE0L8XpOxYbrtdbQEDJjVzznCGc+EWNF0pCG9g8ZFcnV++PL+CpQMMVSx5qXkhIIRFyhVBwcqCC01WqIlOkdBMoxRU8zUSzXWGihQJoWTxkai0+NoHB4oSJTUkLxmE0AIsrD44IFGVhVCoINzC0HXN37Hx05aZJ1iKlKG0oNNM967WsVmqOMWcmpV+KBFCUFpysQIHcEPzMjOfUv/kFsLRyL+FP0hOT6bByHWhrh2Y0zjF3rwQWhZZV7qyijIeOySnmx5d4cnMnwUNWyEExo0P3ajuEcsezfga9wQahe6di7hgRrcjzeqRl5bgjGrsCrpG5hDXI6+oIEN3OCbeNPTNj7y4WFi28wXtfITrwS1M2cxj43g6ZAkbecPJGJOJ68XUn7LY8zC4BUt7hXKNsitxUaKQqPSDxS4kFSpB+b9DFKeVuEdmST5S+dAV91byFRcNjNOuKK/vEcY8L55NgmkyjdyABZPxLEF3kiTBbDT0YuzHWVGxRBZC9wVq8mxu9n+Z/XNr71PvNH/szZOeqaRudvnjm08i5y82LJ0Wl/oxUnL0Iblg/p8fzteb7J/T168+zT+/l/Gcvs+uiyBbPKT3X09Oju29K8quBl+/vRq7vXfDHYGtp67YC64USWSRk0MkLM+ml2Peubr/frlooUxFdr6l8TDw21jclFw2fakL/qnwd/B77JxWsRdHsyljsTfzoumIReOAYTCJJpNgFrnjCdSGN276gaGiZZnx2DbWwWf1Lx2miD5jrMGBUpo2rHnjC2ctHVHlEcr2YbxhbZtylWnVUqRS0gdwgGvMVQcjqrjzvSC4837t+fwN1A7Y4fEf90oFua7IGSVn3EKs5q8QTdCe9jfHhzKWnwwfs+/JAeplm2M/bL4fRuEW1jSrcB9cb9gK4G+bra3pkkqao7aT7mYLgubWW5Qc1R1n8P2gpqQS/EuFinCGQvOEoyRJIQklek0szlyiUS2pTu38/VJxiQxCLSt0fkwjLjSuUMJ3gditvZb73nB4UBoeCfyDwG8LPNefegfZqC0b+S3UuCWZ+SN3fBAFbZA/mx0kk5ZkOnLdSV3XSwdy1Glh3iMrtJlrAhHCwB/o9WD7FNt60Hqu3On9w0PZedVcRyUz86DQulThYEBL3tcp5sWaI4v6hVyBsaYwriTXDxYRIZUoTytj8WbZFl+ZuDehbSs9XYOxArvrMftGyTYcLpLCau7SapEiuTCnIGdU04gq/CFPLjFBiSI2EuNO89Xru30Xmk5DY9NpbA4WSufU9phd/v30RXZkYHvoVr//eNx5rnGjB2VGzeB1mphvd5d2A77RW4MDYbsofnJzSwfSQmmD2W5NTD7IrK7N5y8VmhfAzdKBNZWcRrt2wbgyawZhQjOFv/Dw2eWuiJ6TbgX4U8/2nVaYPrvLWgAH7CBp1Xy9rPfvX3vORn4ax1jqFvKHGXGU+i/OzZz8BrAg+34=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Alternative Titles"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/alternative_titles"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the alternative titles of a TV show.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Alternative Titles","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=9396"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 18:38:38 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"8d91d5c82dfd41275ef701ca38dc11e6\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 dd11c9768f8b06d6759fe07ff69421ce.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"izNXnmiGxdh8oRtzbsr4UfMd3BUEvxlZALJXCjQrcCaQlWo6lTyhkw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"15263"}},"x-memc-expires":{"schema":{"type":"string","example":"9396"}},"x-memc-key":{"schema":{"type":"string","example":"c1cb98ddc191b84db56de67b7769b057"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":12},"results":{"type":"array","items":{"type":"object","properties":{"iso_3166_1":{"type":"string","example":"CN"},"title":{"type":"string","example":"Han Wu Da Di"},"type":{"type":"string","example":""}}},"example":[{"iso_3166_1":"CN","title":"Han Wu Da Di","type":""}]}}},"examples":{"Alternative Titles":{"value":{"id":12,"results":[{"iso_3166_1":"CN","title":"Han Wu Da Di","type":""}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

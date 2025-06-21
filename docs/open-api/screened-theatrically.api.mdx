@@ -1,0 +1,71 @@
+---
+id: screened-theatrically
+title: "Screened Theatrically"
+description: "This endpoint get the seasons and episodes that have screened theatrically."
+sidebar_label: "Screened Theatrically"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV9tu2zgQ/RWCTy0g27pakhd5MNK0223TFLG3XTQxClocWWwkSiEpbxJD/74gJcdKnbZaYJ/2yaRmzhlyhnPxDiuykXh2hZef0OLs8u3ZAq8sTEEmglWKlRzP8DJjEgGnVcm4QhtQSGWAJBBZcokIpwgqJksKEqmMKJSRLSCZCAAOVOsSJVhC8vx+jC1cViCIZn5L8Qzv1ZY9LWxhAbIquQSJZzvs2rb+eXqoxZ7/O2QGhIIwuHmuRottopcyyaAgeqXuK9B2lWB8gy0Md6Socv0p806u8cz3vWv8GyrISTT1bRs3jYVPSZLB6LTkSpT5ULqqXucssVBB7kZkAydO6DnTlq7kHJL2HsO4bgCqEcnZFvYECrganfGkpFp3IM3mgVWG4BVRMBT0GaiF3Bj9QThybTdAdjyz41kQozfnS8N2tiSDj/B5co09P4EkAhpQO5q6MQkBYh9SSMEPIjINrrGhXYDYghhKXFbABUh1b7BLQbhMQfxrFyVZzW+AGpJPRNwPxV0ItmG8hTEyFOWMHRSkwRRCmkZeFJKAUs+Ng9RxpxBTP7KpPU7ysqapKLkac1Doxanev9b7l8beX6N58TA6TUc6oQa+p9iO6oePDx8+fLl8c+HBOjn3gptp9mEO7y7Fu7+/vL79HIkb6eb2RS1P59nlTTCfn5w8tfexrIYafH+xCOzRR7cjMAk1FHvOpESpKAt08IThuRsVUAxO79/fLnsonZJDkWEYhn0o3FVMtKVpUJAfE7/D38DgZ+X4YULdcOqD7UdROA09SOmUJus0iqKAOrjRvElbDzQVqaqcJaa+Tr7JH1SYcv0NEoUtXAldjRVrL8NoT4fXxRpE/zCOF8eNKc11rmRPlQhBdOllCgr5azNds/jaWfiZSW3vF6eaeo7tNhZu29EQUt/47HF7dXyiuLVqqI+Y/cY6Rjj2AeINg3RGHDvw4zA+wgQ/M+M4QWwH/jOgVf9yxt3PN8rZDm9JXsM+7jq4vdj+/5zSGMdURJAClBkQrnaYk8IkHggG8iuj+PvRh6Cas9saJGIUuGIpA4HSUiCC1BYZnH74WrUiKjOTy23NBFA8U6IG6zj5GFewAYG/C1O3dnqRcVz3oOQ+EXgHgdcXOLYXOQeZ35f5Xg8V9CSx59vBQTTtg9qc7yRhTxL5th02TbOycAEqK/UwtwGT7doRMzzxJmo72T36tpnsZ72v6unIJk2jbyNSi1yPYkpVcjaZkIqNVQZFuWVA1+NSbLA2KCGpBVP3BrEGIkDMa230atUXL7TrW+/2lR4joa3gLkJ63yqZSs14WhpNpkwdXmaAzvUp0CuiyJpIOHoql5CCAJ5oib5O+9UZ22MbtyWaJLpEm2dYSlUQU5y7J/ijcfaJjd2h0v/HQ3nnEQV3alLlRE8yVhuLXRfPK+xpvS228KyfL88HdWXhrJRKw3Y77a4/Rd40+vNtDXqqulpZeEsEI+uuBlMm9ZriWUpyCT+5+YvLLsVeomHp+ezl9r2Lay93bxpjC5vm3KsIzarZ/6kw52zl8ySBSvWQR333SWK8OdOzxz+hHXvZ
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Screened Theatrically"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/tv/{series_id}/screened_theatrically"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the seasons and episodes that have screened theatrically.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Screened Theatrically","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=17316"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Wed, 29 Jan 2025 09:09:59 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"34cec8ed5d08629a7ee94efefe458a65\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 5f56e7df8387a5dd3295f126e9d480d0.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"k908uzPzNNZRGO3ebcM35k6hNAeKRrKwZFqW8rks2l0OusCAhRk5AA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"7777"}},"x-memc-expires":{"schema":{"type":"string","example":"17316"}},"x-memc-key":{"schema":{"type":"string","example":"147cd2764e04887673efd6dcbf8885d1"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":1399},"results":{"type":"array","items":{"type":"object","properties":{"episode_number":{"type":"number","example":9},"id":{"type":"number","example":63102},"season_number":{"type":"number","example":4}}},"example":[{"episode_number":9,"id":63102,"season_number":4},{"episode_number":10,"id":63103,"season_number":4},{"episode_number":9,"id":1054979,"season_number":5},{"episode_number":10,"id":1159054,"season_number":5}]}}},"examples":{"Screened Theatrically":{"value":{"id":1399,"results":[{"episode_number":9,"id":63102,"season_number":4},{"episode_number":10,"id":63103,"season_number":4},{"episode_number":9,"id":1054979,"season_number":5},{"episode_number":10,"id":1159054,"season_number":5}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

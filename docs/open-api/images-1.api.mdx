@@ -1,0 +1,71 @@
+---
+id: images-1
+title: "Images"
+description: "This endpoint get company's logo"
+sidebar_label: "Images"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tT2zoQ/isevZx2xknku5MzPOQApbRNoZCUcpuMLK8dhfiCLKdAxv/9jGQHEqDUZ+Y89sm2vPvtfqvVaneFBIkLNLhEu0ej4+HXw/1TdK2jEArKWS5YlqIBGs9YoUEa5hlLhRaD0GiW5CS9/6vQFlmcIR1lOXAixQ9DNEAsITEUBtIRhyLP0gIKNFghE2P52AY/VLJIRzMgIXAlOFyIzumSyteCziAh8k3c54AGqBCcpTHSEdyRJF/IpZm1c4UGtm1dob+1hOz4ro0xqiod7RI6g85ulgqeLdrC5WWwYFTXEnLXITHsWI7r1mhZmgKt/W4HdQOQd8iCLWENICAVnf2UZqGUbQkTP7BcAewRAW2VPnCma6an7QHVTGzamoEHljkwfO1gNFZo+2PS2oWz3hUyItsJwerbtudCYPatyMDUNw0A6mAvdK6Qgj0FvgTeFjjLIeVQiHulO+YkLSLg/zlEdFamNxAqkO+E37fVO+IsZmmtxkhbLaNraBT8yHeIHYZ92/IiCAJqY9y3CfFCx3NIly6yMox4lopuCkJ7tyu/P8jv98rej84weejsRh15ZtrZ/TaFrxP6eT49moQXI+Or9fNiiidw8QUmbjCdzEsc3n7zP8VHxf7hWWDmZ3YyseOdnW17x1ne1uCXjycO7hybDYA6T211R6wotIhnifYUCYVz10kgaX26Px6ON7TkiWyraWLc9zZ14S5nvK5FbfQfD36jfgOt0yqgoRcY4NokBNsITIiobRvYNA1KvL5DUCVxaV0PJBTJ8wWjqoT25sUvKkwWzIEKpKOcy4IrWM2FhRsyaZkEwDedsSodyTJdbEgRzsk90hETkBS/t0CKHKiYqhL/pi2767m+b3gmti1sYM+pdBSxBUxzImZvh6xnjOfLg+97o/Ni7n765+5oeDP5mB/v//wSed08jdEaqoZ4C6pbLJX4DFg8E286bPhupW9H8BVAhxAPTMfHgInpWiE1sAFuZEsjy0zAlCyBN5n5a1NdFQ4lT7Myfdsxu9LRTxZuRe2llO97KpMeFy6fb9aLHdnakN9HfSvodWSfAmv4bh28X0foeYBkFLaDYD8SlWz05wScruFaputY2DVM07b7zwg8uM4on5PZZHTCEnJaFsHw/ML7cWwl9DUC9dKagGk7DQHX7luBZ0OfWI4fYkydvmtZAW1BwHwkYJiu85KB2zV8y/Fs3+ubpocd6xmD4Pag/H7z7fP56QG7ezjqnw/dW/949/BsPm7BAHtrBo5LKDUM7Dv9wMaG1XcMjJ3gFQamaW5TsDYo+Li63kwqVQGaNm2wQkuyKGFddqzH0vIn8f4k3v+TeJVKvpxwkoBQE8HlCqUkUW1ePXhMWYieTylEK1N2W0KhsRBSwSIGXIsy3gwrTA0ZTEoq+nI2uS0ZhxANBC9Bf3ndslRAvF1vzaq61lECYpZJ5jGou7IJp9Vr3Outnvysemw94RSqMa75lHwhJxch8mLQ65GcdcUMkmzJIAy6GY+RtFMALTkT90ojAMKBD0tp6/J68/epdLw+nJtCjzykFdTwU82JElKdDUuj+kJnQl104xloI+mFtkcECUgBL+J8AhFwSKn8I+nUq0YXdzGqWxpC5dWmNjErREJUM9Ns4OO4twW6emqF2kybDS8Bd6KXL4js3/U6oqtmMy6RpZxRikhHg63EaXbkWkezrBBSerWSXCd8UVVy+bYEOUJcXutoSTgjQXO1hqyQ7yEaRGRRwBss3p002fVea5WYr1JaN2uKQlN3EdKRakQ3z0J1Xa0HaOVnLTCkFHKxofqiydxK5oN92Wj/C7FCM7k=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Images"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/company/{company_id}/images"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get company's logo
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"company_id","description":"a uniques identifier for companies","in":"path","required":true,"schema":{"type":"integer","example":2}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Images","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=3566"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Fri, 27 Dec 2024 10:32:18 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"1f45de394476eb293f10c821eec507d5\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 ce8f85a4dd9437febbc40094aa7d575a.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"Q_eNUcKj_OUdZM1N3wZ_0UeZLeU6b_Uju0dqQ8JgOsEIWb2pW4mU4g=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LHR50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"20097"}},"x-memc-expires":{"schema":{"type":"string","example":"3566"}},"x-memc-key":{"schema":{"type":"string","example":"bcd7b1e64ade41b2efc4410221ca795a"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":3},"logos":{"type":"array","items":{"type":"object","properties":{"aspect_ratio":{"type":"number","example":4.768817204301075},"file_path":{"type":"string","example":"/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png"},"file_type":{"type":"string","example":".svg"},"height":{"type":"number","example":186},"id":{"type":"string","example":"5aa7e2580e0a263dc101e6f4"},"vote_average":{"type":"number","example":1.75},"vote_count":{"type":"number","example":4},"width":{"type":"number","example":887}}},"example":[{"aspect_ratio":4.768817204301075,"file_path":"/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png","file_type":".svg","height":186,"id":"5aa7e2580e0a263dc101e6f4","vote_average":1.75,"vote_count":4,"width":887},{"aspect_ratio":5.163265306122449,"file_path":"/z65MpjahUMRimaSusbAYZ7XP3mc.png","file_type":".png","height":245,"id":"6493b74e9a358d00c59633bc","vote_average":1.75,"vote_count":2,"width":1265},{"aspect_ratio":6.183574879227053,"file_path":"/bqGuVkQKYSGixzO9YA6q8PCIWjT.png","file_type":".png","height":207,"id":"656acc110859b4013951005b","vote_average":1.222,"vote_count":3,"width":1280}]}}},"examples":{"Images":{"value":{"id":3,"logos":[{"aspect_ratio":4.768817204301075,"file_path":"/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png","file_type":".svg","height":186,"id":"5aa7e2580e0a263dc101e6f4","vote_average":1.75,"vote_count":4,"width":887},{"aspect_ratio":5.163265306122449,"file_path":"/z65MpjahUMRimaSusbAYZ7XP3mc.png","file_type":".png","height":245,"id":"6493b74e9a358d00c59633bc","vote_average":1.75,"vote_count":2,"width":1265},{"aspect_ratio":6.183574879227053,"file_path":"/bqGuVkQKYSGixzO9YA6q8PCIWjT.png","file_type":".png","height":207,"id":"656acc110859b4013951005b","vote_average":1.222,"vote_count":3,"width":1280}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

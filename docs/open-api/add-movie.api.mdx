@@ -1,0 +1,71 @@
+---
+id: add-movie
+title: "Add Movie"
+description: "This endpoint is used to add a movie to a list"
+sidebar_label: "Add Movie"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFv2zYQ/ivEPbWAbMuKHDsa8pCmzVCgXYPY3bolQUGRZ4utRKok5dY19N+Ho+zYbrrOBeoXQyS/7453x/tuDZ4vHGS38OrldDaF+wgkOmFV7ZXRkMGsUI6hlrVR2jPlWONQMm8Yl5JxVpmlwvDJSuU8RGBqtJzALyVkwKV8TUcggppbXqFHS+bWoHmFkIFD55TR75WECCx+apRFCZm3DUagyINPDdoVROBEgRWHbA1+VQeot0ovoG2jBzbyoaMK0Jr74ju0j5iU9rhACxHgF17VJUI2GcVpPDlt2/sOj84/M3JFoG/phNEetactXtelEuH6gw+OArh+bM3kH1BQqGpLwfIKHe1WKBUn53cndVPlh24Nk7ZtH74D7kJK1sU4W8OSlw0esgVIQFl0tdGugyXxkP4Os73jiqBALkOy1nBR+t50Kb57m00W9nyE4uT8DrI0PbmD31jFzyenaRxTnuDSaI2iM3Yc10fEusdLtcQtAcW69wr1whfHkpylAfycezwW8troiJ3E7DkKlsRJyuJJloyzOGW/v54FtinaJdpj+UyN2qLzq4D9k9vVscg3Vi2U7mCKH4sa9odsLOcxDhORj/hoJPIRnqbJ2SmeDTFJTuc59kVpGjm3Rvu+Rs+eXNL3FX0/Dfbe9S6qr73Lee+lPNbuNH53aa3740bHYjyJb/D67VXxMRl/xat/ivGzF7N5rpa8lunl4lq65d83OLuqL87PD+1dm/pYg6/eTEdx7zrZEFxyURyfZOUcm1tTsV0kAo8glh49bGvKY9nqJi+ViFjFv/T4As+7kkfPF8cy/DW4gzg9iZNROk5GYyHyMZ5OJmkqpBydxaNRHCd3EGiXP1FBXAisfQ+1MLLrmO0v61rOc9+498JI/L/GFW0PV+gcX+CPnZ4VyJTHamBRGCvZZ+5YU0vuUTLXCIHOzZuyXPWBiLuFPcbcmBK53qekbn1k9zy41TB57PlPuLfn3caDrhtX6AtDGlmbIJxBrDIYnAxIxQbrjZa1Ay7lezJFTKHndALa2JJ6rfe1ywYDXqu+LzDoscz7xi6ApMuhaKzyq4DIkVu0Fw3Zub3f355StruA7B96iCZZ2UpwiG44FAqRCuZmJ5AvttH+RoJIkecmUCr/kOAQeface55zR6JzKEc3OEeLWtAO3btbHfbjfgxdBXNBFUx+UBQrHmp3Mwzsi9kB73pX/D8/32wi4vGLH9Qlp84cdblYb1J4CycQweZ4thtJHvJ4H0FBOc9uYb2mi7+1ZdvScjfrUK6kcjwvaciY89LhD27w5GYzjzxl/+XeR1x9O2ptSh1ClSy5VWTt11veLHK92re59Wgbm/a+3c4bwYVud6v1M+LYoR91K5r/OsRFaHQ/PHu/9/Cu30xnEEG+meuq8NrB8s80M/LPnacmXDw8jbC2hpLrRdN1gY6Tfv8CpKbMXg==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Movie"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/list/{list_id}/add_item"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to add a movie to a list
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","required":true,"in":"query","schema":{"type":"string"}},{"name":"list_id","in":"path","required":true,"schema":{"type":"integer","example":8504086}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"media_id":{"type":"number","example":12}}},"examples":{"Add Movie":{"value":{"media_id":12}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Add Movie","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"94"}},"Date":{"schema":{"type":"string","example":"Mon, 30 Dec 2024 08:27:04 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 7df0e12cb5a55cb5e64296e91e226fbe.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"S0XCrrsNRn0c780RePUFhk27zeFZh7BETfbivapd4CgPdsvYReTFpA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"04302547257ccb7e68844cdd59055002\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":12},"status_message":{"type":"string","example":"The item/record was updated successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Add Movie":{"value":{"status_code":12,"status_message":"The item/record was updated successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

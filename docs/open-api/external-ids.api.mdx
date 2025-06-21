@@ -1,0 +1,71 @@
+---
+id: external-ids
+title: "External IDs"
+description: "The endpoint get the external IDs associated with a specific movie."
+sidebar_label: "External IDs"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFP4zgQ/ivRPO1KaZukadrmxEMF3B6rY2GhB6crCDnOpPE2sYPtlELV/36yU5YWtEeQ7qmpPd83M59nPF6DJnMF8QxOz65Oji/h1oUUFZWs0kxwiGGao4M8rQTj2pmjdrRZWGmUnBTOyZFyiFKCMqIxdR6Yzh3iqAopyxh1SrFk2AUXRIWSGMaTFGJ4hp+kClyQqCrBFSqI1xB4nvnZj+F4xx24kCNJUVrzSaE7l0tqPhXNsSTmSz9WCDEoLRmfgwu4ImVVmKW8f3ADcRj2b+A3pyQHoyj0PNhsXDgkNMfOoeBaiqItXVUnBaOuU5JVh8zxwO/73rihE5wjbcJvx7VArDqkYEt8JtDIdeeYU5Ea25Y08ydWWYIjorEtaJrXrhP0na+EO4EXDBxvHA9Gcd9zvpxOLdvxlLQO4bp3AyH1hlHQH/bpeJyQbEBxnA5p5PdHY8/3vfAGLO0lyiXKtsSiQi5R6UeLnUrCVYbywxLRvOYLTC3JFZGPbXFnks0Zb2CMtEX5Xd8ZppmHfkCTARkMaDLAKAzGEY59DIIoS7BLC1GnmRRcdzlq59Oh+f+7+f/Z+vu7MymfOodZx7RPO79SLoPTycX5ZHWlssXk+7C6El9X+T/ViI796+iaPi2m9bfqMLp/8o7u6rvwYcjzh4ODfX/nomrr8M+zy4HXOQ+2BLah2mJPmVJOJkXpvChheVadEsvW7f3HyXQHZVqyLXIUjaJdKK4qJpsbqdUh/2z8LX6BrcuKYBAgpVEYjqmXYOiTIR2GZDTwx0EUeRlsDC9t7gNDRaqqYNTepr0f6hc3jEh+INXgQiXN3atZk0xGKCZCLO5Y+k75YCo4lmIJGxf2jHldJih3jUfhYDjyjV2ZJu8ya+2H43AU9gNLzZUmc0nKj0WkH5jWKD8GemALlhJN3kV99/1wNIyG/WEj/nbHKrg3i+I1LElR4xtpdxw38jUa7Ui0q8NrGfbQu6nubeyl8yrmjY27IpKUqO2snK2Bk9JkZ4eyARm3ZooRndsxfF8ziSnEWtbovi0pxjXO908emrRgs7l1oUSdCxPKHG3hGdoYev2eddhbP/vd9J7n/x2zDwBlp0ATYy0LM6e1rlTc65GKdXWOFpkmXSHnYDwppLVk+tEiEiQS5aQ23ma3u9uXJoPm1HaNfiZkvMA2UfO/MbJtzHgmrCXT2wmJzqmJwjkimiREIbx+KF1ghhI5NTsmnWbV73pdD5r+JdT0rz0YoXRJbOduD+XVE2ePev3S/f/Tc2wrgMaV7lUFMVPNbaRfb89tBn1wm1IBF+Kdmtk7vFsXcqG0sV+vjSx/yWKzMcv3NZrROrt1YUkkI4nRcbaGlCnznUKckULhf6T66WJbkZ+dX4W8XST80YjedCKAC/b6fSn0ze3m+dVoY2i2J5RipXeAby7Wvar+cmyGy7/kJLfH
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"External IDs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/movie/{movie_id}/external_ids"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The endpoint get the external IDs associated with a specific movie.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"movie_id","in":"path","required":true,"schema":{"type":"integer","example":"845781"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"External IDs","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=13109"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Thu, 23 Jan 2025 09:58:30 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"4c0762373c99baf5ce9d7c6138901104\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 7df0e12cb5a55cb5e64296e91e226fbe.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"rrv2MARPAxVsfkAQ7pVoJxhZp8c91W6WczkTuNpC6qz0D_u_4w7nhw=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"8686"}},"x-memc-expires":{"schema":{"type":"string","example":"13109"}},"x-memc-key":{"schema":{"type":"string","example":"ae22ecc6449c0be41a7c74a85192660f"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"facebook_id":{"type":"string","example":"redonemov"},"id":{"type":"number","example":845781},"imdb_id":{"type":"string","example":"tt14948432"},"instagram_id":{"type":"string","example":"redonemov"},"twitter_id":{"type":"string","example":"redonemov"},"wikidata_id":{"type":"string","example":"Q114876737"}}},"examples":{"External IDs":{"value":{"facebook_id":"redonemov","id":845781,"imdb_id":"tt14948432","instagram_id":"redonemov","twitter_id":"redonemov","wikidata_id":"Q114876737"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: images-3
+title: "Images"
+description: "This endpoint get the logo of a network."
+sidebar_label: "Images"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tT2zoQ/isePbUzjuN74pzhIQVaaLgVQntayDCyvY5VbMtIckjI5L93JDuQQKHu23k4L8Q2u9/utzetlkjgKUeDK3SyP/52ej5CEx3FwCNGSkFogQZonBKuQRGXlBRCm4LQRApaRqdUo4mGtQLEPWW3BtIRLYFhqXYYowEiOZ4Cd5COGPCSFhw4GiyRbZryZ9vIoZJFOkoBx8CU4DATnYtZJB95lEKO5ZNYlIAGiAtGiinSEcxxXmbyU+rsXKOB6zrX6B8txzt93zVNtFrpaBdHKXR2aSEYzdrClVWYkUjXcjzv4Cns2E5gejUcLQqIasfbYd0ClB2ckRmsAQQUorNfRDSWsi1hpg+kVAB7WEBbpXEFuuZY2h5Emm3armaZA9sZ2D3t0/FYoe2PcWsXvnWvkQ9guoADs4ddx3d6Ng4T3/Jx6PlugHvRNVKwF8BmwNoC0xIKBlwslO6Y4YInwP46RFFaFbcQK5CvmC3a6p0yMiVFrUZwWy3LsDRIbMvGThyEPexDHFseWHbgJGaYWK5tghFltIoTRgthFCC0d7vy/aN8f6/s/dsZ5g+d3aQjm6ZlFr4d3B0effgyujzaPdiLRsmP3PfOPp2Z996Zt3f5MDKH5HR0MqzujvOPBzQ4CUKSDHd2tu2d0bKtwaPTC8/snNkNgGqotrrHhHMtYTTXniKhcOadHPLW7X1wON7Qki3ZOkte4G2qwrwkrJ5FbdSfGr/Rv4XWZRVgz8K+77tB4ni9vh0HvRBjP4icuN/H/RCtJG5UzwMJhcsyI5Gaod2f/JUJQ8OfEAmko5LJiStITYbEGzJFlYfANp2x7JWO5NjmG2KYMbxAOiICcv5nE5iXEIkbNeTfNGYbnuVbdmA6tu31Td/1VjpKSAY3JRbp20HrwueL7/DR+n64+BL+iMfnJ/Nq9nWEf5wejoyymKI1VA3xFpTBZ0o8BTJNxZse+zI8WyH8DZ6H+72e7/VMMLHte04cmm7f80DamFEBN3gGrCnNVy05huO4a4WIVsXbjkm/7km8FbXfZNfzVS09frh6nq2XKdnKyJ/DvhX1OrRPkfXtOnqvh+h5hFQYtqNgPzKVdPTnDCzDtAK3b3qPf58x6N1X47BHjh+8xRH93E8PFx+Ky/nduZOf/ZmB5blPFBI3iP2aghOEtmm6kWe/oGAalu9vU7A2KPRWk82cqA5qFp3BEs1wVsG6by37sTf/T9x/JHErlbwSM5yDUDvp1RIVOFcNWC+9NySWw1NusIqKXHXvKsIgRgPBKtBfDm9SCJi+mMyriY5yECmVNKagJm8TG6fbGOsun6yuumS9MXO1Z9XeVSyTm7AQJR90u7gkhkghpzMCcWhQNkXSDoeoYkQslEYImAEbVtLW1WTz3xfS87pUN4UeiUgrqCEo32shdVCSIqmPByLqHTQF7Vh6oe1hgUPMZVFtXwDOIQEGRaTKDRivv1qGaZioPiFxJOekSgnlIsfqbGzS8Xh92AJdPp2sf3OLafgJmItumWG5Fup1ZJdNUq6QvNU0KkhHg+1yqJ2Z6CilXEjp5VJyvmTZaiU/31UgN9OriY5mmBEcNvM6Jlw+x2iQ4IzDG2zenTdl9l57zeH1AV/I472ZNQjpSG0vm/W7mqzW1y7lRS0wjCIoxYbqi81kq2Q/7cvt7BegZKQl
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Images"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/network/{network_id}/images"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the logo of a network.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"network_id","in":"path","required":true,"schema":{"type":"integer","example":12}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Images","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=23905"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:23:27 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"6ee04ea907a436372abf616ab5649a7c\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 ef212a3d9b7a6edd15e1293f0bf1420e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"WWHqILBQKULCHDcKfZm65PGP0w5P5DUzK0AiOKNAuqMmFHo9N9bifA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"1595"}},"x-memc-expires":{"schema":{"type":"string","example":"23905"}},"x-memc-key":{"schema":{"type":"string","example":"9a51a66649f35782d97baa69c3d88a8b"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":12},"logos":{"type":"array","items":{"type":"object","properties":{"aspect_ratio":{"type":"number","example":2.5161290322580645},"file_path":{"type":"string","example":"/eJSYeF1YIyQbZdTRNxuvVKaZOIK.png"},"file_type":{"type":"string","example":".svg"},"height":{"type":"number","example":62},"id":{"type":"string","example":"5a8776570e0a2653db04855e"},"vote_average":{"type":"number","example":3.334},"vote_count":{"type":"number","example":2},"width":{"type":"number","example":156}}},"example":[{"aspect_ratio":2.5161290322580645,"file_path":"/eJSYeF1YIyQbZdTRNxuvVKaZOIK.png","file_type":".svg","height":62,"id":"5a8776570e0a2653db04855e","vote_average":3.334,"vote_count":2,"width":156},{"aspect_ratio":1.0194805194805194,"file_path":"/7wuTb7iMz5yLoJ8hIyBnUxqR3mP.png","file_type":".svg","height":154,"id":"5a8f49d60e0a2639b2004c52","vote_average":0.166,"vote_count":1,"width":157}]}}},"examples":{"Images":{"value":{"id":12,"logos":[{"aspect_ratio":2.5161290322580645,"file_path":"/eJSYeF1YIyQbZdTRNxuvVKaZOIK.png","file_type":".svg","height":62,"id":"5a8776570e0a2653db04855e","vote_average":3.334,"vote_count":2,"width":156},{"aspect_ratio":1.0194805194805194,"file_path":"/7wuTb7iMz5yLoJ8hIyBnUxqR3mP.png","file_type":".svg","height":154,"id":"5a8f49d60e0a2639b2004c52","vote_average":0.166,"vote_count":1,"width":157}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: images-4
+title: "Images"
+description: "This endpoint get the profile images that belong to a person."
+sidebar_label: "Images"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0tz2zgM/isantoZ2dbbjndycBwn9SZZp7HbpnU8GUqCJCYSqVCU8/Dov++QslM7maba7mEP25MeBD58AAkQWCGB4wL15+h8NDk/HaGFjkIoAk5yQRhFfTRLSKEBDXNGqNBiEJpIQMs5i0gKGslwDIUmEiw0H1JGY00wDWs58ILRNtIRy4FjiTUOUR/V8g7SEYciZ7SAAvVXyDIM+di1PFaySEcJ4BC4EhykojVdBvK1CBLIsHwTjzmgPioEJzRGOoIHnOWp/JXY+1eo7zj2FfpDy/B+z3MMA1WVjoY4SKA1ZFRwljaFy0s/JYGuZfihhWPYNy3brdEYpRDUvJtB3QLkLZySJWwABFDRGtGAhVK2IUz8RHIFcIgFNFWalaBrtqkdQqBZhuVoptG3u33D047PZgptNMONKXzpXCEcOja4lgdOL/DA8DzTivzANnHUCxxsO1dIwU6BL4E3BWY5UA6FeFS6M45pEQH/xyEKkpLeQqhAPmP+2FRvwklMaK1GcFMts21qeC9y/BCDadpu6Brd0LPCyOm62O/2wsCFdpCyMow4o6JNQWjvhvL7SH6/V/YuW4PsqTWMWjJnmtk9GH6+CHive3BzH3az9Nj84ty6lnHHGCWFicffovC4xEdDdjcZtIbjJXf/jMt4f3/X3jnLmxo8nUxdo3VurQFUPjXVPSNFoUWcZdr3SCich1YGWePs/jCebWnJjGyqaXVNx9nWhYec8LoWNdrlTeKv1W+h8bHqutDtRmbUC73Qd3AYGZZvY6vn93w/dIMIVRI3qOuBhMJ5npJAldDOTfGDCsP8GwgE0lHOZcEVpPaFhFsytMx84NtkTKtSGrKUF1uSmHP8iHREBGTFz63gIodAXKsy/6Y9o+153UpH0t51jkXydqg6ETjZp2luXDIx8E5K56Dw9j7uMSu9+9S+yWNUybuBxIl406ptGEalI1Kwa8/euzalMC3TFPtyVfAStoTlQqWjJRNwjZfA14fqx+Bt23Y2CgEr6dtczEpH9yTc8fy1lCUZy2Pw/Gf+MsoqlDuR/Hm4vkdLhmQnItLtl14r13Y9M5/ZK4p6E1ZPT9FN7/RDMiUXVNDHWbKcHBA+GmXj8X/I6pGWyfTyJCb24UcyuyTJ52EwuXBvjqZ//Qors911d0lZv0DKuZ/A+eXh/X3v6+Bkcp8cHAyPpkF+fjLEL0jtNeBk7BIyngl5TfmYthhcel+/cfvIPD/2z3h0wozxyHWH6Qs+Zk/6/6uETMs1qsX2iVd1Zd0A9ldoidMSNgXNtLaL1u/M+J0Z/4PMqFR25JjjDIQahuYrRHGmxhI1bF2TUF7ZcnJSLOWIdVcSDuHmknvVNRAqIH7VElQLHWUgEiYHthjUfb922+7UtjqrZ5tVh2zmtEK19zW1kqdy/hIiL/qdDs5JWySQsSWB0G8zHiNppYCg5EQ8Kg0fMAc+KKWl+WJ7eSp514VgW+jZDWkFrd2T37WQ6s8IjeqWhIh69ElAO5MstEMssI8LQC8H3guIgAMN5Ip0p/5rto22gerGDAfyklf7wQqRYdWSrffieWjdAV19b+j+9UC9dlrAg+jkKZYjil6He7Xepzmy5Z4pDaSj/s75qPktdJSwQkjZ1UqG4RNPq0r+vitBzkjzhY6WmJO6SZqvUEgK+R6ifoTTAt5w8N3F+ty9135Ed9NnUtllros7QjpSffTWea4W1Wb8VyTq9UEQQC62NF+1yDtH+Hgkx4S/AbXQi78=
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Images"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/person/{person_id}/images"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get the profile images that belong to a person.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"person_id","in":"path","required":true,"schema":{"type":"integer","example":12}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Images","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Cache-Control":{"schema":{"type":"string","example":"public, max-age=1235"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"gzip"}},"Date":{"schema":{"type":"string","example":"Tue, 31 Dec 2024 10:37:06 GMT"}},"ETag":{"schema":{"type":"string","example":"W/\"ad43e526e48c6e06612fbc31af8c4a34\""}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 a9f4bdae1135d507d62df475ab78dc5e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"BCVRcr87Bjwd7mlG1W4k520qoonis1aIZfdGuaFCoqOA-CIvr5Jgug=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"x-memc":{"schema":{"type":"string","example":"HIT"}},"x-memc-age":{"schema":{"type":"string","example":"27144"}},"x-memc-expires":{"schema":{"type":"string","example":"1235"}},"x-memc-key":{"schema":{"type":"string","example":"75e77f1f8d6db4adf02b3a28b8bbd5cf"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"number","example":12},"profiles":{"type":"array","items":{"type":"object","properties":{"aspect_ratio":{"type":"number","example":0.667},"file_path":{"type":"string","example":"/fe4mUSp0XotA6Ku4Bs69Q9o2lqU.jpg"},"height":{"type":"number","example":3000},"iso_639_1":{"nullable":true,"example":null},"vote_average":{"type":"number","example":3.334},"vote_count":{"type":"number","example":1},"width":{"type":"number","example":2000}}},"example":[{"aspect_ratio":0.667,"file_path":"/fe4mUSp0XotA6Ku4Bs69Q9o2lqU.jpg","height":3000,"iso_639_1":null,"vote_average":3.334,"vote_count":1,"width":2000},{"aspect_ratio":0.667,"file_path":"/zzfj8LHhSiRntnyThvOBirEEmII.jpg","height":3000,"iso_639_1":null,"vote_average":3.334,"vote_count":1,"width":2000},{"aspect_ratio":0.667,"file_path":"/ynuhSXKgi3DQiTXihVCcOR5jFSN.jpg","height":3000,"iso_639_1":null,"vote_average":1.75,"vote_count":2,"width":2000},{"aspect_ratio":0.667,"file_path":"/4wOePXDww8YAKOwhBBCFScpPKCa.jpg","height":900,"iso_639_1":null,"vote_average":0,"vote_count":0,"width":600},{"aspect_ratio":0.667,"file_path":"/13tAX6YZr3F1PGbMrfKo0IE55Cl.jpg","height":1875,"iso_639_1":null,"vote_average":0,"vote_count":0,"width":1250}]}}},"examples":{"Images":{"value":{"id":12,"profiles":[{"aspect_ratio":0.667,"file_path":"/fe4mUSp0XotA6Ku4Bs69Q9o2lqU.jpg","height":3000,"iso_639_1":null,"vote_average":3.334,"vote_count":1,"width":2000},{"aspect_ratio":0.667,"file_path":"/zzfj8LHhSiRntnyThvOBirEEmII.jpg","height":3000,"iso_639_1":null,"vote_average":3.334,"vote_count":1,"width":2000},{"aspect_ratio":0.667,"file_path":"/ynuhSXKgi3DQiTXihVCcOR5jFSN.jpg","height":3000,"iso_639_1":null,"vote_average":1.75,"vote_count":2,"width":2000},{"aspect_ratio":0.667,"file_path":"/4wOePXDww8YAKOwhBBCFScpPKCa.jpg","height":900,"iso_639_1":null,"vote_average":0,"vote_count":0,"width":600},{"aspect_ratio":0.667,"file_path":"/13tAX6YZr3F1PGbMrfKo0IE55Cl.jpg","height":1875,"iso_639_1":null,"vote_average":0,"vote_count":0,"width":1250}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

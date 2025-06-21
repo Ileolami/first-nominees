@@ -1,0 +1,71 @@
+---
+id: add-to-watchlist
+title: "Add to Watchlist"
+description: "This endpoint allows the user to add a movie or TV show to their watchlist."
+sidebar_label: "Add to Watchlist"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcGO20YM/ZUBL00B1V43N902mx5ySFPsOs1hYQSUhrYmkWa0M5Q3hqB/LziSV5LlBEgRHWxhhiIfHx/JFhgPAdJHuL27+/Dx7y3sEtAUcm9qNs5CCtvCBEVW185YVliW7jkoLkg1gbxip1BrhapyR0PKebX9V4XCPcsNF2S8ekbOi9IEXkECriaP4vmdhhRQ6637dL6HBGr0WBGTF0wtWKwIUggUgnH2s9GQgBFQTw35EyQQ8oIqhLQFPtXRlL2xB+gus1CDD/Xurdo7r7DhgiybPIIR3Owx/2rsQdWNr12gAF3yggDz3DWWJwhq5AIS8PTUGE8aUvYNXQFkLNOB/BKR0PdbUINnZTR0u94fBX7j9EmcXLrPnWWyLFdY1+UAf/0liMt2Gd1lXyiPxHphng0Fua1IG5RkRkvbVBl5WFafVGPNU0PKaCFsb8grt48KiG6UYaqktPQNq7okSDebLoGXqk9iZM6VhHYR5IE4ysU3dBbU3L2c7vHovGEKs1jyTZcMCfVhLrVwLSWxkCz6EOxURhKW9CySotVhFDYfo7Cn0SFeQtd1L4eR31sdHX2acnDEsqE5+ZvNHPngbkZeTDA+Io5QOxv6GH/ebORvntsi8C+TTGDkJnzOnaZrqhmL3yVn24pCwMPViowMPjR5TiGspEFC/35VMfOK/xThM+ibJbwRwwTCyHuUFxdOBlbthjHFBaSwfr0e2nfdjhOiWz9P6A/kj+dx1vgSUiiY65Cu11ibFRcUa66zlfOHOAEC5Y03fIpfZISe/G0j4R530+sHqVuf/NTohTmJch6QkcloBJKNlP5+nDN/nZm9lOaFCq9qtZNxuHcxsOFYUemv97Fp3iJjhoEWLXhPe/Jkc7kRdvrTzepmdTMoFnOpoaAVyiuMWh2G8RWRz9y3o+Z/8fYaUmf6xuu6RGMl/1jVdtDEI7yG5LwuIIF0tjlGRncJFKKl9BHaVjj66Muuk+N+tUnxtQmYlTL891gG+kGW/2e7fSebr3S63LhDI0GU5xG9EVQ/ifDV/bDJflfLxfcdKMMh2tMUxBnihNhu1yVQEGryEVZvcNcH/2MrbkYHiyEoa77/4jbPqeYf2u4mw+CfDw9bSCAbdnUV5wt4lBUhvxGsi2TEPo1nLZRoD00/eHqf8vwHgwVPRQ==
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add to Watchlist"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/account/{account_id}/watchlist"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows the user to add a movie or TV show to their watchlist.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"},"description":" session ID for authentication or tracking purposes"},{"name":"account_id","in":"path","required":true,"schema":{"type":"integer"},"description":"user's account id"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"media_id":{"type":"number","description":"The unique identifier of the media item.","example":11},"watchlist":{"type":"boolean","description":"Set to true to add the media item to favorites.","example":true},"media_type":{"type":"string","description":"The type of media to be added to favorites e.g movie or tv show","example":"movie"}}},"examples":{"Add to Watchlist":{"value":{"media_id":11,"media_type":"movie","watchlist":true}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Add to Watchlist","content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":1},"status_message":{"type":"string","example":"Success."},"success":{"type":"boolean","example":true}}},"examples":{"Add to Watchlist":{"value":{"status_code":1,"status_message":"Success.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

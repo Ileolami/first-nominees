@@ -1,0 +1,71 @@
+---
+id: favorite-tv
+title: "Favorite TV"
+description: "This endpoint get user's list of favorite tv shows."
+sidebar_label: "Favorite TV"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2zYQ/ivEYcA2QPFbYi/1t67pinRrh+ZlXZEGBi2dJTYyyZInJ56h/z4cLTlSnDhZ+mUf+skwdbx7SD7PvayAZOphfAEvX7368/z9GVxGkKCPnbKkjIYxnGXKC9SJNUqTSJFE4dH96EWuPAkzEzO5ME4RCloIn5lr34EIjEUn2cNxAmOoTc4WEIGVTs6R0HHcFWg5RxhDLnVayBQhAsVhvxbolhCBjzOcSxivgJaWDT05pVNgmDNZ5ARjQL13fgrlXeTsUhapRDGVHhNhtHCY8rcy2sS1T4mpNGGKrhm0vxWOPQldzKfoBBnhkJzCBQpvMVYzFQsrU6UlYSIc+iIn32kC8ei9MnqikqdewRYCUfkQx0diZpyQBWWoScXhJYRxgpyMr5ROhS2cNR59C4FxNJkunx3+1DgSlGF9PIGKMnRCaSF9jDrhwMYl6BgK722tNaHIODaFpsZlWEkZRODwa6EcJjAmV+COp9pCV7G28ixUAuUl+/PWaL6I8QoGvR7/tPf9VtP77C+IIDaaUBObSWvz6mq7XzzbrrbhmOkXjIlZ71gSpNaRAuturdasgQjwRs5tjmt6VdfYsJPOyfA+hHP/eBSZBKpuzKbG5Ch1M85M5h7LCKYyvkqcsZNwz/eobbMDurMP/vjth5vX/aPep957+/H092tzcPhiObQ3nS82EGOmnKeJVG6SSMLd/ga9wf5ev783GPDOFLXDiUqecux7rq33y+igbCxchJXLMgKV7Nw56B30DgdlVDFwF+DTr4VKxBs5x7E4y1C8ymSeo06R8RunUqUngWRu+YRD3BPgza/QOgMvXG58y3yySZY73aCG5qZvPdgC3ULh9W4Xx1oQFwyHMle0FLGZWyQV8g8XB6G0tyxgMV2Kz42I0WcQB8ORsLlcovPCFiGXKCf8lcpzzymVc0uRk5pLrjboaZ3lRK5muBdnUqecTX446AxHYq7ynINap/5BTrRgjS1y6RQtd1NoNBx1+of9sMMTuqdIYnk4/OPF0Ucj3w3efXqf9u3hh5Pl9c3fb72sJbEwhBO5QPeY9EedYW0eWLTTeH/0oixbZNnIPkh7S9mPy3dbvU2JthRaqWstrrWCagHtINO2SNYMv5fgzOItEu92viHq/5aNbTLWjLtDuMdZdZdUo86wTRxmBycOMiTzCRedR9Lnxna79txn3WBeMG3WyvEKFjIv8Lbc9Rsl7TtNv9O0TdM7LO1vMZHpVgbKzZEyw3NFiqHpqXDsd6vmrru67R/Lbj18dImnD49uUY8ehcthDBmR9eNuV1rVoQznZqEwmXaMS0OH6DEu1hdwsYIpSofuZcEBLy6bn0+581uroGm0kQ9HqZvp0IsFI+DjKD0zwVJRqCbMlHeMQhxJkjy7wN1m9gRn6FDH/IWPs17td3qdXtWkypgLR1lVsbkM7WlFy3ZL2/K8uu1wnzn5VeclvKGuzaUKTUi46VX1UhewD1Hd4kME41a3XztlVwtWW2Y88abViq/i3OVlycvr8YQfJVFeTnOeCapc8uCJHp4IH8B9hcv2bFqlNAjDytMDP2c23AnJfhOc5wyKO+G0htdngvrW8XE3wM1se4vukv84xfD+I49+OqnG0J/F9lj5AI56DNAtEDW+hgRCxc5QJugCrLXByzhGS42tW+Mnn2eTGd+8PoOy/BeCnBOj
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Favorite TV"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/account/{account_id}/favorite/tv"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get user's list of favorite tv shows.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"language","in":"query","schema":{"type":"string","default":"en-US"},"description":"langaugae based on region"},{"name":"page","in":"query","schema":{"type":"integer","default":1},"description":"page number to retrieve specific paginated results."},{"name":"session_id","in":"query","schema":{"type":"string"},"description":" session ID for authentication or tracking purposes"},{"name":"sort_by","in":"query","schema":{"type":"string"},"description":"Sort the results either in ascending order or descending order "},{"name":"account_id","in":"path","required":true,"schema":{"type":"integer"},"description":"user's account id"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Favorite TV","content":{"application/json":{"schema":{"type":"object","properties":{"page":{"type":"number","example":1},"results":{"type":"array","items":{"type":"object","properties":{"adult":{"type":"boolean","example":false},"backdrop_path":{"type":"string","example":"/fQsIJQxE1D0Y0NpWSKwo489y5px.jpg"},"first_air_date":{"type":"string","example":"2023-11-22"},"genre_ids":{"type":"array","items":{"type":"number","example":10764},"example":[10764]},"id":{"type":"number","example":204082},"name":{"type":"string","example":"Squid Game: The Challenge"},"origin_country":{"type":"array","items":{"type":"string","example":"GB"},"example":["GB"]},"original_language":{"type":"string","example":"en"},"original_name":{"type":"string","example":"Squid Game: The Challenge"},"overview":{"type":"string","example":"In this reality competition show inspired by \"Squid Game,\" 456 players put their skills to the ultimate test for a life-changing $4.56 million prize."},"popularity":{"type":"number","example":1656.181},"poster_path":{"type":"string","example":"/y85L9DWoaM2MYNg1p8QRywxXJsa.jpg"},"vote_average":{"type":"number","example":6.5},"vote_count":{"type":"number","example":369}}},"example":[{"adult":false,"backdrop_path":"/fQsIJQxE1D0Y0NpWSKwo489y5px.jpg","first_air_date":"2023-11-22","genre_ids":[10764],"id":204082,"name":"Squid Game: The Challenge","origin_country":["GB"],"original_language":"en","original_name":"Squid Game: The Challenge","overview":"In this reality competition show inspired by \"Squid Game,\" 456 players put their skills to the ultimate test for a life-changing $4.56 million prize.","popularity":1656.181,"poster_path":"/y85L9DWoaM2MYNg1p8QRywxXJsa.jpg","vote_average":6.5,"vote_count":369}]},"total_pages":{"type":"number","example":1},"total_results":{"type":"number","example":1}}},"examples":{"Favorite TV":{"value":{"page":1,"results":[{"adult":false,"backdrop_path":"/fQsIJQxE1D0Y0NpWSKwo489y5px.jpg","first_air_date":"2023-11-22","genre_ids":[10764],"id":204082,"name":"Squid Game: The Challenge","origin_country":["GB"],"original_language":"en","original_name":"Squid Game: The Challenge","overview":"In this reality competition show inspired by \"Squid Game,\" 456 players put their skills to the ultimate test for a life-changing $4.56 million prize.","popularity":1656.181,"poster_path":"/y85L9DWoaM2MYNg1p8QRywxXJsa.jpg","vote_average":6.5,"vote_count":369}],"total_pages":1,"total_results":1}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

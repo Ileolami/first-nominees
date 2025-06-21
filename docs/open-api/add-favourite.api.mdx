@@ -1,0 +1,71 @@
+---
+id: add-favourite
+title: "Add Favourite"
+description: "This endpoint allows the user to add a specific media item as a favorite."
+sidebar_label: "Add Favourite"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zgQ/SvEnHYBre20yEW3NN0Feth2kbinwChG5NhiK5EKSbk1BP33xVDftlO0RX2IA5Ke9+a9+Wgg4MFD+gR39/cfPr7fwi4BRV46XQVtDaSwzbUXZFRltQkCi8J+9SLkJGpPTgQrUCmBwlck9V5LUZLSKHSgUqAXKPZ4tE4HWkECtiKHHPedghRQqX/waGu+hQQqdFhSIMd8GjBYEqTgyXttzSetIAHNhJ5rcidIwMucSoS0gXCq4tPgtDlAe55BH0K8eyv21gmsQ04maBmZCOtEcCi/aHMQVe0q68lDm4wEUEpbmzAjUGHIIQFHz7V2pCANrqYrfLQJdCB3SagPKbQSdj9q6aHddVHJhzdWnTjUOYi0JpAJfIVVVfRJrD97DtxccrDZZ5KB1XUsftDk+XYwZfYys7YgNHBO9pECu8zwg9vMeGZzsKPJnl2mb1hWBXWU2wTiU9ZvAjN1mZG7wNqyFEY/1yS0Yo/2mtyg0YS4ALm93YwYXfTzgriGwi84cBc0WJERp0ZqkY2g1UGU9qgplslR+Nx+nYNDvIS2bcfDqO+dUmKq7bSBIxY1LZXvDJ3Eub3dLPOYgsf4jnxlje8AXm1u+GuZ2BL1txWLDxhq/0laRdcsHMW4aZPhbUne4+GqF5N2j7WU5P2KG8R3/1+tx2U9/bjUC943l9wmAjP8HqOTvKSQWx5VlfVRF+78FNav130Lr5tpPLTr0dsEPLnjMMlqV0AKeQiVT9drrPQq5BS9VdnKukPse0+SMzjFX2SEjtxdzWhPu/n1I3vWJT5/NKrGKMNsjCrGR8DJsO0P03T5e1D1l2qSR+HeRmAdopvcVf/GVnmLATP0dNF4D7QnR0byDavTnd6sNqtNX60ouVqZLSteYqzTfhCfV/cidjMV+2/dWH3Wgb6FdVWgNpx6NLTpq+EJXkMyjHRIIF0sjFHaXQI5F1H6BE3D6nx0RdvycbfP2HalPWYFD/s9Fp6+k+IvrLQXcvlCp/Mt2zcQxLo8otNM6icJ/vHQL64/xUvb7gVC/SGa05zKQHQmbrtrE8gJFblIrntw31H4a8thpgAX8483fPeLOympCt99u5uNgv8+PG4hgaxf0GWcLuCQ9wL/jWRtlCS2aTxroEBzqLux08Xkz/9Zdktf
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Favourite"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/account/{account_id}/favorite"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows the user to add a specific media item as a favorite.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"},"description":"session ID for authentication or tracking purposes"},{"name":"account_id","in":"path","required":true,"schema":{"type":"integer"},"description":"account id of the users"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"favorite":{"type":"boolean","description":"Set to true to add the media item to favorites.","example":true},"media_id":{"type":"number","description":"The unique identifier of the media item.","example":550},"media_type":{"type":"string","description":"The type of media to be added to favorites e.g movie or tv show","example":"movie"}}},"examples":{"Add Favourite":{"value":{"favorite":true,"media_id":550,"media_type":"movie"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Add Favourite","content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":1},"status_message":{"type":"string","example":"Success."},"success":{"type":"boolean","example":true}}},"examples":{"Add Favourite":{"value":{"status_code":1,"status_message":"Success.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

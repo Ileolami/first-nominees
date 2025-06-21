@@ -1,0 +1,71 @@
+---
+id: delete-rating-1
+title: "Delete Rating"
+description: "This endpoint delete user's rating from a TV show."
+sidebar_label: "Delete Rating"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVltP6zgQ/ivWvOw5UtomTa9Z8YCAg9gFgaALZwUIucmkMSR2sJ1CT5X/vrKTtimXVdl9auqZ75uLxzOzBE1nCoJbmFyTq6PLk6MruHcgQhVKlmsmOAQwSZgiyKNcMK5JhClqJIVC+ZsikmrGZySWIiOUTK6JSsRLGxwQORqZ4CcRBFCBLq2yBw7kVNIMNUpjewmcZggBKFSKCf7AInCAGdPPBcoFOKDCBDMKwRL0IreqWjI+g7J01uhZgUo//D8OhZKhqsDbSaCk4Oy5QEVYhFyzmKEksZCEEj0nFrcymFOdgAMSnwsmMYJAywI/sM+4xhlKKB3AV5rlKSojrb898z2naYEQeN3uRqm7JfA3Ar8p8Fx/5G1kvaas5zdQ/YZk7Pfc/kY0aIL88XgjGTYko57rDsuyvDchq1xwVcXRdV3zs53Gw6p6qkoABxKkka2CJeynunU1D83nZ1e1tg8BJP7eHQS9nn8Hv5OM7o0GPdc1lwkHgnMMK4O7cT0h5i2asjmuCDRy3TrioYiM7o40U2nhh1TjrpAbjBzieuQPyknX7faJNw76btDtk+OziWW7QjlHuSufyJFLVHphsRNJuYpRfjmSMCn4E0aW5JrKxa64c8lmjFcwRndFeW2P9Pru1PWjQTxycUTHdNAf+C6Oe8O+67m9IbbDVBRRLAXXbY6afDsw/3+Y/9+tvZ+t/exX6yBumYazm92L+Tkf6/jP53508DI9/Sluxn/nXny5n83mFz/Cp9idFOPuqz6Pj49fj9PHy/TkZX+2t7dt70Lkuxo8Pb/qu62Lbk1wQMNk50o5Y0pVfXaTCcsTGpZWKLiWIt2VLS+mKQsdktHXFp3hXvVyUNOdS+SmcwdufzCIx6PR0IuiOBrGAxphd0QpxtO+NxhGd2Bp51+oIBqGmOsWrgq2tCFWD9IgaZ6nLLSTpfOoPnniYvqIoTZzRpo5pFnVkZSmulAPoYiwocyLbIqy6YRn2mOtnKFSdIb/7vQkQcI0Zh2JoZAReaGqnpMRUUUYolJxkaaLtun19UGDcSpEipQ3Kc3IsKE3J8N289x04DeRef5777/gYsPD2ovSepKhTsRmmNsprhMIoON39LyzXM/OsiNX7V3Z5lUN+UKmpm1rnaug06E5a+sEMzFnGE3bQs7ATBCFYSGZXljEFKlEuV8YK7f3TfGVufEqKU2ldUaNldXItxm2SrYYGY+F1WR6fXdnxgtySDWdUoXvZv8lxiiRh0ZiwqlOvbbbdqEqThqa4jT0uVA6o7Ys653i7cjb4l5uavu/7Vl1wBpfdSdPqWm+TpXqZX0/t+AbvTk4EDT3m/qS7h1IhNJGb7k04f8l07I0x9XiZC4iYopOU7PKxDRV6MATLt7ua3UtAph16hPAByvaBnZvGwUzuI+Nfpq4b5f1qvWd7LamfZi0+pDyRdOtTayrzJX35WpvsX5W8n3btxrId43KBLh+Q4dHp0eTIyjLfwBZWN+B
+sidebar_class_name: "delete api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Rating"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/3/tv/{series_id}/rating"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint delete user's rating from a TV show.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Delete Rating","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Encoding":{"schema":{"type":"string","example":"br"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 19:50:25 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 450b03d6f80e8a9a65630e947501047e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"PvOn9tfKq5dCwbLXoW9Yp1fRAmgvPFckf0Tu92xtOfGGxGljRlIwAg=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"0566f98871ddfd7f6ade28aaefb5167d\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":13},"status_message":{"type":"string","example":"The item/record was deleted successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Delete Rating":{"value":{"status_code":13,"status_message":"The item/record was deleted successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

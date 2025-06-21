@@ -1,0 +1,71 @@
+---
+id: add-ratings
+title: "Add Ratings"
+description: "This endpoint allow user to rate a TV show and automatically save it to their rated list."
+sidebar_label: "Add Ratings"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vttu2zgQ/RVinlpAtnVzbGmRhzRJd1ukaBC7l93ECGhpLLOVSIWknLiG/r0gJcdykxYudtdPsobnzPDMaGY2oGmmIL6G6UcyOb96cz6BmQMpqkSyUjPBIYbpkimCPC0F45rQPBf3pFIoiRZEUo2EkulHopbinlCeElppUVDNEprna6LoCgnT5qxeIpMWkZKcKd0HB0SJkho/b1KIgabpFdWMZwocKKmkBWqUJr4NcFogxKBQKSb4LUvBAWbCu6tQrsEBlSyxoBBvQK9Le1RLxjOoa+cRnVWo9O2/41AoGaoGvC8UJRVndxUqwlLkmi0YSrIQklCiV8Titg5LqpfggMS7iklMIdaywmf8M64xQwm1A/hAizJHZazts2eeVzSvEGLP93eH/D1DsDMEXYPnBmNvZwu7tjDooIYdSxSE7nBnOuqCgijaWUYdyzh03VFd17Pmyqj0K5GuzYEfFUgE18i1MdGyzFliq2PwRRmFN08FEvMvmGhTLtLUkmaNQK3fx2O8KuYo4TE4iMf9YV3/IOtJmpJtAXZJtrewEIuSqErBVQPzXZuI/WLocjmwRJraSt7ASa57k1Xy7G3acuuECcvg+AbiMAxu4A9S0OPxUei6piDhVHCOSePuMK6viGWP5myFWwKjde8CeaaXh5JEoQWfUY2HQj5h6hDXI28pJ77rD4kXxWEUey75893Usk1QrlAeyidK5BKVXlvsRyrXhyLfS5Yx3sAYPRTl9T0yiuh4nlI/ihZRMI7ShbdwAzfygmQUeFGE/SQXVbqQgus+R01enJr/r83/l9bf595J8a13uuiZVneY389/c5Glo2+fQn22xturDw+v7s7wMv+LhdE/F2+PJuvXl3P/2zSfvz09oxer4efJOcuOj/f9XYryUIcX7ydDt3fptwSnNFkenOR3TCmykKIgOyUsT2JYeubDliI/lK2s5jlLHFLQhx7N8LgpedQ0O7joBjfghoHrD8ORPxwlyXyER+NxGCZpOozc4dB1/RuwtKvfqCCaJFjqHvJEpM1oqP+zrqU01ZW6TUT6697lmVbfHi5QKZrhr4OeLs0QxmIgMREyJfdUkapM7ShWVZKgUosqz9d9M2jaFx3GuRA5Ut6lNN364P65dy/Pfxr7bwTYia+NoenIBeqlMEtEKZRV1kzYGAbBQK8Gm8ehXQ+kDdDw2J7TbBeVzE2v1bpU8WBAS9bXSyzEimE67wuZgRldCpNKMr22iDlSifKkMl6uZ13zxGS7EaR76FFN42W7a1h17SFbiKZgrnYD8nyr9t4IMivEQlhCph/T+84ES86opnOq8MlucoULlMgTYzG3bt56fbfvQlO/NDH1a6IwChbUVm678+wPsz3mza74/9dNsRVP44MelDk1Tdxp0rZpc30NgTm3Agfi7pLWJnzmwNKURnwNm43R6IPM69q8brY/k9SUKTrPzTayoLlCB77i+sels80EgNkJfwJ4Zs/cwWa24TCDe97pT/V9cdVuSy/JYbvms6K1Lylfd8Pa3XWrXD2rt4uLjbOxb5eGqWHZ4Z+0PaNOgzixHfOXZ2ed7/fy/WQKDszbBbGwTQMkvbepvG9iFVYd+43ZdxvIKc+qppk0nOb3HazkWAc=
+sidebar_class_name: "post api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Ratings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/3/tv/{series_id}/rating"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allow user to rate a TV show and automatically save it to their rated list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","schema":{"type":"string"}},{"name":"guest_session_id","in":"query","schema":{"type":"string"}},{"name":"series_id","description":"a uniques identifier for a tv serie","in":"path","required":true,"schema":{"type":"integer"},"examples":{"example1":{"value":122},"example2":{"value":123},"example3":{"value":110381},"example4":{"value":1433},"example5":{"value":93405},"example6":{"value":1399},"example7":{"value":84007}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"value":{"type":"number","example":8.5}}},"examples":{"Add Ratings":{"value":{"value":8.5}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Add Ratings","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"94"}},"Date":{"schema":{"type":"string","example":"Wed, 01 Jan 2025 19:49:10 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 79a8bda299f9389df1f030913c73199e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"XYnogd7zW4tDye_RUxBqDePlHi49ZLJ6SyFPb2zTlbJCDaLv5XSEig=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"04302547257ccb7e68844cdd59055002\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"status_code":{"type":"number","example":12},"status_message":{"type":"string","example":"The item/record was updated successfully."},"success":{"type":"boolean","example":true}}},"examples":{"Add Ratings":{"value":{"status_code":12,"status_message":"The item/record was updated successfully.","success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

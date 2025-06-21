@@ -1,0 +1,71 @@
+---
+id: delete-session
+title: "Delete Session"
+description: "This endpoint is used to delete a session id."
+sidebar_label: "Delete Session"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1z2jgU/Sua+7Q7Y8DYgGPv5IFNaJrZpEkT2qabMDtCugYlRnIlmYYw/PcdyRBImu7QmeXF2Lr3nPshnaslWDoxkN1C/9Pw/eDD8PSoPzy9+ACjADgapkVphZKQwXAqDEHJSyWkJcKQyiAnVhGOBVoklBg0RihJBG9CAKpETZ3vKYcMaqPr2gIC0PitQmP/VHwB2dK/Co0cMqsrDIApaVFat0TLshDMI7XujQtlCYZNcUbdP7soETJQ43tkFgIoteO1Ao23q/n+EXzH1lgt5ARe50dJJYULigiO0opcoCa50juJWUXGuM6Xw2q1CgAf6awsarbjuhCbJLMlzGlR4etAIAoTRNbFOMduGtGU93odFqVpO41olIQR5V3aSyLP4Ek0mlJJU7NEYegeL4NfU5vn+k6RctTeoV/YxvWcvVm351qs84AMpvHhHWSdTnwHf5AZPTzodcIQXBhHSkpkVvykB29gPSCWDVqIOW4AXFcbZygndrovSLvnnY+pxX1dhtMqIFGPHCMjURh1SLubxe2s3SEn50OPdo16jnpfPFWi1Gjswvt+pnqxr+eFFhMhazdB90652SZJSg/GnEZpmqfxQcrzdh7GYdqOWRK30xSbrFAVz7WStinRkt+O3Ps79/6757tp9GdPjaO8ccr35RX49a+rMd7Mtbgv8pv7xUNl3r8Lr24+dvqLp7wRn6jPXwZPncu/v/YuqYrzxYnI+4eHL/kuVbkv4dnFdTdsXEZrgCPKpns3+VwYQ3KtZmRbCY/DHErDSYhWxb5oZTUuBAvIjD426AQP6y2Plk72RfjSugOWdrvYTZIkQRbyJO7FKWe0l3QOur2Qh+EdeNj5L+wgyhiWtoGSKe7WvCL8X/pYMYbG7BiOlSqQyt0InCL/TOvMW1q3AV071ho2QztV20ngQqFOA6AVt2hlp05y11lsVcz4U+rG0xIqXTh1srY0WatFS9G0U5ypuUA+bio9gdXIObBKC7vwHmOkGnW/cjS3o93la1efOpFdo+cqOBZH781cVbyRb50r8dV2eA02VXql8etGrgIQMlceWti1NiE5d2GTY2rpmBr8YRRdYY4aJXMrLv/6a7sZNkOoe0+Z672Lp1TGzqjvgKQ+2Fdj6BX4crt3fnmkr6tj8dG2yoI6XQvqvizX3byFGAJ42U/fxzqWUQBTZayzWy5d6p90sVq5z98qdEfiduQPh6BjV6vb0WozyXxDH3AB2fMUGbpogs2++/EcrIKNR98fof+0He3s0OPB2WA4gADG69vJTHHnpel3d3Oh3yEDf8Fx/n4T+W9LKKicVHTibGtU9/sXlAMp6Q==
+sidebar_class_name: "delete api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Session"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/3/authentication/session"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint is used to delete a session id.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"session_id":{"type":"string","description":"a uniques identifier for a session to be deleted"}}},"examples":{"Delete Session":{"value":{"session_id":"207eec5e3fe592a9d664c299192a2702ad5a672d"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Delete session","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=86400"}},"Connection":{"schema":{"type":"string","example":"keep-alive"}},"Content-Length":{"schema":{"type":"string","example":"16"}},"Date":{"schema":{"type":"string","example":"Thu, 26 Dec 2024 15:31:14 GMT"}},"Server":{"schema":{"type":"string","example":"openresty"}},"Vary":{"schema":{"type":"string","example":"Origin"}},"Via":{"schema":{"type":"string","example":"1.1 79a8bda299f9389df1f030913c73199e.cloudfront.net (CloudFront)"}},"X-Amz-Cf-Id":{"schema":{"type":"string","example":"ieYKRbeXvrijlfXjykusHF0RXQ4Ayzf-3GoVWEz4PZY6Pao3fyGifA=="}},"X-Amz-Cf-Pop":{"schema":{"type":"string","example":"LOS50-P2"}},"X-Cache":{"schema":{"type":"string","example":"Miss from cloudfront"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"etag":{"schema":{"type":"string","example":"W/\"c955e57777ec0d73639dca6748560d00\""}},"vary":{"schema":{"type":"string","example":"accept-encoding"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","example":true}}},"examples":{"Delete session":{"value":{"success":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

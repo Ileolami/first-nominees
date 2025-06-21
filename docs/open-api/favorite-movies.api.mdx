@@ -1,0 +1,71 @@
+---
+id: favorite-movies
+title: "Favorite Movies"
+description: "This endpoint get user's list of favorite movies."
+sidebar_label: "Favorite Movies"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0tz2zYQ/isYXNrO0JIVV37o5jhNm7Rpm9g5NI5GsyRXJGISQBZLOYqG/72zFCVTViw56aGXnDQCd7EPfN8+FpohC3p0rc8vLv56++eVHkc6xZCQ8Wyc1SN9lZug0KbeGcsqQ1ZVQPohqMIEVm6qpjBzZBhV6WYGQ09H2nkkEP0XqR7plcCr5ruOtAeCEhlJLC+0hRL1SBdgswoy1JE2YvhjhTTXkQ5JjiXo0ULz3ItgYDI20+LoFKqC9UijPXh7qev7vq+uVDEETJWzijCTT3W0NusfY9JYxgypa3OwZU1uUrYqYyTFThEyGZyhCh4TMzWJ8pAZC4ypIgxVwaHXdSRgCMbZiUkfnwH8BKUv5Gg7+PY+9eKZmjpSUHGOlk3SPIxypJgguTE2U74i7wKGDW8c8SSef81jdI1fOmLFOa4iVWg4R1LGKggJ2lTsOkqRxBPR3TiT0GxVCjATQknZBLgHIdFR90D09LjuuA1J4irLnSR64FxHmvBjZQhTPWKqcMcT1/VYpIN3VlIyWugnh4fysxng8xXq16hOnGW0LKLgfdEmuv8hiPxi26CLP2DCQgcSvrBZWmvweCe1xFP3qQV4bVY7ckAEzWsxlmG/FUgbEK/FYucKBNu1M4UiYB3pGJKblJyfNJncCcJ+/u4mc6//qcJwhtlvDvmPm4uXn+PByeeXvQ8+E5BmaAknJn2M818I/rTu/LsenI7rSJt0p85weFhH2pER9hWTdZ3ZGQpKkbhTYsPFHo3nJstZXRRV3GjOkGYGb3frnCs2DQcP2JR4ELsyVsYGV1oDiQKbKlChMN4jzVVw4FWAAkMJViU5WIuF8mRKKFQJBSrIMmpZbyw7Uc7dkuMWb6UMlFKxhYng5z11laMhlTiboGeVACc5BuVspG4N56qyKVJGrrKpeq+nTXxJUcXhvW7uknuNVTgT79jd2khVlk2hwCpMErRMJpGWEURMqsEtzJuoTGYNYxBBV/GBmx4Ie8gVKnhDUMhtQKlycWFmxlkplNo7XxVAhuc7n/vspHd2PGzkAyM9Brb+6enTVyc+vfTHT49f5Cev3/38jF4f/V2+/H0FW8ICIeAkBd6Dg8HZ2dnB4PBgMBS9rwbOzKToHsfMmWOcwAxpX8k47f18dLpSaArkTvEnZ8PhcV1vMG1dMhrjW1VhP/U3mC/EXfJ2ODz8IjeFgNv86+aqy7HvRHo0kTZ5tCTLPa7sJ8R9PnRBv8b85mO1uG7hswndBp+b8FxiUKo7O4ZiIm1xT2tYy253xy9Jd/DdiN7v6KOFnkFR4V1THnQa73dCfCfE/0GIe3wYbGFegF034C6RcycLWIbNANiGctRvh+T+4m5arvurLa1frgbagDRb7WgVFXqkc2YfRv0+eNPjHBvJNO45yrR4FjCpllm8XugYgZDOKzF6Pe5+vpRJeEmwrtCarGJltWo0HbAR0hKSsdNlb2wTepW3dFXPgEG2vK1N5A1OkdAm8kXCWZ4Oeoe9w3Zoh0TaYd1ODCU043q7T2yP+Ru3L+6m/m9alNuIGT9x3xdgmqGzyfWifa9rfaSj1VqjIz3a2HBWV+pIt882jnTuAoviYiEJeUtFXcvxcoWTp0lNgLiQXagF34MxPbhAP+D6Dc43N/m2gupmtXy83W9ZpXe65P+TO9+wSu/0ZmPV3+1Tq7Dexu+kx/KHjIh/5av++KZdhn9SD/m5Wszshs2VOx0MNi06R0iRGi+WAueJ1P2O6tZGLO6vC9Svv1zpuv4XfeZkOQ==
+sidebar_class_name: "get api-method"
+info_path: docs/open-api/the-movie-database
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Favorite Movies"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/3/account/{account_id}/favorite/movies"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint get user's list of favorite movies.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"language","in":"query","schema":{"type":"string","default":"en-US"},"description":"language based on region"},{"name":"page","in":"query","schema":{"type":"integer","default":1},"description":"page number to retrieve specific paginated results."},{"name":"session_id","in":"query","schema":{"type":"string","example":""},"description":"session ID for authentication or tracking purposes"},{"name":"sort_by","in":"query","schema":{"type":"string","description":"Sort the results either in ascending order or descending order ","enum":["created_at.asc","created_at.desc"]}},{"name":"account_id","in":"path","required":true,"schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Favorite Movies","content":{"application/json":{"schema":{"type":"object","properties":{"page":{"type":"number","example":1},"results":{"type":"array","items":{"type":"object","properties":{"adult":{"type":"boolean","example":false},"backdrop_path":{"type":"string","example":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg"},"genre_ids":{"type":"array","items":{"type":"number","example":18},"example":[18]},"id":{"type":"number","example":550},"original_language":{"type":"string","example":"en"},"original_title":{"type":"string","example":"Fight Club"},"overview":{"type":"string","example":"A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion."},"popularity":{"type":"number","example":97.965},"poster_path":{"type":"string","example":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"},"release_date":{"type":"string","example":"1999-10-15"},"title":{"type":"string","example":"Fight Club"},"video":{"type":"boolean","example":false},"vote_average":{"type":"number","example":8.438},"vote_count":{"type":"number","example":29556}}},"example":[{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","genre_ids":[18],"id":550,"original_language":"en","original_title":"Fight Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.","popularity":97.965,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","release_date":"1999-10-15","title":"Fight Club","video":false,"vote_average":8.438,"vote_count":29556}]},"total_pages":{"type":"number","example":1},"total_results":{"type":"number","example":1}}},"examples":{"Favorite Movies":{"value":{"page":1,"results":[{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","genre_ids":[18],"id":550,"original_language":"en","original_title":"Fight Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.","popularity":97.965,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","release_date":"1999-10-15","title":"Fight Club","video":false,"vote_average":8.438,"vote_count":29556}],"total_pages":1,"total_results":1}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
