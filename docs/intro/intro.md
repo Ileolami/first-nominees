@@ -1,12 +1,28 @@
 ---
-sidebar_position: 1
-description: Execution Summary
+description: The Project overview and its Purpose
+sidebar_position: 2
 ---
 
-# Execution Summary
+# Introduction
 
-:::info
-This Requirements Specification document was prepared based on requirements indicated by First Nominees key users during business process workshop session.
-:::
+This Functional Requirement Documentation(FRD) is the starting point of the solution and system development. This is a collaborative effort between all business and technology stakeholders
 
-This document is structured in accordance with Gems' methodology for the integration of Microsoft Dynamics Business Central with Client Portal . The findings of this Requirements Specification will form the basis of planning, setup, configuration and testing as well as finding solutions to the gaps. It will ensure that future tasks are prioritized accordingly, and resources used efficiently.  
+The doc defines ‘what’ the user needs. It is not intended to specify ‘how’ the needs are to be met. Furthermore, the document:
+
+- Identifies and documents First Nominees requirements
+
+- This document also includes the Functional Design Document (FDD) for system configuration
+
+- Forms the basis of planning
+
+- Forms the basis of quality assurance
+
+- Forms the basis of functional tests
+
+- Forms the basis of setup and configuration
+
+- Forms the basis of testing
+
+## Purpose
+
+The purpose of the FRD is to communicate business needs in common terms to all project and technical team members to ensure the product meets the business objectives. It is the first phase of the Systems Development Life Cycle.

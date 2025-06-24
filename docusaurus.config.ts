@@ -71,7 +71,17 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'URIPXRG8JK',
+
+      // Public API key: it is safe to commit it
+      apiKey: '5cebde63f758e783890a0f8229d38b5e',
+
+      indexName: 'first-nominees',
+      // Optional: Algolia search parameters
+      searchParameters: {},
+    },
     image: 'static/img/first.png',
     navbar: {
       title: '',
@@ -148,8 +158,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      
+      darkTheme: prismThemes.oneDark,
     },
   } satisfies Preset.ThemeConfig,
    plugins: [
