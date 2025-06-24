@@ -94,9 +94,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'api-reference',
+          sidebarId: 'apiReference',
           position: 'right',
-          label: 'API-Reference',
+          label: 'API Reference',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -151,25 +151,20 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       
     },
-    //   algolia: {
-    //   apiKey: "441074cace987cbf4640c039ebed303c",
-    //   appId: "J0EABTYI1A",
-    //   indexName: "docusaurus-openapi",
-    // },
   } satisfies Preset.ThemeConfig,
    plugins: [
       [
         'docusaurus-plugin-openapi-docs',
         {
-          id: "api", // Unique ID for the plugin
-          docsPluginId: "classic", // Refers to the preset-classic Docusaurus setup
+          id: "api", 
+          docsPluginId: "classic", 
           config: {
-            petstore: {
+            apireference: {
               specPath: "openapi.yaml", 
               outputDir: "docs/open-api", 
               sidebarOptions: {
-                groupPathsBy: 'tag',           // ✅ groups by tags
-                categoryLinkSource: 'tag',     // ✅ uses tag as folder title
+                groupPathsBy: 'tag',           
+                categoryLinkSource: 'tag',  
               },
             } satisfies OpenApiPlugin.Options,
           }

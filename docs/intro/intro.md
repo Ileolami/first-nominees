@@ -3,7 +3,7 @@ sidebar_position: 1
 description: Execution Summary
 ---
 
-# Exexcution Summary
+# Execution Summary
 
 :::info
 This Requirements Specification document was prepared based on requirements indicated by First Nominees key users during business process workshop session.
